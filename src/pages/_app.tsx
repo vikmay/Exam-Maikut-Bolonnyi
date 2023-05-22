@@ -1,3 +1,4 @@
+
 import React from "react";
 import "@/styles/globals.scss";
 import "swiper/css";
@@ -7,7 +8,7 @@ function MyApp({ Component, pageProps }: { Component: React.ComponentType<any>; 
   return (
     <Layouts>
       <Component {...pageProps} />
-    </Layouts>
+    </Layouts> main
   );
 }
 
