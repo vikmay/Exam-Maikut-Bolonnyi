@@ -1,6 +1,14 @@
-import '@/styles/globals.scss'
-import type { AppProps } from 'next/app'
+import React from "react";
+import "@/styles/globals.scss";
+import "swiper/css";
+import Layouts from "@/layouts";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }: { Component: React.ComponentType<any>; pageProps: any }) {
+  return (
+    <Layouts>
+      <Component {...pageProps} />
+    </Layouts>
+  );
 }
+
+export default MyApp;
