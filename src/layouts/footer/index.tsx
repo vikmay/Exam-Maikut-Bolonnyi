@@ -12,7 +12,7 @@ function Footer() {
     <footer className={s.footer}>
       <Container>
         <Row>
-          <Col xs={6} md={3}>
+          <Col xs={6} md={3} className="d-flex align-items-center justify-content-center">
             <Image
               src="/@/../../public/images/Logo.png"
               alt="Logo"
@@ -20,59 +20,80 @@ function Footer() {
               height={48}
             />
           </Col>
-          <Col xs={6} md={3}>
-            <nav>
-              <ul className="list-inline">
+          <Col xs={6} md={3} className="d-flex align-items-center justify-content-center">
+            <nav className={s.location}>
+              <ul className="list-inline d-flex flex-column gap-3">
+                <h5>Location</h5>
+
                 <li>
-                  <Image
-                    src="/@/../../public/images/footer/Location.png"
-                    alt="Logo"
-                    width={23}
-                    height={24}
-                  ></Image>
-                  <a href="location1.html">Location 1</a>
+                  <div className="d-flex">
+                    <Image
+                      src="/@/../../public/images/footer/Location.png"
+                      alt="Logo"
+                      width={23}
+                      height={24}
+                    ></Image>
+                    <a href="location1.html">
+                      Wisconsin Ave, Suite 700<br /> Chevy Chase, Maryland 20815
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <Image
-                    src="/@/../../public/images/footer/Location.png"
-                    alt="Logo"
-                    width={24}
-                    height={24}
-                  ></Image>
-                  <a href="location1.html">Location 1</a>
+                  <div className="d-flex">
+                    <Image
+                      src="/@/../../public/images/footer/Location.png"
+                      alt="Logo"
+                      width={23}
+                      height={24}
+                    ></Image>
+                    <a href="location1.html">
+                      Wisconsin Ave, Suite 700<br /> Chevy Chase, Maryland 20815
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <Image
-                    src="/@/../../public/images/footer/Location.png"
-                    alt="Logo"
-                    width={24}
-                    height={24}
-                  ></Image>
-                  <a href="location1.html">Location 1</a>
+                  <div className="d-flex">
+                    <Image
+                      src="/@/../../public/images/footer/Location.png"
+                      alt="Logo"
+                      width={23}
+                      height={24}
+                    ></Image>
+                    <a href="location1.html">
+                      Wisconsin Ave, Suite 700<br /> Chevy Chase, Maryland 20815
+                    </a>
+                  </div>
                 </li>
               </ul>
             </nav>
           </Col>
-          <Col xs={6} md={3}>
+          <Col xs={6} md={3} className="d-flex align-items-center justify-content-center"></Col>
+          <Col xs={6} md={3} className="d-flex flex-column align-items-center justify-content-center">
             <div>
               <address>
                 <ul className="list-inline">
-                  <li>Address: 123 Main Street, City, Country</li>
-                  <li>Phone: (123) 456-7890</li>
+                  <h5>Contact US</h5>
                   <li>
                     <Image
                       src="/@/../../public/images/footer/Mail.png"
                       alt="Logo"
-                      width={17}
-                      height={17}
+                      width={24}
+                      height={24}
                     ></Image>
-                    <a href="mailto:logo@firma.com"></a>
+                    <a href="mailto:logo@firma.com">logo@figma.com</a>
+                  </li>
+                  <li>
+                    <Image
+                      src="/@/../../public/images/footer/Phone.png"
+                      alt="Logo"
+                      width={24}
+                      height={24}
+                    ></Image>
+                    <a href="tel:+3800065628">+3800065628</a>
                   </li>
                 </ul>
               </address>
             </div>
-          </Col>
-          <Col xs={6} md={3}>
             <div className={s.social}>
               <h4 className="d-inline">Follow Us</h4>
               <ul className="list-inline d-flex justify-content-between">
