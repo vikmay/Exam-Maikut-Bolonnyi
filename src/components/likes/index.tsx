@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 // 💬 Img --//
-import LikesImg from "../../../public/likes.svg";
+import LikesImg from "../../../public/images/likes.svg";
 const Likes = () => {
   return (
     <>

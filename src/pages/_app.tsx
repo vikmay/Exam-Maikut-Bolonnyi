@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: { Component: React.ComponentType<any>; 
   return (
     <Layouts>
       <Component {...pageProps} />
-    </Layouts> main
+    </Layouts>
   );
 }
 
