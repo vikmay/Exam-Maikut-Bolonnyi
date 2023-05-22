@@ -1,14 +1,15 @@
-import "@/styles/globals.scss";
-import type { AppProps } from "next/app";
-import Header from "@/layouts/header";
-import Footer from "@/layouts/footer";
 
-export default function App({ Component, pageProps }: AppProps) {
+import React from "react";
+import "@/styles/globals.scss";
+import "swiper/css";
+import Layouts from "@/layouts";
+
+function MyApp({ Component, pageProps }: { Component: React.ComponentType<any>; pageProps: any }) {
   return (
-    <>
-      <Header />
+    <Layouts>
       <Component {...pageProps} />
-      <Footer />
-    </>
+    </Layouts> main
   );
 }
+
+export default MyApp;
