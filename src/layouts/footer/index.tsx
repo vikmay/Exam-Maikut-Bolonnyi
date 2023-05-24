@@ -33,48 +33,50 @@ function Footer() {
             <nav className={s.location}>
               <ul className="list-inline d-flex flex-column gap-3">
                 <h5>Location</h5>
-
                 <li>
-                  <div className="d-flex">
+                  <a
+                    className="d-flex gap-3 align-items-center"
+                    href="location1.html"
+                  >
                     <Image
                       src="/@/../../public/images/footer/Location.png"
                       alt="Logo"
                       width={23}
                       height={24}
                     ></Image>
-                    <a href="location1.html">
-                      Wisconsin Ave, Suite 700
-                      <br /> Chevy Chase, Maryland 20815
-                    </a>
-                  </div>
+                    Wisconsin Ave, Suite 700
+                    <br /> Chevy Chase, Maryland 20815
+                  </a>
                 </li>
                 <li>
-                  <div className="d-flex">
+                  <a
+                    className="d-flex gap-3 align-items-center"
+                    href="location1.html"
+                  >
                     <Image
                       src="/@/../../public/images/footer/Location.png"
                       alt="Logo"
                       width={23}
                       height={24}
                     ></Image>
-                    <a href="location1.html">
-                      Wisconsin Ave, Suite 700
-                      <br /> Chevy Chase, Maryland 20815
-                    </a>
-                  </div>
+                    Wisconsin Ave, Suite 700
+                    <br /> Chevy Chase, Maryland 20815
+                  </a>
                 </li>
                 <li>
-                  <div className="d-flex">
+                  <a
+                    className="d-flex gap-3 align-items-center"
+                    href="location1.html"
+                  >
                     <Image
                       src="/@/../../public/images/footer/Location.png"
                       alt="Logo"
                       width={23}
                       height={24}
                     ></Image>
-                    <a href="location1.html">
-                      Wisconsin Ave, Suite 700
-                      <br /> Chevy Chase, Maryland 20815
-                    </a>
-                  </div>
+                    Wisconsin Ave, Suite 700
+                    <br /> Chevy Chase, Maryland 20815
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -97,7 +99,8 @@ function Footer() {
                   <h5>Contact US</h5>
                   <li>
                     <a href="mailto:logo@firma.com">
-                      <Image className="me-2"
+                      <Image
+                        className="me-2"
                         src="/@/../../public/images/footer/Mail.png"
                         alt="Logo"
                         width={24}
@@ -108,7 +111,8 @@ function Footer() {
                   </li>
                   <li>
                     <a href="tel:+3800065628">
-                      <Image className="me-2"
+                      <Image
+                        className="me-2"
                         src="/@/../../public/images/footer/Phone.png"
                         alt="Logo"
                         width={24}
