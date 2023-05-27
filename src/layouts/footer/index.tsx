@@ -14,9 +14,11 @@ function Footer() {
       <Container>
         <Row>
           <Col
-            xs={6}
+            xs={12}
             md={3}
-            className="d-flex align-items-center justify-content-start"
+            sm={12}
+            className="d-flex align-items-center justify-content-md-start
+             justify-content-center"
           >
             <Link href="/">
               {" "}
@@ -29,9 +31,10 @@ function Footer() {
             </Link>
           </Col>
           <Col
-            xs={6}
+            xs={{ order: 3, span: 12 }}
             md={3}
-            className="d-flex align-items-center justify-content-start"
+            className="d-flex align-items-center justify-content-md-start
+             justify-content-center"
           >
             <nav className={s.location}>
               <ul className="list-inline d-flex flex-column gap-3">
@@ -47,8 +50,7 @@ function Footer() {
                       width={23}
                       height={24}
                     ></Image>
-                    Wisconsin Ave, Suite 700
-                    <br /> Chevy Chase, Maryland 20815
+                    Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815
                   </a>
                 </li>
                 <li>
@@ -62,8 +64,7 @@ function Footer() {
                       width={23}
                       height={24}
                     ></Image>
-                    Wisconsin Ave, Suite 700
-                    <br /> Chevy Chase, Maryland 20815
+                    Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815
                   </a>
                 </li>
                 <li>
@@ -77,27 +78,26 @@ function Footer() {
                       width={23}
                       height={24}
                     ></Image>
-                    Wisconsin Ave, Suite 700
-                    <br /> Chevy Chase, Maryland 20815
+                    Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815
                   </a>
                 </li>
               </ul>
             </nav>
           </Col>
           <Col
-            xs={6}
+            xs={{ order: 2, span: 12 }}
             md={3}
             className="d-flex align-items-center justify-content-center"
           >
             <Nav ulClassName={s.ul} liClassName={s.li} aClassName={s.a} />
           </Col>
           <Col
-            xs={6}
+            xs={{ order: 4, span: 12 }}
             md={3}
             className="d-flex flex-column align-items-start justify-content-center gap-4"
           >
-            <div>
-              <address>
+            <div className={s.contact_social}>
+              <div>
                 <ul className="list-inline d-flex flex-column align-items-start gap-2">
                   <h5>Contact US</h5>
                   <li>
@@ -125,54 +125,54 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </address>
-            </div>
-            <div className={s.social}>
-              <h4 className="d-inline">Follow Us</h4>
-              <ul className="list-inline d-flex justify-content-between">
-                <li>
-                  <a
-                    href="https://www.example.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/@/../../public/images/Footer/Facebook.png"
-                      alt="Logo"
-                      width={24}
-                      height={24}
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.example.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/@/../../public/images/Footer/Telegram.png"
-                      alt="Logo"
-                      width={24}
-                      height={24}
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.example.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/@/../../public/images/Footer/Instagram.png"
-                      alt="Logo"
-                      width={24}
-                      height={24}
-                    />
-                  </a>
-                </li>
-              </ul>
+              </div>
+              <div className={s.social}>
+                <h4 className="d-inline">Follow Us</h4>
+                <ul className="list-inline d-flex justify-content-between">
+                  <li>
+                    <a
+                      href="https://www.example.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/@/../../public/images/Footer/Facebook.png"
+                        alt="Logo"
+                        width={24}
+                        height={24}
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.example.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/@/../../public/images/Footer/Telegram.png"
+                        alt="Logo"
+                        width={24}
+                        height={24}
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.example.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/@/../../public/images/Footer/Instagram.png"
+                        alt="Logo"
+                        width={24}
+                        height={24}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </Col>
         </Row>

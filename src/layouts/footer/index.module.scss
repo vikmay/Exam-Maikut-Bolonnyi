@@ -27,12 +27,15 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 2.3em!important;
+    gap: 2.3em !important;
+
     li {
         display: flex;
+
         &:nth-child(3) {
             order: 4;
         }
+
         &:nth-child(4) {
             order: 3;
         }
@@ -44,8 +47,22 @@
 
 }
 
+.contact_social {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 767px) {
+    
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2em;
+    }
+}
+
 .social {
     width: fit-content;
     display: flex;
     flex-direction: column;
+
 }
