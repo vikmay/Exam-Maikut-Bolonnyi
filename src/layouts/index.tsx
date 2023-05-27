@@ -17,7 +17,7 @@ const Layouts = ({ children, ...props }: LayoutProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main style={{ width: "90%", margin: "0 auto" }} {...props}>
+      <main style={{ width: "90%", margin: "100px 0 auto auto" }} {...props}>
         {children}
       </main>
       <Footer />

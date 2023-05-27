@@ -3,10 +3,16 @@
   display: flex;
   align-items: center;
   .ul {
+    display: flex;
+    align-items: center;
     list-style-type: none;
     display: flex;
     gap: 69px;
+    margin: 0;
+
     a {
+      position: relative;
+      display: inline-block;
       text-decoration: none;
       color: $primary-color;
       font-family: "Montserrat";
@@ -14,9 +20,36 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 18px;
+      transition: 0.5s;
+      .selected {
+        color: aqua;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        background-color: $primary-color;
+        transform-origin: bottom;
+        transition: transform 0.25s ease-out;
+      }
+
+      &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom;
+      }
     }
   }
 }
-a.active {
-  color: $primary-bg-color;
+
+//💬 Breakpoints //
+@media only screen and (max-width: 992px) {
+  .nav {
+    .ul {
+      gap: 10px;
+    }
+  }
 }
