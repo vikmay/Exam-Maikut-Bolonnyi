@@ -13,16 +13,24 @@ const Nav: React.FC<NavProps> = ({ ulClassName, liClassName, aClassName }) => {
     <nav className={s.nav}>
       <ul className={`${s.ul} ${ulClassName}`}>
         <li className={liClassName}>
-          <Link className={aClassName} href="/catalog">Каталог</Link>
+          <Link className={aClassName} href="/catalog">
+            Каталог
+          </Link>
         </li>
         <li className={liClassName}>
-          <Link className={aClassName} href="/about">Про нас</Link>
+          <Link className={aClassName} href="/about">
+            Про нас
+          </Link>
         </li>
         <li className={liClassName}>
-          <Link className={aClassName} href="/faq">FAQ</Link>
+          <Link className={aClassName} href="/faq">
+            FAQ
+          </Link>
         </li>
         <li className={liClassName}>
-          <Link className={aClassName} href="/contact">Контакти</Link>
+          <Link className={aClassName} href="/contact">
+            Контакти
+          </Link>
         </li>
       </ul>
     </nav>

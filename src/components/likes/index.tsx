@@ -6,8 +6,8 @@ import LikesImg from "../../../public/images/likes.svg";
 const Likes = () => {
   return (
     <>
-      <Link href="#">
-        <Image src={LikesImg} width={20} height={20} alt="Likes" />
+      <Link href="/favorites">
+        <Image src={LikesImg} width={24} height={22} alt="Likes" />
       </Link>
     </>
   );
