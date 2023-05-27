@@ -11,7 +11,7 @@ import Catalog from "@/pages/catalog";
 import Nav from "@/components/nav";
 import Likes from "@/components/likes";
 //💬 Img //
-import Logo from "../../../public/Logo.png";
+import Logo from "../../../public/images/Logo.png";
 import Image from "next/image";
 
 const Header = () => {
