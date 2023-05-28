@@ -34,4 +34,33 @@
       margin-left: 25px;
     }
   }
+  /* ... */
+
+  .menu__toggle {
+    display: none;
+  }
+
+  @media (max-width: 1000px) {
+    .menu__toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: none;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .menu__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 3px;
+      background-color: $primary-color;
+    }
+
+    .phone__btn {
+      display: none !important ;
+    }
+  }
 }
