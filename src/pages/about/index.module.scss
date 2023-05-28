@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+.history__block {
+  .h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: $primary-color;
+  }
+  .p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: $secondary-text-color;
+  }
+  span {
+    color: $primary-color;
+  }
+}
