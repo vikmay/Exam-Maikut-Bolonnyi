@@ -13,6 +13,27 @@ const About = () => {
           egestas sit volutpat at diam.
         </p>
         <span className={s.span}>Lorem ipsum dolor</span>
+
+        <div className={s.left_right_blocks}>
+          <div className={s.block}>
+            Lorem ipsum dolor sit amet consectetur. Sit massa proin pulvinar
+            gravida odio faucibus feugiat elementum. Nullam nunc blandit purus
+            leo nulla commodo malesuada odio. Sem aliquam morbi sapien dolor at.
+            Risus fermentum bibendum convallis nec. Nec fermentum faucibus risus
+            diam nisi at lacus vitae ultricies. Sodales phasellus blandit
+            posuere senectus interdum. Massa nunc tellus cras egestas sem risus.
+            Ut semper at nunc egestas.
+          </div>
+          <div className={s.block}>
+            Lorem ipsum dolor sit amet consectetur. Sit massa proin pulvinar
+            gravida odio faucibus feugiat elementum. Nullam nunc blandit purus
+            leo nulla commodo malesuada odio. Sem aliquam morbi sapien dolor at.
+            Risus fermentum bibendum convallis nec. Nec fermentum faucibus risus
+            diam nisi at lacus vitae ultricies. Sodales phasellus blandit
+            posuere senectus interdum. Massa nunc tellus cras egestas sem risus.
+            Ut semper at nunc egestas.
+          </div>
+        </div>
       </div>
     </>
   );
