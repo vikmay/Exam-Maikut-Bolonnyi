@@ -8,6 +8,7 @@
   height: 82px;
   width: 100%;
   background-color: $primary-bg-color;
+  z-index: 1;
 
   .action__bar {
     display: flex;
