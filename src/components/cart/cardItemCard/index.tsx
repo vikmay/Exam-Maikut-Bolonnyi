@@ -7,6 +7,7 @@ import { Product } from "@/../../interfaces";
 
 interface Props {
   cartItem: CartItem;
+  product: Product;
 }
 const CartItemCard = ({ cartItem }: Props) => {
   const dispatch = useAppDispatch();
