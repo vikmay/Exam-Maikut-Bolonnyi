@@ -16,7 +16,7 @@ const QtyBtn = (props: Props) => {
           className={s.btn_decrease}
           onClick={props.onDecrease}
         >
-          {props.qty === 1 ? <TrashIcon className="w-5 mx-auto" /> : "-"}
+          {props.qty === 1 ? <TrashIcon className="align-self-center pt-2" /> : "-"}
         </button>
         <div className={s.quantity}>{props.qty}</div>
         <button

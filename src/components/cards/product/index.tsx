@@ -4,8 +4,11 @@ import AddToCartBtn from "@/components/cart/addToCart";
 import s from "./index.module.scss";
 import { Product } from "@/../../interfaces";
 
+
 const ProductCard = (props: any) => {
   const { product, id } = props;
+  
+  
   return (
     <>
       <div className={s.card_wrapper}>
@@ -16,7 +19,9 @@ const ProductCard = (props: any) => {
             width={200}
             height={200}
           />
-          <div>{product?.title}</div>
+          <div className={s.card_title}>{product?.title.slice(0, 26)}</div>
+          <div className={s.card_model}>{product?.title.slice(28)}</div>
+          
           <div className={s.card__producer}>{'_'+ product?.producer}</div>
           <div className={s.price_cart_container}>
             <div>
