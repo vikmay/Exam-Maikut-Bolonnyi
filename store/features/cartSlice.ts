@@ -5,7 +5,7 @@ import { RootState } from "../store";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-// Define CartState Interface 
+// Define CartState Interface
 export interface CartState {
   cartItems: CartItem[];
 }
@@ -72,7 +72,10 @@ const persistConfig = {
 };
 
 // Create persisted reducer
-export const persistedCartReducer = persistReducer(persistConfig, cartSlice.reducer);
+export const persistedCartReducer = persistReducer(
+  persistConfig,
+  cartSlice.reducer
+);
 
 // Create Selector to get cartItems from state
 const cartItems = (state: RootState) => state.cart.cartItems;

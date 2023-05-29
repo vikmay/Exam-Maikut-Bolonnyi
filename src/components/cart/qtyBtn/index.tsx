@@ -1,6 +1,7 @@
 import React from "react";
 // import { Button } from "./elements";
 import { TrashIcon } from "@heroicons/react/24/solid";
+import s from "./index.module.scss";
 
 interface Props {
   onIncrease: () => void;
@@ -10,16 +11,16 @@ interface Props {
 const QtyBtn = (props: Props) => {
   return (
     <>
-      <div className="flex gap-2 justify-center items-center">
+      <div className={s.btn_container}>
         <button
-          className="w-14 h-14 bg-red-500 rounded"
+          className={s.btn_decrease}
           onClick={props.onDecrease}
         >
           {props.qty === 1 ? <TrashIcon className="w-5 mx-auto" /> : "-"}
         </button>
-        <p className="font-bold">{props.qty}</p>
+        <div className={s.quantity}>{props.qty}</div>
         <button
-          className="w-14 h-14 bg-green-500 rounded"
+          className={s.btn_increase}
           onClick={props.onIncrease}
         >
           +

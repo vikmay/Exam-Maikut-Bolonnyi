@@ -3,7 +3,7 @@ import React from "react";
 import { useAppDispatch,useAppSelector } from "@/../../store/store";
 import s from "./index.module.scss";
 import { decrement, increment,productQtyInCartSelector } from "@/../store/features/cartSlice";
-import QtyBtn from "../QtyBtn";
+import QtyBtn from "../qtyBtn";
 import Image from "next/image";
 import addtocard from "@/../../public/images/AddToCartBtn.png";
 
@@ -24,7 +24,7 @@ interface Props {
           <button className={s.btncolor}
             onClick={() => dispatch(increment(props.product))}
           >
-            <Image src={addtocard} alt="cart" width={50} height={50} />
+            <Image src={addtocard} alt="cart" width={60} height={60} />
           </button>
         </div>
       );

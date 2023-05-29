@@ -1,9 +1,59 @@
-.card_container {
+.card_wrapper {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     height: 400px;
-
+    font-family: 'Montserrat';
+    font-style: normal;
     &:hover {
         scale: 1.05;
         transition: ease-in-out 0.4s;
+    }
+
+    .card_container {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+
+        
+
+        .card__producer {
+            width: 100%;
+            text-align: left;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: #C90000;
+        }
+
+        .price_cart_container {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+
+
+
+            .card__price {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .on_stock {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                color: #C90000;
+            }
+
+        }
     }
 }

@@ -1,0 +1,32 @@
+.btn_container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .btn_decrease {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        color:white;
+        background: #C90000;
+        border: none;
+        border-radius: 50%;
+    }
+    .quantity {
+        width: 10px;
+    }
+    .btn_increase {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        color:white;
+        background: #C90000;
+        border: none;
+        border-radius: 50%;
+    }
+}
