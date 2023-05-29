@@ -57,7 +57,7 @@ const Header = () => {
         <div className={s.action__bar}>
           <Favorites></Favorites>
           <Search></Search>
-          <Cart></Cart>
+          < Cart />
           <button className={s.menu__toggle} onClick={handleMenuToggle}>
             <span className={s.menu__icon}></span>
             <span className={s.menu__icon}></span>

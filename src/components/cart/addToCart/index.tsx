@@ -1,4 +1,4 @@
-import { Product } from "@/../../interfaces";
+import {Product}  from "@/../../interfaces";
 import React from "react";
 import { useAppDispatch,useAppSelector } from "@/../../store/store";
 import s from "./index.module.scss";
@@ -8,7 +8,9 @@ import Image from "next/image";
 import addtocard from "@/../../public/images/AddToCartBtn.png";
 
 interface Props {
-    product: Product;
+    product: Product,
+    id: number;
+    
   }
   
   const AddToCartBtn = (props: Props) => {
