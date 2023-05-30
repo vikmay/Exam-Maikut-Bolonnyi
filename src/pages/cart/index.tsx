@@ -17,9 +17,7 @@ const CartPage = () => {
       <>
         <p className={s.title}>Кошик</p>
         <div className={s.container}>
-          <span className={s.message}>
-            Ваш кошик порожній :((
-          </span>
+          <span className={s.message}>Ваш кошик порожній :((</span>
           <Link
             className="text-black text-4xl font-bold rounded py-6 px-6 bg-green-300"
             href="/catalog"
@@ -33,22 +31,27 @@ const CartPage = () => {
 
   return (
     <>
-      <p className="text-4xl font-bold text-center my-3">Кошик</p>
+      <div className={s.title}>Кошик</div>
+      <div className={s.top_btns_container}>
+        <button
+          onClick={() => dispatch(emptyCart())}
+          className={s.empty_cart_btn}
+        >
+          Очистити кошик
+        </button>
+        <Link className={s.payment_link} href="/payment">
+          Оформити покупку
+        </Link>
+      </div>
       <div className="p-2 mb-2 relative">
         {cartItems.map((item) => (
           <CartItemCard cartItem={item} />
         ))}
 
         <div className="flex">
-          <p className="text-red-600 font-extrabold text-3xl my-4 ms-auto">
-            Загальна Сума:{" "}
-            <span className="text-slate-900 font-bold">{totalPrice} $</span>
-            <Link
-              className="text-black rounded m-24 mt-12 py-2 px-3 bg-green-400"
-              href="/payment"
-            >
-              Перейти до оплати
-            </Link>
+          <p className={s.total_price}>
+            Загальна Ціна :{" "}
+            <span>{totalPrice} $</span>
             <Link
               className="text-black text-3xl font-bold rounded my-4 py-2 px-2 bg-orange-400"
               href="/catalog"
@@ -57,15 +60,7 @@ const CartPage = () => {
             </Link>
           </p>
         </div>
-        <button
-          onClick={() => dispatch(emptyCart())}
-          className="flex bg-black hover:bg-red-700 text-white 
-          font-bold py-2 px-4 rounded fixed top-20 right-3"
-        >
-          Очистити кошик
-        </button>
       </div>
-      
     </>
   );
 };

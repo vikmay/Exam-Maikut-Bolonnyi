@@ -18,8 +18,8 @@ const Cart = (props: Props) => {
   const totalItems = useAppSelector(totalCartItemsSelector);
   return (
     <>
-        <Link href="/cart">
-      <div className={s.cart_container}>
+      <Link href="/cart">
+        <div className={s.cart_container}>
           <Image
             className={s.cart_icon}
             src={CartImg}
@@ -27,13 +27,13 @@ const Cart = (props: Props) => {
             height={24}
             alt="Cart"
           ></Image>
-        {!!totalItems && (
-          <div key={totalItems} className={s.total_items}>
-            {totalItems}
-          </div>
-        )}
-      </div>
-        </Link>
+          {!!totalItems && (
+            <div key={totalItems} className={s.total_items}>
+              {totalItems}
+            </div>
+          )}
+        </div>
+      </Link>
     </>
   );
 };

@@ -3,11 +3,12 @@ export interface Product {
   title: string;
   price: number;
   description: string;
-  image: any;
+  images: string[];
   features: string[];
 }
 
 export interface CartItem {
   product: Product;
   qty: number;
+
 }

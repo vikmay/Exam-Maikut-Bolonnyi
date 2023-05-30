@@ -12,8 +12,27 @@
 
 }
 .title {
+    
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     text-align: center;
+}
+.empty_cart_btn {
+    background: none;
+    border: none;
+    color: #C90000;
+    margin-left: 0.2%;
+    
+}
+.payment_link {
+    
+    text-decoration: none;
+    color: #C90000;
+    margin-right: 0.5%;
+}
+.top_btns_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }

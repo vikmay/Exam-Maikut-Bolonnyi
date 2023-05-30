@@ -7,27 +7,30 @@ interface Props {
   onIncrease: () => void;
   onDecrease: () => void;
   qty: number;
+  className?: string;
+  increaseClassName?: string;
+  decreaseClassName?: string;
 }
-const QtyBtn = (props: Props) => {
+
+const QtyBtn = ({ onIncrease, onDecrease, qty, className, increaseClassName, decreaseClassName }: Props) => {
   return (
-    <>
-      <div className={s.btn_container}>
-        <button
-          className={s.btn_decrease}
-          onClick={props.onDecrease}
-        >
-          {props.qty === 1 ? <TrashIcon className="align-self-center pt-2" /> : "-"}
-        </button>
-        <div className={s.quantity}>{props.qty}</div>
-        <button
-          className={s.btn_increase}
-          onClick={props.onIncrease}
-        >
-          +
-        </button>
-      </div>
-    </>
+    <div className={`${s.btn_container} ${className}`}>
+      <button
+        className={`${s.btn_decrease} ${decreaseClassName}`}
+        onClick={onDecrease}
+      >
+        {qty === 1 ? <TrashIcon className="align-self-center pt-2" /> : "-"}
+      </button>
+      <div className={s.quantity}>{qty}</div>
+      <button
+        className={`${s.btn_increase} ${increaseClassName}`}
+        onClick={onIncrease}
+      >
+        +
+      </button>
+    </div>
   );
 };
+
 
 export default QtyBtn;
