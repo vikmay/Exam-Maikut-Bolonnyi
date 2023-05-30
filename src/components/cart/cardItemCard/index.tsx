@@ -3,11 +3,11 @@ import React from "react";
 import { decrement, increment, remove } from "@/../../store/features/cartSlice";
 import { useAppDispatch } from "@/../../store/store";
 import QtyBtn from "../qtyBtn";
-import { Product } from "@/../../interfaces";
+
 
 interface Props {
   cartItem: CartItem;
-  product: Product;
+
 }
 const CartItemCard = ({ cartItem }: Props) => {
   const dispatch = useAppDispatch();
