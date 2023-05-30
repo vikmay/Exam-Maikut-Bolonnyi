@@ -21,6 +21,22 @@
         align-items: center;
         justify-content: space-around;
 
+        .new_fav_container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .new_label {
+                width: 73.12px;
+                height: 30px;
+                display: grid;
+                place-items: center;
+                color: white;
+                background: #C90000;
+            }
+        }
+
         .card_title {
             width: 100%;
             display: flex;

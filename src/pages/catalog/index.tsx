@@ -16,7 +16,7 @@ const ProductListPage: React.FC = () => {
       {
       products.map((id: any)  => {
         return (
-          <Col key={id} lg="4" className="mb-4">
+          <Col key={id} lg="4" md="6" className="mb-4">
             <ProductCard  product={id} />
         </Col>     
         )

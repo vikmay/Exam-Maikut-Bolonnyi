@@ -85,7 +85,8 @@
             "https://franke-lux.com.ua/wp-content/uploads/AP001_131.0669.345.png",
             "https://franke-lux.com.ua/wp-content/uploads/TE001_131.0669.345.png"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
         "id": "2",
@@ -177,7 +178,8 @@
             "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP001_335.0588.180-nd486w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP001_335.0588.221-nd486w.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
         "id": "3",
@@ -358,7 +360,8 @@
             "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP004_345.0529.584-nd486w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2020/04/PD001_345.0529.584-nd486w.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
         "id": "5",
@@ -524,7 +527,8 @@
             "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_106.0183.016-nd1000w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_106.0183.016-nd860w-2.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
         "id": "7",
@@ -599,7 +603,8 @@
             "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE001_108.0606.106-nd860w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE002_108.0606.106-nd860w.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
         "id": "8",
@@ -675,7 +680,8 @@
             "https://franke-lux.com.ua/wp-content/uploads/2019/09/TE001_106.0554.404-nd860w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_106.0554.404-nd486w.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
         "id": "9",
