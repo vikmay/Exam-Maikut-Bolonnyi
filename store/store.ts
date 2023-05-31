@@ -28,3 +28,4 @@ export type AppDispatch = typeof store.dispatch;
 // These will provide TypeScript type checking capabilities when dispatching actions and selecting state
 export const useAppDispatch: () => AppDispatch = useDispatch;
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+

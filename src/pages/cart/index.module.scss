@@ -1,16 +1,36 @@
-.container {
+.empty_cart_wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.empty_cart_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 20px 0;
 }
 
-.items_container {
-    height: 290px;
-    overflow-y: scroll;
-    padding-right: 10px;
-    margin-right: -10px;
+.cart_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.items_wrapper {
+    width: 100%;
+
+    .items_container {
+        height: 290px;
+        overflow-y: scroll;
+        padding-right: 10px;
+        margin-right: -10px;
+    }
 }
 
 .empty_cart_msg {
@@ -23,7 +43,6 @@
 
 
 .title {
-
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -67,12 +86,14 @@
     }
 
     .total_price {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         font-weight: 600;
         font-size: 24px;
         line-height: 26px;
+        padding: 20px 0;
+        border-bottom: 1px solid #A2A2A2;
 
         .total_num {
             font-weight: 600;
@@ -80,6 +101,14 @@
             line-height: 26px;
             color: #C90000;
         }
+    }
+
+    .delivery {
+        display: flex;
+        text-align: start;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
     }
 
     .bottom_btn_container {
@@ -95,11 +124,17 @@
             color: white;
             margin-top: 20px;
             background: #C90000;
+            border: 2px solid #C90000;
+
+            &:hover {
+                scale: 1.1;
+            }
         }
 
-        
+
     }
 }
+
 .contiue_shopping_btn {
     margin-right: 20px;
     text-decoration: none;
@@ -107,8 +142,8 @@
     color: #C90000;
     margin-top: 20px;
     border: 2px solid #C90000;
-   &:hover {
-    background: #C90000;
-    color: white;
-   }
+
+    &:hover {
+        scale: 1.1;
+    }
 }

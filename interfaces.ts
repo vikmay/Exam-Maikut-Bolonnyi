@@ -13,3 +13,6 @@ export interface CartItem {
   price: number;
 
 }
+export interface Props {
+  className?: string;
+}

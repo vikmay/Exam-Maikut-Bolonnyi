@@ -33,7 +33,7 @@ const CartItemCard = ({ cartItem}: Props) => {
           </div>
         </div>
 
-        <div className={s.item_price}>{cartItem.product.price} $</div>
+        <div className={s.item_price}>{cartItem.product.price} грн</div>
         <QtyBtn
           className={s.qtyBtn_container}
           qty={cartItem.qty}

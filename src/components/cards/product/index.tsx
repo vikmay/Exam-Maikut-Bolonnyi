@@ -4,6 +4,7 @@ import AddToCartBtn from "@/components/cart/addToCart";
 import s from "./index.module.scss";
 import { Product } from "@/../../interfaces";
 import favorite from "@/../../public/images/likes.svg";
+import AddToFavBtn from "@/components/favorites/addToFav";
 
 const ProductCard = (props: any) => {
   const { product, id } = props;
@@ -20,7 +21,7 @@ const ProductCard = (props: any) => {
       <div className={s.card_container}>
         <div className={s.new_fav_container}>
           {NewLabel()}
-          <Image src={favorite} alt="favorite" width={20} height={20} />
+          <AddToFavBtn product={product} id={id} />
         </div>
         <Image
           src={product?.images[0]}
