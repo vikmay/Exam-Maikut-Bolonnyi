@@ -96,8 +96,10 @@ export const totalCartItemsSelector = createSelector([cartItems], (cartItems) =>
 export const TotalPriceSelector = createSelector([cartItems], (cartItems) =>
   cartItems
     .reduce(
-      (total: number, curr: CartItem) =>
-        (total += curr.qty * curr.product.price),
+      (total: number, curr: CartItem) => {
+        const price = parseFloat(curr.product.price.replace(/\s/g, ''));
+        return (total += curr.qty * price);
+      },
       0
     )
     .toFixed(2)

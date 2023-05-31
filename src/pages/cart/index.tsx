@@ -1,6 +1,9 @@
 import CartItemCard from "@/components/cart/cardItemCard";
 import React from "react";
-import { TotalPriceSelector } from "@/../store/features/cartSlice";
+import {
+  TotalPriceSelector,
+  totalCartItemsSelector,
+} from "@/../store/features/cartSlice";
 import { useAppSelector } from "@/../store/store";
 import Link from "next/link";
 import { useAppDispatch } from "@/../store/store";
@@ -11,6 +14,24 @@ const CartPage = () => {
   const dispatch = useAppDispatch();
   const cartItems = useAppSelector((state) => state.cart.cartItems);
   const totalPrice = useAppSelector(TotalPriceSelector);
+  const totalItems = useAppSelector(totalCartItemsSelector);
+
+  const getQuantityLabel = (num: number) => {
+    const lastDigit = num % 10;
+    const lastTwoDigits = num % 100;
+
+    if (num === 1) {
+      return "";
+    } else if (
+      lastDigit >= 2 &&
+      lastDigit <= 4 &&
+      !(lastTwoDigits >= 10 && lastTwoDigits <= 20)
+    ) {
+      return "товари";
+    } else {
+      return "товарів";
+    }
+  };
 
   if (cartItems.length === 0) {
     return (
@@ -52,19 +73,30 @@ const CartPage = () => {
         </div>
       </div>
 
-      <div className="flex">
-        <p className={s.total_price}>
-          Загальна Ціна : <span>{totalPrice} $</span>
-          <Link
-            className={s.contiue_shopping_btn}
-            href="/catalog"
-          >
-            Продовжити покупки
-          </Link>
-          <Link className={s.payment_link_down} href="/payment">
-          Оформити покупку
-        </Link>
-        </p>
+      <div className={s.bottom_wrapper}>
+        <div className={s.bottom_container}>
+          <div className={s.total_price}>
+            <span>
+              {" "}
+              Загальна Ціна
+              {totalItems > 1 && (
+                <span>
+                  {" "}
+                  ({totalItems} {getQuantityLabel(totalItems)}){" "}
+                </span>
+              )}{" "}
+            </span>
+            <span className={s.total_num}>{totalPrice}грн</span>
+          </div>
+          <div className={s.bottom_btn_container}>
+            <Link className={s.payment_link_down} href="/payment">
+              Оформити покупку
+            </Link>
+            <Link className={s.contiue_shopping_btn} href="/catalog">
+              Продовжити покупки
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

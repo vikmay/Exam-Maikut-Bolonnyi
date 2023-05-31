@@ -30,7 +30,7 @@ const CartItemCard = ({ cartItem, allowZero }: Props) => {
         </div></div>
 
         <p className={s.item_price}>{cartItem.product.price} $</p>
-        <p>&#xd7;</p>
+        {/* <p>&#xd7;</p> */}
         <QtyBtn
           qty={cartItem.qty}
           onDecrease={() => dispatch(decrement(cartItem.product))}
@@ -41,9 +41,9 @@ const CartItemCard = ({ cartItem, allowZero }: Props) => {
           allowZero={allowZero} // Pass allowZero prop to QtyBtn
         />
 
-        <p className="text-center font-bold text-xl">
+        {/* <p className="text-center font-bold text-xl">
           {(cartItem.qty * cartItem.product.price).toFixed(2)} $
-        </p>
+        </p> */}
         <CrossButton onClick={() => dispatch(remove(cartItem.product))} />
       </div>
     </>

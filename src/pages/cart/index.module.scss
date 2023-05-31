@@ -40,3 +40,65 @@
     display: flex;
     justify-content: space-between;
 }
+
+.bottom_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    .bottom_container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .total_price {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+
+        .total_num {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 26px;
+            color: #C90000;
+        }
+    }
+
+    .bottom_btn_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .payment_link_down {
+            margin-right: 20px;
+            text-decoration: none;
+            padding: 16px 45px;
+            color: white;
+            margin-top: 20px;
+            background: #C90000;
+        }
+
+        .contiue_shopping_btn {
+            margin-right: 20px;
+            text-decoration: none;
+            padding: 16px 45px;
+            color: #C90000;
+            margin-top: 20px;
+            border: 2px solid #C90000;
+           &:hover {
+            background: #C90000;
+            color: white;
+           }
+        }
+    }
+}
