@@ -19,9 +19,9 @@ const CartPage = () => {
   const getQuantityLabel = (num: number) => {
     const lastDigit = num % 10;
     const lastTwoDigits = num % 100;
-
-    if (num === 1) {
-      return "";
+  
+    if ((lastDigit === 1) && !(lastTwoDigits >= 11 && lastTwoDigits <= 14)) {
+      return "товар";
     } else if (
       lastDigit >= 2 &&
       lastDigit <= 4 &&
@@ -38,12 +38,12 @@ const CartPage = () => {
       <>
         <p className={s.title}>Кошик</p>
         <div className={s.container}>
-          <span className={s.empty_cart_msg}>Ваш кошик порожній :((</span>
+          <span className={s.empty_cart_msg}>Ваш кошик порожній</span>
           <Link
-            className="text-black text-4xl font-bold rounded py-6 px-6 bg-green-300"
+            className={s.contiue_shopping_btn}
             href="/catalog"
           >
-            Вперед до покупок
+            До покупок
           </Link>
         </div>
       </>

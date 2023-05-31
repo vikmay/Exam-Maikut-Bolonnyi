@@ -1,3 +1,11 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
 .items_container {
     height: 290px;
     overflow-y: scroll;
@@ -11,6 +19,7 @@
     margin-bottom: 1rem;
     text-align: center;
 }
+
 
 
 .title {
@@ -88,17 +97,18 @@
             background: #C90000;
         }
 
-        .contiue_shopping_btn {
-            margin-right: 20px;
-            text-decoration: none;
-            padding: 16px 45px;
-            color: #C90000;
-            margin-top: 20px;
-            border: 2px solid #C90000;
-           &:hover {
-            background: #C90000;
-            color: white;
-           }
-        }
+        
     }
+}
+.contiue_shopping_btn {
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 16px 45px;
+    color: #C90000;
+    margin-top: 20px;
+    border: 2px solid #C90000;
+   &:hover {
+    background: #C90000;
+    color: white;
+   }
 }

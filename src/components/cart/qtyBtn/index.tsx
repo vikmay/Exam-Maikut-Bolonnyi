@@ -9,7 +9,7 @@ interface Props {
   className?: string;
   increaseClassName?: string;
   decreaseClassName?: string;
-  allowZero?: boolean;
+  isInCart?: boolean;
 }
 
 const QtyBtn = ({
@@ -19,30 +19,21 @@ const QtyBtn = ({
   className,
   increaseClassName,
   decreaseClassName,
-  allowZero,
+  isInCart,
 }: Props) => {
+  const isQtyOne = qty === 1;
+
+  const decreaseButtonClassName = `${s.btn_decrease} ${decreaseClassName} ${isQtyOne && isInCart ? s.disabled : ''}`;
+
   return (
     <div className={`${s.btn_container} ${className}`}>
-      {allowZero ? (
-        <button
-          className={`${s.btn_decrease} ${decreaseClassName}`}
-          onClick={onDecrease}
-          disabled={qty === 1} // Button will be disabled when qty is 1
-        >
-          -
-        </button>
-      ) : (
-        <button
-          className={`${s.btn_decrease} ${decreaseClassName}`}
-          onClick={onDecrease}
-        >
-          {qty === 1 ? (
-            <TrashIcon className="align-self-center pt-2" />
-          ) : (
-            "-"
-          )}
-        </button>
-      )}
+      <button
+        className={decreaseButtonClassName}
+        onClick={onDecrease}
+        disabled={isQtyOne && isInCart}
+      >
+        {isQtyOne && !isInCart ? <TrashIcon className="align-self-center pt-2" /> : "-"}
+      </button>
       <div className={s.quantity}>{qty}</div>
       <button
         className={`${s.btn_increase} ${increaseClassName}`}
