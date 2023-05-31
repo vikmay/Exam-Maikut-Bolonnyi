@@ -1,36 +1,40 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .message {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
+.items_container {
+    height: 290px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    margin-right: -10px;
 }
+
+.empty_cart_msg {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
 .title {
-    
+
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .empty_cart_btn {
     background: none;
     border: none;
     color: #C90000;
-    margin-left: 0.2%;
-    
+
 }
+
 .payment_link {
-    
+    margin-right: 20px;
     text-decoration: none;
     color: #C90000;
-    margin-right: 0.5%;
+
 }
+
 .top_btns_container {
     width: 100%;
     display: flex;

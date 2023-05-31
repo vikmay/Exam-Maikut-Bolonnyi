@@ -17,7 +17,7 @@ const CartPage = () => {
       <>
         <p className={s.title}>Кошик</p>
         <div className={s.container}>
-          <span className={s.message}>Ваш кошик порожній :((</span>
+          <span className={s.empty_cart_msg}>Ваш кошик порожній :((</span>
           <Link
             className="text-black text-4xl font-bold rounded py-6 px-6 bg-green-300"
             href="/catalog"
@@ -32,6 +32,7 @@ const CartPage = () => {
   return (
     <>
       <div className={s.title}>Кошик</div>
+
       <div className={s.top_btns_container}>
         <button
           onClick={() => dispatch(emptyCart())}
@@ -43,23 +44,27 @@ const CartPage = () => {
           Оформити покупку
         </Link>
       </div>
-      <div className="p-2 mb-2 relative">
-        {cartItems.map((item) => (
-          <CartItemCard cartItem={item} />
-        ))}
-
-        <div className="flex">
-          <p className={s.total_price}>
-            Загальна Ціна :{" "}
-            <span>{totalPrice} $</span>
-            <Link
-              className="text-black text-3xl font-bold rounded my-4 py-2 px-2 bg-orange-400"
-              href="/catalog"
-            >
-              Назад до покупок
-            </Link>
-          </p>
+      <div className={s.items_wrapper}>
+        <div className={s.items_container}>
+          {cartItems.map((item) => (
+            <CartItemCard cartItem={item} allowZero={true} />
+          ))}
         </div>
+      </div>
+
+      <div className="flex">
+        <p className={s.total_price}>
+          Загальна Ціна : <span>{totalPrice} $</span>
+          <Link
+            className={s.contiue_shopping_btn}
+            href="/catalog"
+          >
+            Продовжити покупки
+          </Link>
+          <Link className={s.payment_link_down} href="/payment">
+          Оформити покупку
+        </Link>
+        </p>
       </div>
     </>
   );

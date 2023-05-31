@@ -5,16 +5,19 @@ import { useAppDispatch } from "@/../../store/store";
 import QtyBtn from "../qtyBtn";
 import s from "./index.module.scss";
 import Image from "next/image";
+import CrossButton from "@/utils/crossBtn";
 
 interface Props {
   cartItem: CartItem;
+  allowZero?: boolean;
 }
-const CartItemCard = ({ cartItem }: Props) => {
+
+const CartItemCard = ({ cartItem, allowZero }: Props) => {
   const dispatch = useAppDispatch();
   return (
     <>
       <div className={s.cartItem_container}>
-        <Image
+        <div className={s.img_name_wrapper}><Image
           src={cartItem.product?.images[0]}
           width={100}
           height={100}
@@ -24,7 +27,7 @@ const CartItemCard = ({ cartItem }: Props) => {
         <div>
           <div className={s.title}>{cartItem.product.title.slice(0, 26)}</div>
           <div className={s.card_model}>{cartItem.product.title.slice(28)}</div>
-        </div>
+        </div></div>
 
         <p className={s.item_price}>{cartItem.product.price} $</p>
         <p>&#xd7;</p>
@@ -35,17 +38,13 @@ const CartItemCard = ({ cartItem }: Props) => {
           className={s.qtyBtn_container}
           increaseClassName={s.increase_btn}
           decreaseClassName={s.decrease_btn}
+          allowZero={allowZero} // Pass allowZero prop to QtyBtn
         />
 
         <p className="text-center font-bold text-xl">
           {(cartItem.qty * cartItem.product.price).toFixed(2)} $
         </p>
-        <button
-          onClick={() => dispatch(remove(cartItem.product))}
-          className={s.remove_btn}
-        >
-          X
-        </button>
+        <CrossButton onClick={() => dispatch(remove(cartItem.product))} />
       </div>
     </>
   );

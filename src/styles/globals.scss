@@ -5,3 +5,22 @@ body {
   margin: 0;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 7.5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid #C90000;
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  &:hover {
+    background: #C90000;
+  }
+}

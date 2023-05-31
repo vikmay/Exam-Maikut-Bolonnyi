@@ -8,6 +8,11 @@
     border: 2px solid #E5E5E5;
     font-family: 'Montserrat';
     font-style: normal;
+    .img_name_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    } 
 }
 
 .title {
@@ -35,9 +40,10 @@
 .remove_btn {
     border: none;
     background: none;
-    font-size: large;
-    font-weight: 700;
+    font-size: 28px;
+    color: #C90000;
 }
+
 
 .image {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
