@@ -1,3 +1,4 @@
+import { useForm } from "react-hook-form";
 import CartItemCard from "@/components/cart/cardItemCard";
 import React from "react";
 import {
@@ -9,13 +10,20 @@ import Link from "next/link";
 import { useAppDispatch } from "@/../store/store";
 import { emptyCart } from "@/../../store/features/cartSlice";
 import s from "./index.module.scss";
-import AcoordionExample from "@/components/accordion";
+import CustomAccordion from "@/components/accordion";
 
 const CartPage = () => {
   const dispatch = useAppDispatch();
   const cartItems = useAppSelector((state) => state.cart.cartItems);
   const totalPrice = useAppSelector(TotalPriceSelector);
   const totalItems = useAppSelector(totalCartItemsSelector);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data: any) => console.log(data);
 
   const getQuantityLabel = (num: number) => {
     const lastDigit = num % 10;
@@ -89,7 +97,36 @@ const CartPage = () => {
               </span>
               <span className={s.total_num}>{totalPrice}грн</span>
             </div>
-            <AcoordionExample className={s.customAccordion} />
+
+            <div className={s.accord_container}>
+              <CustomAccordion
+                title="Доставка"
+                headerClassName={s.customHeader}
+                bodyClassName={s.customBody}
+              >
+                Доставка
+              </CustomAccordion>
+              <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
+                <input className={s.input}
+                  {...register("name", { required: true })}
+                  placeholder="Iм'я*"
+                />
+                {errors.name && <p>This field is required</p>}
+
+                <input className={s.input}
+                  {...register("phone", { required: true })}
+                  placeholder="Номер*"
+                />
+                <input className={s.input}
+                  {...register("email", { required: true })}
+                  placeholder="Пошта*"
+                />
+                {errors.email && <p>This field is required</p>}
+
+                {errors.phone && <p>This field is required</p>}
+              </form>
+            </div>
+
             <div className={s.bottom_btn_container}>
               <Link className={s.payment_link_down} href="/payment">
                 Оформити покупку
@@ -99,7 +136,6 @@ const CartPage = () => {
               </Link>
             </div>
           </div>
-          
         </div>
       </div>
     </>

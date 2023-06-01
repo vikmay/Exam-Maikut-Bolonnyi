@@ -4,6 +4,7 @@ import Image from "next/image";
 import s from "./index.module.scss";
 
 
+
 const AddToFavBtn = ({ product }) => {
   const dispatch = useDispatch();
 
