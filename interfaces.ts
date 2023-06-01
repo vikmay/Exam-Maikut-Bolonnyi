@@ -1,18 +1,18 @@
 export interface Product {
   id: number;
   title: string;
-  price: number;
+  price: any;
   description: string;
   images: string[];
   features: string[];
+  isFavorite?: boolean;
 }
 
 export interface CartItem {
   product: Product;
   qty: number;
-  price: number;
-
 }
+
 export interface Props {
   className?: string;
 }

@@ -2,10 +2,15 @@ import { useDispatch } from "react-redux";
 import { addToFavorites } from "@/../../store/features/favoritesSlice";
 import Image from "next/image";
 import s from "./index.module.scss";
+import { Product } from "@/../../interfaces";
 
+interface Props {
+  product: Product;
+  id: number;
+  
+}
 
-
-const AddToFavBtn = ({ product }) => {
+const AddToFavBtn = ({ product, id }: Props) => {
   const dispatch = useDispatch();
 
   const handleFavoriteClick = () => {
@@ -13,20 +18,22 @@ const AddToFavBtn = ({ product }) => {
   };
 
   return (
-    <div>
-      <button className={s.fav_btn} onClick={handleFavoriteClick}>
-        <Image
-          src={
-            product.isFavorite
-              ? "@/../../public/images/likes.svg"
-              : "@/../../public/images/likes.svg"
-          }
-          alt="heart_image"
-          width={20}
+    <>
+      <div>
+        <button className={s.fav_btn} onClick={handleFavoriteClick}>
+          <Image
+            src={
+              product.isFavorite
+                ? "@/../../public/images/likes.svg"
+                : "@/../../public/images/likes.svg"
+            }
+            alt="heart_image"
+            width={20}
             height={20}
-        />
-      </button>
-    </div>
+          />
+        </button>
+      </div>
+    </>
   );
 };
 

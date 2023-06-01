@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import CartItemCard from "@/components/cart/cardItemCard";
+import CartItemCard from "@/components/cart/cartItemCard";
 import React from "react";
 import {
   TotalPriceSelector,

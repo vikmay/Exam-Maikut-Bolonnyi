@@ -23,7 +23,7 @@ const AddToCartBtn = (props: Props) => {
   const dispatch = useAppDispatch();
   if (!qty)
     return (
-      <div className="flex justify-center">
+      <div>
         <button
           className={s.btncolor}
           onClick={() => dispatch(increment(props.product))}
