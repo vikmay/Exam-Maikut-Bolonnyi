@@ -9,10 +9,9 @@ import CrossButton from "@/utils/crossBtn";
 
 interface Props {
   cartItem: CartItem;
-
 }
 
-const CartItemCard = ({ cartItem}: Props) => {
+const CartItemCard = ({ cartItem }: Props) => {
   const dispatch = useAppDispatch();
   return (
     <>
@@ -33,16 +32,18 @@ const CartItemCard = ({ cartItem}: Props) => {
           </div>
         </div>
 
-        <div className={s.item_price}>{cartItem.product.price} грн</div>
         <QtyBtn
           className={s.qtyBtn_container}
           qty={cartItem.qty}
           onDecrease={() => dispatch(decrement(cartItem.product))}
           onIncrease={() => dispatch(increment(cartItem.product))}
           increaseClassName={s.increase_btn}
-          decreaseClassName={`${s.decrease_btn} ${cartItem.qty === 1 ? s.decrease_btn_disabled : ''}`}
+          decreaseClassName={`${s.decrease_btn} ${
+            cartItem.qty === 1 ? s.decrease_btn_disabled : ""
+          }`}
           isInCart={true}
         />
+        <div className={s.item_price}>{cartItem.product.price} грн</div>
 
         <CrossButton onClick={() => dispatch(remove(cartItem.product))} />
       </div>

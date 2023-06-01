@@ -12,6 +12,10 @@ export interface CartItem {
   product: Product;
   qty: number;
 }
+export interface FavItem {
+  product: Product;
+  qty: number;
+}
 
 export interface Props {
   className?: string;

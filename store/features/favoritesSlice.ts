@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Product } from '@/../../interfaces'; // Use your own type for Product
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { Product } from "@/../../interfaces"; // Use your own type for Product
 
 interface FavoritesState {
   favoritesItems: Product[];
@@ -10,12 +10,18 @@ const initialState: FavoritesState = {
 };
 
 const favoritesSlice = createSlice({
-  name: 'favorites',
+  name: "favorites",
   initialState,
   reducers: {
     addToFavorites: (state, action: PayloadAction<Product>) => {
-      state.favoritesItems.push(action.payload);
+      const productExists = state.favoritesItems.some(
+        (item) => item.id === action.payload.id
+      );
+      if (!productExists) {
+        state.favoritesItems.push(action.payload);
+      }
     },
+
     removeFromFavorites: (state, action: PayloadAction<Product>) => {
       state.favoritesItems = state.favoritesItems.filter(
         (item) => item.id !== action.payload.id
