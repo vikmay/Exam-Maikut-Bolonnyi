@@ -56,6 +56,7 @@ export default function Home() {
           <input className={s.search} type="search" placeholder="Пошук" />
         </div>
         <h2 className={s.h2}>Популярні товари</h2>
+        <div className={s.popular_product__section}></div>
       </main>
     </>
   );

@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+.product__card {
+  display: flex;
+  align-items: start;
+  padding: 17px;
+  flex-direction: column;
+  width: 295.13px;
+  height: 462px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 19px;
+  .likes__img {
+    padding-left: 85%;
+  }
+  .img__card {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+  &_title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: $primary-text-color;
+  }
+  &_price {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &_producer {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: $primary_color;
+  }
+}
