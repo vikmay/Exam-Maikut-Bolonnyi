@@ -32,6 +32,10 @@
       line-height: 18px;
       cursor: pointer;
       margin-left: 25px;
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
   }
   /* ... */
