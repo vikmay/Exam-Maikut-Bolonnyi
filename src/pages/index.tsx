@@ -20,6 +20,7 @@ export default function Home() {
       </Head>
       <main>
         <Swiper
+          autoplay={{ delay: 3000 }}
           spaceBetween={50}
           slidesPerView={1}
           onSlideChange={() => console.log("slide change")}
@@ -50,6 +51,11 @@ export default function Home() {
             ></Image>
           </SwiperSlide>
         </Swiper>
+        <div className={s.search__block}>
+          <p className={s.p}>Lorem ipsum dolor sit amet.</p>
+          <input className={s.search} type="search" placeholder="Пошук" />
+        </div>
+        <h2 className={s.h2}>Популярні товари</h2>
       </main>
     </>
   );

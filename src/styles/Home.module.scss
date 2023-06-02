@@ -1,1 +1,52 @@
+@import "../styles/variables.scss";
 
+.search__block {
+  position: absolute;
+  left: 167px;
+  width: 1105.5px;
+  height: 238.5px;
+  background-color: aqua;
+  transform: translate(0, -100px);
+  z-index: 2;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+  .p {
+    padding-top: 45px;
+    color: $primary-color;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 140px;
+  }
+  .search {
+    margin-left: 140px;
+    width: 825.5px;
+    height: 68.5px;
+    background: #ffffff;
+    border: 3px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 35px;
+    gap: 10px;
+    &:focus {
+      color: $primary-color;
+    }
+  }
+}
+.h2 {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
