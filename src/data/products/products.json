@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "title": "Шафа для вина. Холодильник для вина FRANKE FMY 24 WCR XS (131.0669.345)",
         "price": "65 928 ",
         "colors": [
@@ -84,9 +85,11 @@
             "https://franke-lux.com.ua/wp-content/uploads/AP001_131.0669.345.png",
             "https://franke-lux.com.ua/wp-content/uploads/TE001_131.0669.345.png"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
+        "id": "2",
         "title": "Витяжка FRANKE Tube FTU Plus 3707 I",
         "price": "37 392 ",
         "colors": [
@@ -175,9 +178,11 @@
             "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP001_335.0588.180-nd486w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP001_335.0588.221-nd486w.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
+        "id": "3",
         "title": "Витяжка FRANKE Crystal Touch FCR 925 I TC BK XS LED (325.0518.709)",
         "price": "33 128 ",
         "colors": [
@@ -266,6 +271,7 @@
         "producer": "Franke"
     },
     {
+        "id": "4",
         "title": "Витяжка FRANKE Cloud 1106 BK",
         "price": "70 110 ",
         "colors": [
@@ -354,9 +360,11 @@
             "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP004_345.0529.584-nd486w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2020/04/PD001_345.0529.584-nd486w.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
+        "id": "5",
         "title": "Витяжка FRANKE Tale 905 I XS/BK",
         "price": "31 324 ",
         "colors": [
@@ -448,6 +456,7 @@
         "producer": "Franke"
     },
     {
+        "id": "6",
         "title": "Варильна поверхня FRANKE Trend Line FHTL 604 3G TC C",
         "price": "18 204 ",
         "colors": [
@@ -518,9 +527,11 @@
             "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_106.0183.016-nd1000w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_106.0183.016-nd860w-2.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
+        "id": "7",
         "title": "Варильна поверхня FRANKE Smart FSM 302 I BK (108.0606.106)",
         "price": "12 669 ",
         "colors": [
@@ -592,9 +603,11 @@
             "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE001_108.0606.106-nd860w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE002_108.0606.106-nd860w.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
+        "id": "8",
         "title": "Варильна поверхня FRANKE Maris FHMA 604 3G DC",
         "price": "17 753 ",
         "colors": [
@@ -667,9 +680,11 @@
             "https://franke-lux.com.ua/wp-content/uploads/2019/09/TE001_106.0554.404-nd860w.jpg",
             "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_106.0554.404-nd486w.jpg"
         ],
-        "producer": "Franke"
+        "producer": "Franke",
+        "isNew": true
     },
     {
+        "id": "9",
         "title": "Варильна поверхня FRANKE Frames by Franke FHFS 786 3FLEXI ST",
         "price": "39 155 ",
         "colors": [
@@ -743,6 +758,7 @@
         "producer": "Franke"
     },
     {
+        "id": "10",
         "title": "Варильна поверхня FRANKE Maris FHMA 755 4G DCL",
         "price": "19 311 ",
         "colors": [
@@ -822,6 +838,7 @@
         "producer": "Franke"
     },
     {
+        "id": "11",
         "title": "Варильна поверхня FRANKE Smart FHSM 755 4G DC ON E",
         "price": "12 546 ",
         "colors": [
@@ -891,6 +908,7 @@
         "producer": "Franke"
     },
     {
+        "id": "12",
         "title": "Варильна поверхня FRANKE Smart FHSM 604 4G ON OA E",
         "price": "14 309 ",
         "colors": [
@@ -967,6 +985,7 @@
         "producer": "Franke"
     },
     {
+        "id": "13",
         "title": "Варильна поверхня FRANKE Crystal FHCR 774 2I 1FLEXI T PWL (108.0377.090)",
         "price": "16 523 ",
         "colors": [
@@ -1040,6 +1059,7 @@
         "producer": "Franke"
     },
     {
+        "id": "14",
         "title": "Варильна поверхня FRANKE Crystal FHCR 604 4G HE C",
         "price": "38 745 ",
         "colors": [
@@ -1113,6 +1133,7 @@
         "producer": "Franke"
     },
     {
+        "id": "15",
         "title": "Варильна поверхня FRANKE Crystal FHCR 755 4G TC HE C",
         "price": "30 627 ",
         "colors": [
@@ -1189,6 +1210,7 @@
         "producer": "Franke"
     },
     {
+        "id": "16",
         "title": "Варильна поверхня FRANKE Crystal / Crystal Steel Pro FHCR 1204 3G TC HE C",
         "price": "34 153 ",
         "colors": [
@@ -1262,6 +1284,7 @@
         "producer": "Franke"
     },
     {
+        "id": "17",
         "title": "Варильна поверхня FRANKE Trend Line FHTL 755 4G TC C",
         "price": "21 935 ",
         "colors": [
@@ -1336,6 +1359,7 @@
         "producer": "Franke"
     },
     {
+        "id": "18",
         "title": "FRANKE Maris Hob Extractor FMA 839 Витяжка + Індукційна варильна поверхня (340.0595.364)",
         "price": "64 616 ",
         "colors": [
@@ -1416,6 +1440,7 @@
         "producer": "Franke"
     },
     {
+        "id": "19",
         "title": "Варильна поверхня FRANKE Maris Free By Dror FHMF 755 4G DC C",
         "price": "26 240 ",
         "colors": [
@@ -1497,6 +1522,7 @@
         "producer": "Franke"
     },
     {
+        "id": "20",
         "title": "Варильна поверхня FRANKE Smart FSM 804 IB BK (108.0606.110)",
         "price": "17 548 ",
         "colors": [
@@ -1572,6 +1598,7 @@
         "producer": "Franke"
     },
     {
+        "id": "21",
         "title": "Варильна поверхня FRANKE Maris Free By Dror FHMF 604 3G DC C",
         "price": "15 088 ",
         "colors": [
@@ -1649,6 +1676,7 @@
         "producer": "Franke"
     },
     {
+        "id": "22",
         "title": "Варильна поверхня FRANKE Maris FMA 804 IF BK (108.0606.112)",
         "price": "23 288 ",
         "colors": [
@@ -1726,6 +1754,7 @@
         "producer": "Franke"
     },
     {
+        "id": "23",
         "title": "Варильна поверхня Franke Smart FHSM 755 4G",
         "price": "13 243 ",
         "colors": [
@@ -1801,6 +1830,7 @@
         "producer": "Franke"
     },
     {
+        "id": "24",
         "title": "Варильна поверхня FRANKE Mythos FMY 808 I FP BK (108.0613.588)",
         "price": "38 089 ",
         "colors": [
@@ -1873,6 +1903,7 @@
         "producer": "Franke"
     },
     {
+        "id": "25",
         "title": "Витяжка FRANKE Inca FBI 525/705 GR",
         "price": "3 731 ",
         "colors": [
@@ -1959,6 +1990,7 @@
         "producer": "Franke"
     },
     {
+        "id": "26",
         "title": "Витяжка FRANKE Flexa FTC 532L/632L",
         "price": "3 485 ",
         "colors": [
@@ -2050,6 +2082,7 @@
         "producer": "Franke"
     },
     {
+        "id": "27",
         "title": "Витяжка FRANKE Flexa FTC 532H/612/912 XS LED",
         "price": "5 822 ",
         "colors": [
@@ -2140,6 +2173,7 @@
         "producer": "Franke"
     },
     {
+        "id": "28",
         "title": "Витяжка FRANKE Inca FBI 525/705 Plus",
         "price": "7 503 ",
         "colors": [
@@ -2231,6 +2265,7 @@
         "producer": "Franke"
     },
     {
+        "id": "29",
         "title": "Витяжка FRANKE Inca FBI 525/705 XS",
         "price": "5 248 ",
         "colors": [
@@ -2317,6 +2352,7 @@
         "producer": "Franke"
     },
     {
+        "id": "30",
         "title": "Витяжка FRANKE Smart Telescopic FSM 601",
         "price": "6 560 ",
         "colors": [
@@ -2412,6 +2448,7 @@
         "producer": "Franke"
     },
     {
+        "id": "31",
         "title": "Витяжка FRANKE Box Flush Evo FBFE 52/70 XS BK WH",
         "price": "13 489 ",
         "colors": [
@@ -2494,6 +2531,7 @@
         "producer": "Franke"
     },
     {
+        "id": "32",
         "title": "Витяжка FRANKE Evo Plus FPJ 625/925 V BK WH SS",
         "price": "16 810 ",
         "colors": [
@@ -2589,6 +2627,7 @@
         "producer": "Franke"
     },
     {
+        "id": "33",
         "title": "Витяжка FRANKE Tube FTU Plus 3707 I",
         "price": "37 392 ",
         "colors": [
@@ -2680,6 +2719,7 @@
         "producer": "Franke"
     },
     {
+        "id": "34",
         "title": "Витяжка FRANKE Smart Vertical 2.0 FPJ 615/915 V BK/DG",
         "price": "9 963 ",
         "colors": [
@@ -2775,6 +2815,7 @@
         "producer": "Franke"
     },
     {
+        "id": "35",
         "title": "Витяжка FRANKE Inca FBI 525/705 XS HCS",
         "price": "6 068 ",
         "colors": [
@@ -2861,6 +2902,7 @@
         "producer": "Franke"
     },
     {
+        "id": "36",
         "title": "Витяжка FRANKE Mythos FMY 608/908",
         "price": "36 695 ",
         "colors": [
@@ -2957,6 +2999,7 @@
         "producer": "Franke"
     },
     {
+        "id": "37",
         "title": "Витяжка FRANKE Style Plus FSTP NG 605/905 X",
         "price": "15 826 ",
         "colors": [
@@ -3052,6 +3095,7 @@
         "producer": "Franke"
     },
     {
+        "id": "38",
         "title": "Витяжка FRANKE Gavia FDL 665/965 XS",
         "price": "5 699 ",
         "colors": [
@@ -3136,6 +3180,7 @@
         "producer": "Franke"
     },
     {
+        "id": "39",
         "title": "Витяжка FRANKE Smart Deco FSMD 508",
         "price": "22 222 ",
         "colors": [
@@ -3246,6 +3291,7 @@
         "producer": "Franke"
     },
     {
+        "id": "40",
         "title": "Витяжка FRANKE Style Pro Fstpro 608/908/1208 X",
         "price": "22 632 ",
         "colors": [
@@ -3341,6 +3387,7 @@
         "producer": "Franke"
     },
     {
+        "id": "41",
         "title": "Витяжка FRANKE FCR 925 TC BK/XS NG",
         "price": "20 869 ",
         "colors": [
@@ -3431,6 +3478,7 @@
         "producer": "Franke"
     },
     {
+        "id": "42",
         "title": "Витяжка FRANKE Inca Smart FBI 525/705 BK (Black Matt)",
         "price": "4 920 ",
         "colors": [
@@ -3526,6 +3574,7 @@
         "producer": "Franke"
     },
     {
+        "id": "43",
         "title": "Витяжка FRANKE Box Flush Premium FBFP XS A52/70",
         "price": "19 967 ",
         "colors": [
@@ -3613,6 +3662,7 @@
         "producer": "Franke"
     },
     {
+        "id": "44",
         "title": "Витяжка FRANKE Style Drip Free FST Drip-Free 60/90/120 x",
         "price": "29 889 ",
         "colors": [
@@ -3699,6 +3749,7 @@
         "producer": "Franke"
     },
     {
+        "id": "45",
         "title": "Витяжка FRANKE Turn FTU 3805 XS LED0 (335.0518.748)",
         "price": "15 949 ",
         "colors": [
@@ -3786,6 +3837,7 @@
         "producer": "Franke"
     },
     {
+        "id": "46",
         "title": "Витяжка FRANKE Maxima FTC 626/926 LED",
         "price": "17 630 ",
         "colors": [
@@ -3875,6 +3927,7 @@
         "producer": "Franke"
     },
     {
+        "id": "47",
         "title": "Витяжка FRANKE Crystal Touch FCR 925 I TC BK XS LED (325.0518.709)",
         "price": "33 128 ",
         "colors": [
@@ -3963,6 +4016,7 @@
         "producer": "Franke"
     },
     {
+        "id": "48",
         "title": "Витяжка FRANKE Maris Pull Out Slim FMPOS 908 BI X",
         "price": "16 646 ",
         "colors": [
@@ -4053,6 +4107,7 @@
         "producer": "Franke"
     },
     {
+        "id": "49",
         "title": "Витяжка FRANKE Style Plus FSTP 1205 X (110.0473.547)",
         "price": "13 940 ",
         "colors": [
@@ -4142,6 +4197,7 @@
         "producer": "Franke"
     },
     {
+        "id": "50",
         "title": "Витяжка FRANKE Tube FTU Plus 3707 XS (335.0590.493)",
         "price": "20 664 ",
         "colors": [
@@ -4236,7 +4292,8 @@
         ],
         "producer": "Franke"
     },
-    {
+    {   
+        "id": "51",
         "title": "Витяжка FRANKE Maris Free by Dror 80 (330.0542.181)",
         "price": "25 215 ",
         "colors": [
@@ -4336,6 +4393,7 @@
         "producer": "Franke"
     },
     {
+        "id": "52",
         "title": "Витяжка FRANKE Trendline Plus BK 70",
         "price": "19 967 ",
         "colors": [
@@ -4426,6 +4484,7 @@
         "producer": "Franke"
     },
     {
+        "id": "53",
         "title": "Витяжка FRANKE Cloud 1106 BK",
         "price": "70 110 ",
         "colors": [
@@ -4517,6 +4576,7 @@
         "producer": "Franke"
     },
     {
+        "id": "54",
         "title": "Витяжка FRANKE Tale 905 I XS/BK",
         "price": "31 324 ",
         "colors": [
@@ -4608,6 +4668,7 @@
         "producer": "Franke"
     },
     {
+        "id": "55",
         "title": "Витяжка FRANKE Glass Soft FGC 625/925 XS NP",
         "price": "9 635 ",
         "colors": [
@@ -4698,6 +4759,7 @@
         "producer": "Franke"
     },
     {
+        "id": "56",
         "title": "Витяжка FRANKE Tale 615/915 W XS",
         "price": "19 639 ",
         "colors": [
@@ -4787,6 +4849,7 @@
         "producer": "Franke"
     },
     {
+        "id": "57",
         "title": "Витяжка FRANKE Neo FNO 605/905 BK",
         "price": "22 058 ",
         "colors": [
@@ -4872,6 +4935,7 @@
         "producer": "Franke"
     },
     {
+        "id": "58",
         "title": "FRANKE Maris Hob Extractor FMA 839 Витяжка + Індукційна варильна поверхня (340.0595.364)",
         "price": "64 616 ",
         "colors": [
@@ -4952,6 +5016,7 @@
         "producer": "Franke"
     },
     {
+        "id": "59",
         "title": "Змішувач FRANKE Pola",
         "price": "2 173 ",
         "colors": [
@@ -5043,6 +5108,7 @@
         "producer": "Franke"
     },
     {
+        "id": "60",
         "title": "Змішувач FRANKE Neptune Clear Water",
         "price": "13 079 ",
         "colors": [
@@ -5134,6 +5200,7 @@
         "producer": "Franke"
     },
     {
+        "id": "61",
         "title": "Змішувач FRANKE Sirius",
         "price": "4 141 ",
         "colors": [
@@ -5227,6 +5294,7 @@
         "producer": "Franke"
     },
     {
+        "id": "62",
         "title": "Змішувач FRANKE Novara-Plus",
         "price": "2 788 ",
         "colors": [
@@ -5316,6 +5384,7 @@
         "producer": "Franke"
     },
     {
+        "id": "63",
         "title": "Змішувач FRANKE Novara-Plus Pull Out",
         "price": "4 387 ",
         "colors": [
@@ -5406,6 +5475,7 @@
         "producer": "Franke"
     },
     {
+        "id": "64",
         "title": "Змішувач FRANKE Lina Pull Out",
         "price": "4 182 ",
         "colors": [
@@ -5497,6 +5567,7 @@
         "producer": "Franke"
     },
     {
+        "id": "65",
         "title": "Змішувач FRANKE Vega",
         "price": "1 640 ",
         "colors": [
@@ -5589,6 +5660,7 @@
         "producer": "Franke"
     },
     {
+        "id": "66",
         "title": "Змішувач FRANKE Urban Pull Down",
         "price": "8 938 ",
         "colors": [
@@ -5682,6 +5754,7 @@
         "producer": "Franke"
     },
     {
+        "id": "67",
         "title": "Змішувач FRANKE Neptune EVO",
         "price": "7 175 ",
         "colors": [
@@ -5768,6 +5841,7 @@
         "producer": "Franke"
     },
     {
+        "id": "68",
         "title": "Змішувач FRANKE Maris",
         "price": "6 437 ",
         "colors": [
@@ -5859,6 +5933,7 @@
         "producer": "Franke"
     },
     {
+        "id": "69",
         "title": "Змішувач FRANKE Neptune EVO Pull Out",
         "price": "9 635 ",
         "colors": [
@@ -5951,6 +6026,7 @@
         "producer": "Franke"
     },
     {
+        "id": "70",
         "title": "Змішувач FRANKE Atlas Neo Pull Out",
         "price": "12 013 ",
         "colors": [
@@ -6044,6 +6120,7 @@
         "producer": "Franke"
     },
     {
+        "id": "71",
         "title": "Змішувач FRANKE Orbit Pull Out",
         "price": "5 166 ",
         "colors": [
@@ -6135,6 +6212,7 @@
         "producer": "Franke"
     },
     {
+        "id": "72",
         "title": "Змішувач FRANKE Atlas Neo",
         "price": "8 364 ",
         "colors": [
@@ -6225,6 +6303,7 @@
         "producer": "Franke"
     },
     {
+        "id": "73",
         "title": "Змішувач FRANKE Mythos Pull Out",
         "price": "14 924 ",
         "colors": [
@@ -6317,6 +6396,7 @@
         "producer": "Franke"
     },
     {
+        "id": "74",
         "title": "Змішувач FRANKE Lina з поворотним виливом",
         "price": "3 198 ",
         "colors": [
@@ -6412,6 +6492,7 @@
         "producer": "Franke"
     },
     {
+        "id": "75",
         "title": "Змішувач FRANKE Active Plus Doc",
         "price": "5 781 ",
         "colors": [
@@ -6502,6 +6583,7 @@
         "producer": "Franke"
     },
     {
+        "id": "76",
         "title": "Змішувач FRANKE Mythos Swivel",
         "price": "13 448 ",
         "colors": [
@@ -6591,6 +6673,7 @@
         "producer": "Franke"
     },
     {
+        "id": "77",
         "title": "Змішувач FRANKE Active J Pull Out Spray",
         "price": "14 719 ",
         "colors": [
@@ -6689,6 +6772,7 @@
         "producer": "Franke"
     },
     {
+        "id": "78",
         "title": "Змішувач FRANKE Active L Pull Out Spray",
         "price": "15 129 ",
         "colors": [
@@ -6791,6 +6875,7 @@
         "producer": "Franke"
     },
     {
+        "id": "79",
         "title": "Змішувач FRANKE Active L",
         "price": "9 799 ",
         "colors": [
@@ -6890,6 +6975,7 @@
         "producer": "Franke"
     },
     {
+        "id": "80",
         "title": "Змішувач FRANKE Icon Pull Out Spray",
         "price": "18 901 ",
         "colors": [
@@ -6979,6 +7065,7 @@
         "producer": "Franke"
     },
     {
+        "id": "81",
         "title": "Змішувач FRANKE Fox (115.0250.143)",
         "price": "4 305 ",
         "colors": [
@@ -7071,6 +7158,7 @@
         "producer": "Franke"
     },
     {
+        "id": "82",
         "title": "Змішувач FRANKE Pescara 360",
         "price": "25 174 ",
         "colors": [
@@ -7165,6 +7253,7 @@
         "producer": "Franke"
     },
     {
+        "id": "83",
         "title": "Змішувач FRANKE Maris Free by Dror",
         "price": "7 667 ",
         "colors": [
@@ -7254,6 +7343,7 @@
         "producer": "Franke"
     },
     {
+        "id": "84",
         "title": "Змішувач FRANKE Active Plus Doc Super Metallic",
         "price": "6 519 ",
         "colors": [
@@ -7349,6 +7439,7 @@
         "producer": "Franke"
     },
     {
+        "id": "85",
         "title": "Змішувач FRANKE Sirius",
         "price": "5 371 ",
         "colors": [
@@ -7441,6 +7532,7 @@
         "producer": "Franke"
     },
     {
+        "id": "86",
         "title": "Змішувач FRANKE Icon",
         "price": "13 202 ",
         "colors": [
@@ -7523,6 +7615,7 @@
         "producer": "Franke"
     },
     {
+        "id": "87",
         "title": "Змішувач FRANKE Pescara Semipro L",
         "price": "16 277 ",
         "colors": [
@@ -7616,6 +7709,7 @@
         "producer": "Franke"
     },
     {
+        "id": "88",
         "title": "Змішувач FRANKE Active Window Pull Out (115.0486.978)",
         "price": "9 102 ",
         "colors": [
@@ -7706,6 +7800,7 @@
         "producer": "Franke"
     },
     {
+        "id": "89",
         "title": "Змішувач FRANKE Active Plus Super Metallic",
         "price": "5 453 ",
         "colors": [
@@ -7795,6 +7890,7 @@
         "producer": "Franke"
     },
     {
+        "id": "90",
         "title": "Змішувач FRANKE EOS NEO Pull Down",
         "price": "14 145 ",
         "colors": [
@@ -7894,6 +7990,7 @@
         "producer": "Franke"
     },
     {
+        "id": "91",
         "title": "Змішувач FRANKE Lina L Shape",
         "price": "5 740 ",
         "colors": [
@@ -7990,6 +8087,7 @@
         "producer": "Franke"
     },
     {
+        "id": "92",
         "title": "Змішувач FRANKE Active Twist Pull Out Spray",
         "price": "17 384 ",
         "colors": [
@@ -8087,6 +8185,7 @@
         "producer": "Franke"
     },
     {
+        "id": "93",
         "title": "Змішувач FRANKE Active Twist",
         "price": "15 170 ",
         "colors": [
@@ -8188,6 +8287,7 @@
         "producer": "Franke"
     },
     {
+        "id": "94",
         "title": "Змішувач FRANKE Active J",
         "price": "8 159 ",
         "colors": [
@@ -8286,6 +8386,7 @@
         "producer": "Franke"
     },
     {
+        "id": "95",
         "title": "Змішувач FRANKE Planar Angolo (115.0486.976)",
         "price": "2 706 ",
         "colors": [
@@ -8375,6 +8476,7 @@
         "producer": "Franke"
     },
     {
+        "id": "96",
         "title": "Змішувач FRANKE Pescara Semipro XL",
         "price": "15 498 ",
         "colors": [
@@ -8467,6 +8569,7 @@
         "producer": "Franke"
     },
     {
+        "id": "97",
         "title": "Змішувач FRANKE Ambient Semi-Pro (115.0265.997)",
         "price": "8 733 ",
         "colors": [
@@ -8559,6 +8662,7 @@
         "producer": "Franke"
     },
     {
+        "id": "98",
         "title": "Змішувач FRANKE Orbit (115.0569.290)",
         "price": "6 437 ",
         "colors": [
@@ -8646,6 +8750,7 @@
         "producer": "Franke"
     },
     {
+        "id": "99",
         "title": "Змішувач FRANKE Kubus Pull Out (115.0529.207)",
         "price": "8 610 ",
         "colors": [
@@ -8736,6 +8841,7 @@
         "producer": "Franke"
     },
     {
+        "id": "100",
         "title": "Змішувач FRANKE Pescara XL Slide in (115.0523.290)",
         "price": "7 913 ",
         "colors": [
@@ -8826,6 +8932,7 @@
         "producer": "Franke"
     },
     {
+        "id": "101",
         "title": "Змішувач FRANKE Pescara Pull Down",
         "price": "14 104 ",
         "colors": [
@@ -8925,6 +9032,7 @@
         "producer": "Franke"
     },
     {
+        "id": "102",
         "title": "Змішувач FRANKE Centro (115.0600.095)",
         "price": "4 920 ",
         "colors": [
@@ -9018,6 +9126,7 @@
         "producer": "Franke"
     },
     {
+        "id": "103",
         "title": "Змішувач FRANKE Centro Pull Out",
         "price": "12 095 ",
         "colors": [
@@ -9110,6 +9219,7 @@
         "producer": "Franke"
     },
     {
+        "id": "104",
         "title": "Змішувач FRANKE Centro",
         "price": "9 389 ",
         "colors": [
@@ -9200,6 +9310,7 @@
         "producer": "Franke"
     },
     {
+        "id": "105",
         "title": "Змішувач FRANKE Tango Neo Pull Out (115.0596.388)",
         "price": "9 102 ",
         "colors": [
@@ -9294,6 +9405,7 @@
         "producer": "Franke"
     },
     {
+        "id": "106",
         "title": "Змішувач FRANKE Tango Neo Pull Out Spray (115.0596.389)",
         "price": "14 268 ",
         "colors": [
@@ -9391,6 +9503,7 @@
         "producer": "Franke"
     },
     {
+        "id": "107",
         "title": "Змішувач FRANKE EOS NEO",
         "price": "11 070 ",
         "colors": [
@@ -9487,6 +9600,7 @@
         "producer": "Franke"
     },
     {
+        "id": "108",
         "title": "Змішувач FRANKE Pola",
         "price": "2 173 ",
         "colors": [
@@ -9578,6 +9692,7 @@
         "producer": "Franke"
     },
     {
+        "id": "109",
         "title": "Змішувач FRANKE Neptune Clear Water",
         "price": "13 079 ",
         "colors": [
@@ -9669,6 +9784,7 @@
         "producer": "Franke"
     },
     {
+        "id": "110",
         "title": "Змішувач FRANKE Novara-Plus",
         "price": "2 788 ",
         "colors": [
@@ -9758,6 +9874,7 @@
         "producer": "Franke"
     },
     {
+        "id": "111",
         "title": "Змішувач FRANKE Vega",
         "price": "1 640 ",
         "colors": [
@@ -9850,6 +9967,7 @@
         "producer": "Franke"
     },
     {
+        "id": "112",
         "title": "Змішувач FRANKE Neptune EVO",
         "price": "7 175 ",
         "colors": [
@@ -9936,6 +10054,7 @@
         "producer": "Franke"
     },
     {
+        "id": "113",
         "title": "Змішувач FRANKE Maris",
         "price": "6 437 ",
         "colors": [
@@ -10027,6 +10146,7 @@
         "producer": "Franke"
     },
     {
+        "id": "114",
         "title": "Змішувач FRANKE Atlas Neo",
         "price": "8 364 ",
         "colors": [
@@ -10117,6 +10237,7 @@
         "producer": "Franke"
     },
     {
+        "id": "115",
         "title": "Змішувач FRANKE Lina з поворотним виливом",
         "price": "3 198 ",
         "colors": [
@@ -10212,6 +10333,7 @@
         "producer": "Franke"
     },
     {
+        "id": "116",
         "title": "Змішувач FRANKE Mythos Swivel",
         "price": "13 448 ",
         "colors": [
@@ -10301,6 +10423,7 @@
         "producer": "Franke"
     },
     {
+        "id": "117",
         "title": "Змішувач FRANKE Active L",
         "price": "9 799 ",
         "colors": [
@@ -10400,6 +10523,7 @@
         "producer": "Franke"
     },
     {
+        "id": "118",
         "title": "Змішувач FRANKE Fox (115.0250.143)",
         "price": "4 305 ",
         "colors": [
@@ -10492,6 +10616,7 @@
         "producer": "Franke"
     },
     {
+        "id": "119",
         "title": "",
         "price": "7 667 ",
         "colors": [
@@ -10581,6 +10706,7 @@
         "producer": "Franke"
     },
     {
+        "id": "120",
         "title": "Змішувач FRANKE Active Plus Super Metallic",
         "price": "5 453 ",
         "colors": [
@@ -10670,6 +10796,7 @@
         "producer": "Franke"
     },
     {
+        "id": "121",
         "title": "Змішувач FRANKE Lina L Shape",
         "price": "5 740 ",
         "colors": [
@@ -10766,6 +10893,7 @@
         "producer": "Franke"
     },
     {
+        "id": "122",
         "title": "Змішувач FRANKE Active Twist",
         "price": "15 170 ",
         "colors": [
@@ -10867,6 +10995,7 @@
         "producer": "Franke"
     },
     {
+        "id": "123",
         "title": "Змішувач FRANKE Active J",
         "price": "8 159 ",
         "colors": [
@@ -10965,6 +11094,7 @@
         "producer": "Franke"
     },
     {
+        "id": "124",
         "title": "Змішувач FRANKE Orbit (115.0569.290)",
         "price": "6 437 ",
         "colors": [
@@ -11052,6 +11182,7 @@
         "producer": "Franke"
     },
     {
+        "id": "125",
         "title": "Змішувач FRANKE Pescara Pull Down",
         "price": "14 104 ",
         "colors": [
@@ -11151,6 +11282,7 @@
         "producer": "Franke"
     },
     {
+        "id": "126",
         "title": "Змішувач FRANKE Centro (115.0600.095)",
         "price": "4 920 ",
         "colors": [
@@ -11244,6 +11376,7 @@
         "producer": "Franke"
     },
     {
+        "id": "127",
         "title": "Змішувач FRANKE Centro",
         "price": "9 389 ",
         "colors": [
@@ -11334,6 +11467,7 @@
         "producer": "Franke"
     },
     {
+        "id": "128",
         "title": "Змішувач FRANKE EOS NEO",
         "price": "11 070 ",
         "colors": [
@@ -11430,6 +11564,7 @@
         "producer": "Franke"
     },
     {
+        "id": "129",
         "title": "Змішувач FRANKE Neptune Clear Water",
         "price": "13 079 ",
         "colors": [
@@ -11521,6 +11656,7 @@
         "producer": "Franke"
     },
     {
+        "id": "130",
         "title": "Духова шафа FRANKE Frames by Franke FS 913 P DCT TFT",
         "price": "53 956 ",
         "colors": [
@@ -11599,6 +11735,7 @@
         "producer": "Franke"
     },
     {
+        "id": "131",
         "title": "Духова шафа FRANKE Mythos FMY 99 HS XS/BK",
         "price": "78 064 ",
         "colors": [
@@ -11680,6 +11817,7 @@
         "producer": "Franke"
     },
     {
+        "id": "132",
         "title": "Підігрівач посуду FRANKE Mythos FMY 14 DRW BK (131.0640.710)",
         "price": "18 983 ",
         "colors": [],
@@ -11734,6 +11872,7 @@
         "producer": "Franke"
     },
     {
+        "id": "133",
         "title": "Духова шафа FRANKE Maris FMA 97 P XS (116.0606.100)",
         "price": "28 003 ",
         "colors": [
@@ -11808,6 +11947,7 @@
         "producer": "Franke"
     },
     {
+        "id": "134",
         "title": "Духова шафа FRANKE Smart FSM 86 H XS/BK/WH/OY",
         "price": "20 951 ",
         "colors": [
@@ -11889,6 +12029,7 @@
         "producer": "Franke"
     },
     {
+        "id": "135",
         "title": "Духова шафа FRANKE Maris FMA 86 H XS/BK",
         "price": "25 830 ",
         "colors": [
@@ -11963,6 +12104,7 @@
         "producer": "Franke"
     },
     {
+        "id": "136",
         "title": "Духова шафа FRANKE Mythos FMY 98 P XS/BK",
         "price": "38 991 ",
         "colors": [],
@@ -12042,6 +12184,7 @@
         "producer": "Franke"
     },
     {
+        "id": "137",
         "title": "Духова шафа FRANKE Mythos FMY 99 P XS/BK",
         "price": "43 952 ",
         "colors": [
@@ -12124,6 +12267,7 @@
         "producer": "Franke"
     },
     {
+        "id": "138",
         "title": "Підігрівач посуду FRANKE Mythos FMY 14 DRW XS (131.0611.212)",
         "price": "18 983 ",
         "colors": [
@@ -12185,6 +12329,7 @@
         "producer": "Franke"
     },
     {
+        "id": "139",
         "title": "Витяжка FRANKE Flexa FTC 532L/632L",
         "price": "3 485 ",
         "colors": [
@@ -12276,6 +12421,7 @@
         "producer": "Franke"
     },
     {
+        "id": "140",
         "title": "Витяжка FRANKE Flexa FTC 532H/612/912 XS LED",
         "price": "5 822 ",
         "colors": [
@@ -12366,6 +12512,7 @@
         "producer": "Franke"
     },
     {
+        "id": "141",
         "title": "Витяжка FRANKE Smart Telescopic FSM 601",
         "price": "6 560 ",
         "colors": [
@@ -12461,6 +12608,7 @@
         "producer": "Franke"
     },
     {
+        "id": "142",
         "title": "Витяжка FRANKE Maxima FTC 626/926 LED",
         "price": "17 630 ",
         "colors": [
@@ -12550,6 +12698,7 @@
         "producer": "Franke"
     },
     {
+        "id": "143",
         "title": "Витяжка FRANKE Gavia FDL 665/965 XS",
         "price": "5 699 ",
         "colors": [
@@ -12634,6 +12783,7 @@
         "producer": "Franke"
     },
     {
+        "id": "144",
         "title": "Витяжка FRANKE Smart Deco FSMD 508",
         "price": "22 222 ",
         "colors": [
@@ -12744,6 +12894,7 @@
         "producer": "Franke"
     },
     {
+        "id":"145",
         "title": "Витяжка FRANKE Turn FTU 3805 XS LED0 (335.0518.748)",
         "price": "15 949 ",
         "colors": [
@@ -12831,6 +12982,7 @@
         "producer": "Franke"
     },
     {
+        "id":"146",
         "title": "Витяжка FRANKE Tube FTU Plus 3707 XS (335.0590.493)",
         "price": "20 664 ",
         "colors": [
@@ -12926,6 +13078,7 @@
         "producer": "Franke"
     },
     {
+        "id":"147",
         "title": "Витяжка FRANKE Trendline Plus BK 70",
         "price": "19 967 ",
         "colors": [
@@ -13016,6 +13169,7 @@
         "producer": "Franke"
     },
     {
+        "id":"148",
         "title": "Кавомашина FRANKE A400 FoamMaster",
         "price": "524 595 ",
         "colors": [
@@ -13086,6 +13240,7 @@
         "producer": "Franke"
     },
     {
+        "id":"149",
         "title": "Кавомашина FRANKE A600",
         "price": "430 500 ",
         "colors": [
@@ -13156,6 +13311,7 @@
         "producer": "Franke"
     },
     {
+        "id":"150",
         "title": "Кавомашина FRANKE A400 MS",
         "price": "365 105 ",
         "colors": [
@@ -13226,6 +13382,7 @@
         "producer": "Franke"
     },
     {
+        "id":"151",
         "title": "Кавомашина FRANKE A600 FoamMaster",
         "price": "589 990 ",
         "colors": [
@@ -13296,6 +13453,7 @@
         "producer": "Franke"
     },
     {
+        "id":"152",
         "title": "Кавомашина FRANKE A800 FoamMaster",
         "price": "694 540 ",
         "colors": [
@@ -13367,6 +13525,7 @@
         "producer": "Franke"
     },
     {
+        "id":"153",
         "title": "Кавомашина FRANKE A1000 FoamMaster",
         "price": "849 520 ",
         "colors": [
@@ -13441,6 +13600,7 @@
         "producer": "Franke"
     },
     {
+        "id":"154",
         "title": "Змішувач FRANKE Atlas Neo Pull Out",
         "price": "12 013 ",
         "colors": [
@@ -13534,6 +13694,7 @@
         "producer": "Franke"
     },
     {
+        "id":"155",
         "title": "Змішувач FRANKE Orbit Pull Out",
         "price": "5 166 ",
         "colors": [
@@ -13625,6 +13786,7 @@
         "producer": "Franke"
     },
     {
+        "id":"156",
         "title": "Змішувач FRANKE Atlas Neo",
         "price": "8 364 ",
         "colors": [
@@ -13715,6 +13877,7 @@
         "producer": "Franke"
     },
     {
+        "id":"157",
         "title": "Змішувач FRANKE Mythos Swivel",
         "price": "13 448 ",
         "colors": [
@@ -13804,6 +13967,7 @@
         "producer": "Franke"
     },
     {
+        "id":"158",
         "title": "Змішувач FRANKE Active J Pull Out Spray",
         "price": "14 719 ",
         "colors": [
@@ -13902,6 +14066,7 @@
         "producer": "Franke"
     },
     {
+        "id":"159",
         "title": "Змішувач FRANKE Active L Pull Out Spray",
         "price": "15 129 ",
         "colors": [
@@ -14004,6 +14169,7 @@
         "producer": "Franke"
     },
     {
+        "id":"160",
         "title": "Змішувач FRANKE Active L",
         "price": "9 799 ",
         "colors": [
@@ -14103,6 +14269,7 @@
         "producer": "Franke"
     },
     {
+        "id":"161",
         "title": "Змішувач FRANKE EOS NEO Pull Down",
         "price": "14 145 ",
         "colors": [
@@ -14202,6 +14369,7 @@
         "producer": "Franke"
     },
     {
+        "id":"162",
         "title": "Змішувач FRANKE Active Twist Pull Out Spray",
         "price": "17 384 ",
         "colors": [
@@ -14299,6 +14467,7 @@
         "producer": "Franke"
     },
     {
+        "id":"163",
         "title": "Змішувач FRANKE Active Twist",
         "price": "15 170 ",
         "colors": [
@@ -14400,6 +14569,7 @@
         "producer": "Franke"
     },
     {
+        "id":"164",
         "title": "Змішувач FRANKE Active J",
         "price": "8 159 ",
         "colors": [
@@ -14498,6 +14668,7 @@
         "producer": "Franke"
     },
     {
+        "id":"165",
         "title": "Змішувач FRANKE Orbit (115.0569.290)",
         "price": "6 437 ",
         "colors": [
@@ -14585,6 +14756,7 @@
         "producer": "Franke"
     },
     {
+        "id":"166",
         "title": "Змішувач FRANKE Kubus Pull Out (115.0529.207)",
         "price": "8 610 ",
         "colors": [
@@ -14675,6 +14847,7 @@
         "producer": "Franke"
     },
     {
+        "id":"167",
         "title": "Змішувач FRANKE Centro (115.0600.095)",
         "price": "4 920 ",
         "colors": [
@@ -14768,6 +14941,7 @@
         "producer": "Franke"
     },
     {
+        "id":"168",
         "title": "Змішувач FRANKE Centro",
         "price": "9 389 ",
         "colors": [
@@ -14858,6 +15032,7 @@
         "producer": "Franke"
     },
     {
+        "id":"169",
         "title": "Змішувач FRANKE Tango Neo Pull Out (115.0596.388)",
         "price": "9 102 ",
         "colors": [
@@ -14952,6 +15127,7 @@
         "producer": "Franke"
     },
     {
+        "id":"170",
         "title": "Змішувач FRANKE Tango Neo Pull Out Spray (115.0596.389)",
         "price": "14 268 ",
         "colors": [
@@ -15049,6 +15225,7 @@
         "producer": "Franke"
     },
     {
+        "id":"171",
         "title": "Змішувач FRANKE EOS NEO",
         "price": "11 070 ",
         "colors": [
@@ -15145,6 +15322,7 @@
         "producer": "Franke"
     },
     {
+        "id":"172",
         "title": "Витяжка FRANKE Inca FBI 525/705 GR",
         "price": "3 731 ",
         "colors": [
@@ -15231,6 +15409,7 @@
         "producer": "Franke"
     },
     {
+        "id":"173",
         "title": "Витяжка FRANKE Flexa FTC 532L/632L",
         "price": "3 485 ",
         "colors": [
@@ -15322,6 +15501,7 @@
         "producer": "Franke"
     },
     {
+        "id":"174",
         "title": "Витяжка FRANKE Flexa FTC 532H/612/912 XS LED",
         "price": "5 822 ",
         "colors": [
@@ -15412,6 +15592,7 @@
         "producer": "Franke"
     },
     {
+        "id":"175",
         "title": "Витяжка FRANKE Inca FBI 525/705 Plus",
         "price": "7 503 ",
         "colors": [
@@ -15503,6 +15684,7 @@
         "producer": "Franke"
     },
     {
+        "id":"176",
         "title": "Витяжка FRANKE Inca FBI 525/705 XS",
         "price": "5 248 ",
         "colors": [
@@ -15589,6 +15771,7 @@
         "producer": "Franke"
     },
     {
+        "id":"177",
         "title": "Витяжка FRANKE Box Flush Evo FBFE 52/70 XS BK WH",
         "price": "13 489 ",
         "colors": [
@@ -15671,6 +15854,7 @@
         "producer": "Franke"
     },
     {
+        "id":"178",
         "title": "Витяжка FRANKE Inca FBI 525/705 XS HCS",
         "price": "6 068 ",
         "colors": [
@@ -15757,6 +15941,7 @@
         "producer": "Franke"
     },
     {
+        "id":"179",
         "title": "Витяжка FRANKE Mythos FMY 608/908",
         "price": "36 695 ",
         "colors": [
@@ -15853,6 +16038,7 @@
         "producer": "Franke"
     },
     {
+        "id":"180",
         "title": "Витяжка FRANKE Style Plus FSTP NG 605/905 X",
         "price": "15 826 ",
         "colors": [
@@ -15948,6 +16134,7 @@
         "producer": "Franke"
     },
     {
+        "id":"181",
         "title": "Витяжка FRANKE Style Pro Fstpro 608/908/1208 X",
         "price": "22 632 ",
         "colors": [
@@ -16043,6 +16230,7 @@
         "producer": "Franke"
     },
     {
+        "id":"182",
         "title": "Витяжка FRANKE Inca Smart FBI 525/705 BK (Black Matt)",
         "price": "4 920 ",
         "colors": [
@@ -16138,6 +16326,7 @@
         "producer": "Franke"
     },
     {
+        "id":"183",
         "title": "Витяжка FRANKE Box Flush Premium FBFP XS A52/70",
         "price": "19 967 ",
         "colors": [
@@ -16225,6 +16414,7 @@
         "producer": "Franke"
     },
     {
+        "id":"184",
         "title": "Витяжка FRANKE Style Drip Free FST Drip-Free 60/90/120 x",
         "price": "29 889 ",
         "colors": [
@@ -16311,6 +16501,7 @@
         "producer": "Franke"
     },
     {
+        "id":"185",
         "title": "Витяжка FRANKE Maxima FTC 626/926 LED",
         "price": "17 630 ",
         "colors": [
@@ -16399,6 +16590,7 @@
         "producer": "Franke"
     },
     {
+        "id":"186",
         "title": "Витяжка FRANKE Maris Pull Out Slim FMPOS 908 BI X",
         "price": "16 646 ",
         "colors": [
@@ -16489,6 +16681,7 @@
         "producer": "Franke"
     },
     {
+        "id":"187",
         "title": "Витяжка FRANKE Style Plus FSTP 1205 X (110.0473.547)",
         "price": "13 940 ",
         "colors": [
@@ -16578,6 +16771,7 @@
         "producer": "Franke"
     },
     {
+        "id":"188",
         "title": "FRANKE Maris Hob Extractor FMA 839 Витяжка + Індукційна варильна поверхня (340.0595.364)",
         "price": "64 616 ",
         "colors": [
@@ -16658,6 +16852,7 @@
         "producer": "Franke"
     },
     {
+        "id":"189",
         "title": "Змішувач FRANKE Pescara 360",
         "price": "25 174 ",
         "colors": [
@@ -16752,6 +16947,7 @@
         "producer": "Franke"
     },
     {
+        "id":"190",
         "title": "Змішувач FRANKE Pescara Semipro L",
         "price": "16 277 ",
         "colors": [
@@ -16845,6 +17041,7 @@
         "producer": "Franke"
     },
     {
+        "id":"191",
         "title": "Змішувач FRANKE Pescara Semipro XL",
         "price": "15 498 ",
         "colors": [
@@ -16937,6 +17134,7 @@
         "producer": "Franke"
     },
     {
+        "id":"192",
         "title": "Змішувач FRANKE Ambient Semi-Pro (115.0265.997)",
         "price": "8 733 ",
         "colors": [
@@ -17029,6 +17227,7 @@
         "producer": "Franke"
     },
     {
+        "id":"193",
         "title": "Варильна поверхня FRANKE Smart FSM 302 I BK (108.0606.106)",
         "price": "12 669 ",
         "colors": [
@@ -17103,6 +17302,7 @@
         "producer": "Franke"
     },
     {
+        "id":"194",
         "title": "Варильна поверхня FRANKE Frames by Franke FHFS 786 3FLEXI ST",
         "price": "39 155 ",
         "colors": [
@@ -17176,6 +17376,7 @@
         "producer": "Franke"
     },
     {
+        "id":"195",
         "title": "Варильна поверхня FRANKE Crystal FHCR 774 2I 1FLEXI T PWL (108.0377.090)",
         "price": "16 523 ",
         "colors": [
@@ -17249,6 +17450,7 @@
         "producer": "Franke"
     },
     {
+        "id":"196",
         "title": "FRANKE Maris Hob Extractor FMA 839 Витяжка + Індукційна варильна поверхня (340.0595.364)",
         "price": "64 616 ",
         "colors": [
@@ -17329,6 +17531,7 @@
         "producer": "Franke"
     },
     {
+        "id":"197",
         "title": "Варильна поверхня FRANKE Smart FSM 804 IB BK (108.0606.110)",
         "price": "17 548 ",
         "colors": [
@@ -17404,6 +17607,7 @@
         "producer": "Franke"
     },
     {
+        "id":"198",
         "title": "Варильна поверхня FRANKE Maris FMA 804 IF BK (108.0606.112)",
         "price": "23 288 ",
         "colors": [
@@ -17481,6 +17685,7 @@
         "producer": "Franke"
     },
     {
+        "id":"199",
         "title": "Варильна поверхня FRANKE Mythos FMY 808 I FP BK (108.0613.588)",
         "price": "38 089 ",
         "colors": [
@@ -17553,6 +17758,7 @@
         "producer": "Franke"
     },
     {
+        "id":"200",
         "title": "Духова шафа FRANKE Crystal CR 982 M DCT TFT",
         "price": "19 024 ",
         "colors": [
@@ -17626,6 +17832,7 @@
         "producer": "Franke"
     },
     {
+        "id":"201",
         "title": "Духова шафа FRANKE Smart SGP 62 M",
         "price": "9 963 ",
         "colors": [
@@ -17698,6 +17905,7 @@
         "producer": "Franke"
     },
     {
+        "id":"202",
         "title": "Духова шафа FRANKE Maris Free by Dror MA 86 M",
         "price": "11 931 ",
         "colors": [
@@ -17786,6 +17994,7 @@
         "producer": "Franke"
     },
     {
+        "id":"203",
         "title": "Духова шафа FRANKE Frames by Franke FS 913 P DCT TFT",
         "price": "53 956 ",
         "colors": [
@@ -17864,6 +18073,7 @@
         "producer": "Franke"
     },
     {
+        "id":"204",
         "title": "Духова шафа FRANKE Mythos FMY 99 HS XS/BK",
         "price": "78 064 ",
         "colors": [
@@ -17945,6 +18155,7 @@
         "producer": "Franke"
     },
     {
+        "id":"205",
         "title": "Підігрівач посуду FRANKE Mythos FMY 14 DRW BK (131.0640.710)",
         "price": "18 983 ",
         "colors": [],
@@ -17999,6 +18210,7 @@
         "producer": "Franke"
     },
     {
+        "id":"206",
         "title": "Духова шафа FRANKE Crystal CR 913 M DCT TFT",
         "price": "21 361 ",
         "colors": [
@@ -18072,6 +18284,7 @@
         "producer": "Franke"
     },
     {
+        "id":"207",
         "title": "Духова шафа FRANKE Maris FMA 97 P XS (116.0606.100)",
         "price": "28 003 ",
         "colors": [
@@ -18146,6 +18359,7 @@
         "producer": "Franke"
     },
     {
+        "id":"208",
         "title": "Духова шафа FRANKE Smart FSM 86 H XS/BK/WH/OY",
         "price": "20 951 ",
         "colors": [
@@ -18227,6 +18441,7 @@
         "producer": "Franke"
     },
     {
+        "id":"209",
         "title": "Духова шафа FRANKE Maris FMA 86 H XS/BK",
         "price": "25 830 ",
         "colors": [
@@ -18301,6 +18516,7 @@
         "producer": "Franke"
     },
     {
+        "id":"210",
         "title": "Духова шафа FRANKE Mythos FMY 98 P XS/BK",
         "price": "38 991 ",
         "colors": [],
@@ -18380,6 +18596,7 @@
         "producer": "Franke"
     },
     {
+        "id":"211",
         "title": "Духова шафа FRANKE Mythos FMY 99 P XS/BK",
         "price": "43 952 ",
         "colors": [
@@ -18462,6 +18679,7 @@
         "producer": "Franke"
     },
     {
+        "id":"212",
         "title": "Підігрівач посуду FRANKE Mythos FMY 14 DRW XS (131.0611.212)",
         "price": "18 983 ",
         "colors": [
@@ -18523,6 +18741,7 @@
         "producer": "Franke"
     },
     {
+        "id":"213",
         "title": "Духова шафа FRANKE Frames by Franke FS 913 P DCT TFT",
         "price": "53 956 ",
         "colors": [
@@ -18601,6 +18820,7 @@
         "producer": "Franke"
     },
     {
+        "id":"214",
         "title": "Духова шафа FRANKE Mythos FMY 99 HS XS/BK",
         "price": "78 064 ",
         "colors": [
@@ -18682,6 +18902,7 @@
         "producer": "Franke"
     },
     {
+        "id":"215",
         "title": "Підігрівач посуду FRANKE Mythos FMY 14 DRW BK (131.0640.710)",
         "price": "18 983 ",
         "colors": [],
@@ -18736,6 +18957,7 @@
         "producer": "Franke"
     },
     {
+        "id":"216",
         "title": "Духова шафа FRANKE Maris FMA 97 P XS (116.0606.100)",
         "price": "28 003 ",
         "colors": [
@@ -18810,6 +19032,7 @@
         "producer": "Franke"
     },
     {
+        "id":"217",
         "title": "Духова шафа FRANKE Smart FSM 86 H XS/BK/WH/OY",
         "price": "20 951 ",
         "colors": [
@@ -18891,6 +19114,7 @@
         "producer": "Franke"
     },
     {
+        "id":"218",
         "title": "Духова шафа FRANKE Maris FMA 86 H XS/BK",
         "price": "25 830 ",
         "colors": [
@@ -18965,6 +19189,7 @@
         "producer": "Franke"
     },
     {
+        "id":"219",
         "title": "Духова шафа FRANKE Mythos FMY 98 P XS/BK",
         "price": "38 991 ",
         "colors": [],
@@ -19044,6 +19269,7 @@
         "producer": "Franke"
     },
     {
+        "id":"220",
         "title": "Духова шафа FRANKE Mythos FMY 99 P XS/BK",
         "price": "43 952 ",
         "colors": [
@@ -19126,6 +19352,7 @@
         "producer": "Franke"
     },
     {
+        "id":"221",
         "title": "Підігрівач посуду FRANKE Mythos FMY 14 DRW XS (131.0611.212)",
         "price": "18 983 ",
         "colors": [
@@ -19187,6 +19414,7 @@
         "producer": "Franke"
     },
     {
+        "id":"222",
         "title": "Змішувач FRANKE Novara-Plus Pull Out",
         "price": "4 387 ",
         "colors": [
@@ -19277,6 +19505,7 @@
         "producer": "Franke"
     },
     {
+        "id":"223",
         "title": "Змішувач FRANKE Orbit Pull Out",
         "price": "5 166 ",
         "colors": [
@@ -19368,6 +19597,7 @@
         "producer": "Franke"
     },
     {
+        "id":"224",
         "title": "Змішувач FRANKE Active J Pull Out Spray",
         "price": "14 719 ",
         "colors": [
@@ -19466,6 +19696,7 @@
         "producer": "Franke"
     },
     {
+        "id":"225",
         "title": "Змішувач FRANKE Active L Pull Out Spray",
         "price": "15 129 ",
         "colors": [
@@ -19568,6 +19799,7 @@
         "producer": "Franke"
     },
     {
+        "id":"226",
         "title": "Змішувач FRANKE Icon Pull Out Spray",
         "price": "18 901 ",
         "colors": [
@@ -19657,6 +19889,7 @@
         "producer": "Franke"
     },
     {
+        "id":"227",
         "title": "Змішувач FRANKE Pescara 360",
         "price": "25 174 ",
         "colors": [
@@ -19751,6 +19984,7 @@
         "producer": "Franke"
     },
     {
+        "id":"228",
         "title": "Змішувач FRANKE Active Plus Doc Super Metallic",
         "price": "6 519 ",
         "colors": [
@@ -19846,6 +20080,7 @@
         "producer": "Franke"
     },
     {
+        "id":"229",
         "title": "Змішувач FRANKE Pescara Semipro L",
         "price": "16 277 ",
         "colors": [
@@ -19939,6 +20174,7 @@
         "producer": "Franke"
     },
     {
+        "id":"230",
         "title": "Змішувач FRANKE EOS NEO Pull Down",
         "price": "14 145 ",
         "colors": [
@@ -20038,6 +20274,7 @@
         "producer": "Franke"
     },
     {
+        "id":"231",
         "title": "Змішувач FRANKE Active Twist Pull Out Spray",
         "price": "17 384 ",
         "colors": [
@@ -20135,6 +20372,7 @@
         "producer": "Franke"
     },
     {
+        "id":"232",
         "title": "Змішувач FRANKE Pescara Semipro XL",
         "price": "15 498 ",
         "colors": [
@@ -20227,6 +20465,7 @@
         "producer": "Franke"
     },
     {
+        "id":"233",
         "title": "Змішувач FRANKE Ambient Semi-Pro (115.0265.997)",
         "price": "8 733 ",
         "colors": [
@@ -20319,6 +20558,7 @@
         "producer": "Franke"
     },
     {
+        "id":"234",
         "title": "Змішувач FRANKE Kubus Pull Out (115.0529.207)",
         "price": "8 610 ",
         "colors": [
@@ -20409,6 +20649,7 @@
         "producer": "Franke"
     },
     {
+        "id":"235",
         "title": "Змішувач FRANKE Pescara XL Slide in (115.0523.290)",
         "price": "7 913 ",
         "colors": [
@@ -20499,6 +20740,7 @@
         "producer": "Franke"
     },
     {
+        "id":"236",
         "title": "Змішувач FRANKE Pescara Pull Down",
         "price": "14 104 ",
         "colors": [
@@ -20598,6 +20840,7 @@
         "producer": "Franke"
     },
     {
+        "id":"237",
         "title": "Змішувач FRANKE Tango Neo Pull Out Spray (115.0596.389)",
         "price": "14 268 ",
         "colors": [
@@ -20695,6 +20938,7 @@
         "producer": "Franke"
     },
     {
+        "id":"238",
         "title": "Витяжка FRANKE Cloud 1106 BK",
         "price": "70 110 ",
         "colors": [
@@ -20786,6 +21030,7 @@
         "producer": "Franke"
     },
     {
+        "id":"239",
         "title": "Варильна поверхня FRANKE Trend Line FHTL 604 3G TC C",
         "price": "18 204 ",
         "colors": [
@@ -20859,6 +21104,7 @@
         "producer": "Franke"
     },
     {
+        "id":"240",
         "title": "Варильна поверхня FRANKE Maris FHMA 604 3G DC",
         "price": "17 753 ",
         "colors": [
@@ -20934,6 +21180,7 @@
         "producer": "Franke"
     },
     {
+        "id":"241",
         "title": "Варильна поверхня FRANKE Maris FHMA 755 4G DCL",
         "price": "19 311 ",
         "colors": [
@@ -21013,6 +21260,7 @@
         "producer": "Franke"
     },
     {
+        "id":"242",
         "title": "Варильна поверхня FRANKE Smart FHSM 755 4G DC ON E",
         "price": "12 546 ",
         "colors": [
@@ -21082,6 +21330,7 @@
         "producer": "Franke"
     },
     {
+        "id":"243",
         "title": "Варильна поверхня FRANKE Smart FHSM 604 4G ON OA E",
         "price": "14 309 ",
         "colors": [
@@ -21158,6 +21407,7 @@
         "producer": "Franke"
     },
     {
+        "id":"244",
         "title": "Варильна поверхня FRANKE Crystal FHCR 604 4G HE C",
         "price": "38 745 ",
         "colors": [
@@ -21231,6 +21481,7 @@
         "producer": "Franke"
     },
     {
+        "id":"245",
         "title": "Варильна поверхня FRANKE Crystal FHCR 755 4G TC HE C",
         "price": "30 627 ",
         "colors": [
@@ -21307,6 +21558,7 @@
         "producer": "Franke"
     },
     {
+        "id":"246",
         "title": "Варильна поверхня FRANKE Crystal / Crystal Steel Pro FHCR 1204 3G TC HE C",
         "price": "34 153 ",
         "colors": [
@@ -21380,6 +21632,7 @@
         "producer": "Franke"
     },
     {
+        "id":"247",
         "title": "Варильна поверхня FRANKE Trend Line FHTL 755 4G TC C",
         "price": "21 935 ",
         "colors": [
@@ -21454,6 +21707,7 @@
         "producer": "Franke"
     },
     {
+        "id":"248",
         "title": "Варильна поверхня FRANKE Maris Free By Dror FHMF 755 4G DC C",
         "price": "26 240 ",
         "colors": [
@@ -21535,6 +21789,7 @@
         "producer": "Franke"
     },
     {
+        "id":"249",
         "title": "Варильна поверхня FRANKE Maris Free By Dror FHMF 604 3G DC C",
         "price": "15 088 ",
         "colors": [
@@ -21612,6 +21867,7 @@
         "producer": "Franke"
     },
     {
+        "id":"250",
         "title": "Варильна поверхня Franke Smart FHSM 755 4G",
         "price": "13 243 ",
         "colors": [
@@ -21687,6 +21943,7 @@
         "producer": "Franke"
     },
     {
+        "id":"251",
         "title": "Змішувач FRANKE Active Window Pull Out (115.0486.978)",
         "price": "9 102 ",
         "colors": [
@@ -21777,6 +22034,7 @@
         "producer": "Franke"
     },
     {
+        "id":"252",
         "title": "Змішувач FRANKE Sirius",
         "price": "4 141 ",
         "colors": [
@@ -21870,6 +22128,7 @@
         "producer": "Franke"
     },
     {
+        "id":"253",
         "title": "Змішувач FRANKE Novara-Plus Pull Out",
         "price": "4 387 ",
         "colors": [
@@ -21960,6 +22219,7 @@
         "producer": "Franke"
     },
     {
+        "id":"254",
         "title": "Змішувач FRANKE Lina Pull Out",
         "price": "4 182 ",
         "colors": [
@@ -22051,6 +22311,7 @@
         "producer": "Franke"
     },
     {
+        "id":"255",
         "title": "Змішувач FRANKE Urban Pull Down",
         "price": "8 938 ",
         "colors": [
@@ -22144,6 +22405,7 @@
         "producer": "Franke"
     },
     {
+        "id":"256",
         "title": "Змішувач FRANKE Neptune EVO Pull Out",
         "price": "9 635 ",
         "colors": [
@@ -22236,6 +22498,7 @@
         "producer": "Franke"
     },
     {
+        "id":"257",
         "title": "Змішувач FRANKE Atlas Neo Pull Out",
         "price": "12 013 ",
         "colors": [
@@ -22329,6 +22592,7 @@
         "producer": "Franke"
     },
     {
+        "id":"258",
         "title": "Змішувач FRANKE Orbit Pull Out",
         "price": "5 166 ",
         "colors": [
@@ -22420,6 +22684,7 @@
         "producer": "Franke"
     },
     {
+        "id":"259",
         "title": "Змішувач FRANKE Mythos Pull Out",
         "price": "14 924 ",
         "colors": [
@@ -22512,6 +22777,7 @@
         "producer": "Franke"
     },
     {
+        "id":"260",
         "title": "Змішувач FRANKE Active Plus Doc",
         "price": "5 781 ",
         "colors": [
@@ -22602,6 +22868,7 @@
         "producer": "Franke"
     },
     {
+        "id":"261",
         "title": "Змішувач FRANKE Active J Pull Out Spray",
         "price": "14 719 ",
         "colors": [
@@ -22700,6 +22967,7 @@
         "producer": "Franke"
     },
     {
+        "id":"262",
         "title": "Змішувач FRANKE Active L Pull Out Spray",
         "price": "15 129 ",
         "colors": [
@@ -22802,6 +23070,7 @@
         "producer": "Franke"
     },
     {
+        "id":"263",
         "title": "Змішувач FRANKE Icon Pull Out Spray",
         "price": "18 901 ",
         "colors": [
@@ -22891,6 +23160,7 @@
         "producer": "Franke"
     },
     {
+        "id":"264",
         "title": "Змішувач FRANKE Pescara 360",
         "price": "25 174 ",
         "colors": [
@@ -22985,6 +23255,7 @@
         "producer": "Franke"
     },
     {
+        "id":"265",
         "title": "Змішувач FRANKE Active Plus Doc Super Metallic",
         "price": "6 519 ",
         "colors": [
@@ -23080,6 +23351,7 @@
         "producer": "Franke"
     },
     {
+        "id":"266",
         "title": "Змішувач FRANKE Sirius",
         "price": "5 371 ",
         "colors": [
@@ -23172,6 +23444,7 @@
         "producer": "Franke"
     },
     {
+        "id":"267",
         "title": "Змішувач FRANKE Pescara Semipro L",
         "price": "16 277 ",
         "colors": [
@@ -23265,6 +23538,7 @@
         "producer": "Franke"
     },
     {
+        "id":"268",
         "title": "Змішувач FRANKE EOS NEO Pull Down",
         "price": "14 145 ",
         "colors": [
@@ -23364,6 +23638,7 @@
         "producer": "Franke"
     },
     {
+        "id":"269",
         "title": "Змішувач FRANKE Active Twist Pull Out Spray",
         "price": "17 384 ",
         "colors": [
@@ -23461,6 +23736,7 @@
         "producer": "Franke"
     },
     {
+        "id":"270",
         "title": "Змішувач FRANKE Pescara Semipro XL",
         "price": "15 498 ",
         "colors": [
@@ -23553,6 +23829,7 @@
         "producer": "Franke"
     },
     {
+        "id":"271",
         "title": "Змішувач FRANKE Ambient Semi-Pro (115.0265.997)",
         "price": "8 733 ",
         "colors": [
@@ -23645,6 +23922,7 @@
         "producer": "Franke"
     },
     {
+        "id":"272",
         "title": "Змішувач FRANKE Kubus Pull Out (115.0529.207)",
         "price": "8 610 ",
         "colors": [
@@ -23735,6 +24013,7 @@
         "producer": "Franke"
     },
     {
+        "id":"273",
         "title": "Змішувач FRANKE Pescara XL Slide in (115.0523.290)",
         "price": "7 913 ",
         "colors": [
@@ -23825,6 +24104,7 @@
         "producer": "Franke"
     },
     {
+        "id":"274",
         "title": "Змішувач FRANKE Centro Pull Out",
         "price": "12 095 ",
         "colors": [
@@ -23917,6 +24197,7 @@
         "producer": "Franke"
     },
     {
+        "id":"275",
         "title": "Змішувач FRANKE Tango Neo Pull Out (115.0596.388)",
         "price": "9 102 ",
         "colors": [
@@ -24011,6 +24292,7 @@
         "producer": "Franke"
     },
     {
+        "id":"276",
         "title": "Змішувач FRANKE Tango Neo Pull Out Spray (115.0596.389)",
         "price": "14 268 ",
         "colors": [
@@ -24108,6 +24390,7 @@
         "producer": "Franke"
     },
     {
+        "id":"277",
         "title": "Змішувач FRANKE Maris Free by Dror",
         "price": "7 667 ",
         "colors": [
@@ -24197,6 +24480,7 @@
         "producer": "Franke"
     },
     {
+        "id":"278",
         "title": "Витяжка FRANKE Evo Plus FPJ 625/925 V BK WH SS",
         "price": "16 810 ",
         "colors": [
@@ -24292,6 +24576,7 @@
         "producer": "Franke"
     },
     {
+        "id":"279",
         "title": "Витяжка FRANKE Smart Vertical 2.0 FPJ 615/915 V BK/DG",
         "price": "9 963 ",
         "colors": [
@@ -24387,6 +24672,7 @@
         "producer": "Franke"
     },
     {
+        "id":"280",
         "title": "Витяжка FRANKE Maris Free by Dror 80 (330.0542.181)",
         "price": "25 215 ",
         "colors": [
@@ -24486,6 +24772,7 @@
         "producer": "Franke"
     },
     {
+        "id":"281",
         "title": "Витяжка FRANKE Neo FNO 605/905 BK",
         "price": "22 058 ",
         "colors": [
@@ -24571,6 +24858,7 @@
         "producer": "Franke"
     },
     {
+        "id":"282",
         "title": "Витяжка FRANKE FCR 925 TC BK/XS NG",
         "price": "20 869 ",
         "colors": [
@@ -24667,6 +24955,7 @@
         "producer": "Franke"
     },
     {
+        "id":"283",
         "title": "Витяжка FRANKE Trendline Plus BK 70",
         "price": "19 967 ",
         "colors": [
@@ -24757,6 +25046,7 @@
         "producer": "Franke"
     },
     {
+        "id":"284",
         "title": "Витяжка FRANKE Glass Soft FGC 625/925 XS NP",
         "price": "9 635 ",
         "colors": [
@@ -24847,6 +25137,7 @@
         "producer": "Franke"
     },
     {
+        "id":"285",
         "title": "Витяжка FRANKE Tale 615/915 W XS",
         "price": "19 639 ",
         "colors": [

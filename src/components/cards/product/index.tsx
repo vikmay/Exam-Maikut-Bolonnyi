@@ -1,30 +1,46 @@
 import React from "react";
 import Image from "next/image";
-// 💬 Styles //
-import s from "../product/index.module.scss";
-// 💬 Components //
-import Likes from "@/components/likes";
+import AddToCartBtn from "@/components/cart/addToCart";
+import s from "./index.module.scss";
+import { Product } from "@/../../interfaces";
+import favorite from "@/../../public/images/likes.svg";
+import AddToFavBtn from "@/components/favorites/addToFav";
+
 const ProductCard = (props: any) => {
-  const { product } = props;
+  const { product, id } = props;
+
+  const NewLabel = () => {
+    if (product?.isNew) {
+      return <span className={s.new_label}>НОВЕ</span>;
+    }
+    return <span></span>;
+  };
+
   return (
-    <>
-      <div className={s.product__card}>
-        <div className={s.likes__img}>
-          <Likes />
+    <div className={s.card_wrapper}>
+      <div className={s.card_container}>
+        <div className={s.new_fav_container}>
+          {NewLabel()}
+          <AddToFavBtn product={product} id={id} />
         </div>
         <Image
-          className={s.img__card}
           src={product?.images[0]}
           alt={product?.title}
           width={200}
           height={200}
         />
-        <div className={s.product__card_title}> {product?.title}</div>
-
-        <div className={s.product__card_producer}>{product?.producer}</div>
-        <div className={s.product__card_price}>{product?.price}грн</div>
+        <div className={s.card_title}>{product?.title.slice(0, 26)}</div>
+        <div className={s.card_model}>{product?.title.slice(28)}</div>
+        <div className={s.card__producer}>_{product?.producer}</div>
+        <div className={s.price_cart_container}>
+          <div>
+            <div className={s.card__price}>{product?.price + "грн"}</div>
+            <span className={s.on_stock}>В наявності</span>
+          </div>
+          <AddToCartBtn product={product} id={id} />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

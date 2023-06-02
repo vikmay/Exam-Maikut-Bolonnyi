@@ -1,42 +1,91 @@
-@import "../../../styles/variables.scss";
-.product__card {
+.card_wrapper {
+  width: 300px;
   display: flex;
-  align-items: start;
-  padding: 17px;
   flex-direction: column;
-  width: 295.13px;
-  height: 462px;
-  background: #ffffff;
+  align-items: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 19px;
-  .likes__img {
-    padding-left: 85%;
+  height: 400px;
+  font-family: "Montserrat";
+  font-style: normal;
+
+  &:hover {
+    scale: 1.05;
+    transition: ease-in-out 0.4s;
   }
-  .img__card {
-    margin: 0 auto;
-    margin-bottom: 8px;
-  }
-  &_title {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 18px;
-    color: $primary-text-color;
-  }
-  &_price {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-  }
-  &_producer {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    color: $primary_color;
+
+  .card_container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .new_fav_container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      .new_label {
+        width: 73.12px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        color: white;
+        background: #c90000;
+      }
+    }
+
+    .card_title {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .card_model {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      color: #b2b2b2;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .card__producer {
+      width: 100%;
+      text-align: left;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: #c90000;
+    }
+
+    .price_cart_container {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+
+      .card__price {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .on_stock {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: #c90000;
+      }
+    }
   }
 }

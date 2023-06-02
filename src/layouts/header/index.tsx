@@ -10,7 +10,7 @@ import Catalog from "@/pages/catalog";
 
 //💬 Components --//
 import Nav from "@/components/nav";
-import Likes from "@/components/likes";
+import Favorites from "@/components/favorites";
 import Search from "@/components/search";
 import Cart from "@/components/cart";
 //💬 Img //
@@ -55,9 +55,9 @@ const Header = () => {
         {isNavVisible && <Nav ulClassName={isMenuOpen ? s.open : ""} />}
 
         <div className={s.action__bar}>
-          <Likes></Likes>
+          <Favorites></Favorites>
           <Search></Search>
-          <Cart></Cart>
+          < Cart />
           <button className={s.menu__toggle} onClick={handleMenuToggle}>
             <span className={s.menu__icon}></span>
             <span className={s.menu__icon}></span>

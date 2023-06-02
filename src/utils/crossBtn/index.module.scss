@@ -1,0 +1,29 @@
+.remove_btn {
+    background: none;
+    border: none;
+
+
+    .cross_btn {
+        position: relative;
+        width: 25px;
+        height: 25px;
+
+        .vector {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background-color: #C90000;
+            transform-origin: center center;
+
+            &:first-child {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &:last-child {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+}

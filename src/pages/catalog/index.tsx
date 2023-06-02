@@ -6,17 +6,18 @@ import ProductCard from "@/components/cards/product";
 import { Container, Row, Col } from "react-bootstrap";
 
 
+
 const ProductListPage: React.FC = () => {
   const [products, setProducts] = useState(Object.values(productsList));
   return (
     <>
     <Container>
-      <Row>
+    <Row>
       {
-      products.map((product: any)  => {
+      products.map((id: any)  => {
         return (
-          <Col key={product} lg="4">
-            <ProductCard  product={product} />
+          <Col key={id} lg="4" md="6" className="mb-4">
+            <ProductCard  product={id} />
         </Col>     
         )
       })
