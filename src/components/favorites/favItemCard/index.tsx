@@ -6,6 +6,7 @@ import s from "./index.module.scss";
 import Image from "next/image";
 import CrossButton from "@/utils/crossBtn";
 import { Product } from "@/../../interfaces";
+import AddToCartBtn from "@/components/cart/addToCart";
 
 interface Props {
   product: Product;
@@ -14,7 +15,7 @@ interface Props {
 const FavItemCard = ({ product }: Props) => {
   const dispatch = useAppDispatch();
 
-  // Check if product exists before using it
+  
   if (!product) {
     return null;
   }
@@ -32,15 +33,14 @@ const FavItemCard = ({ product }: Props) => {
           />
           <div>
             <div className={s.title}>{product.title.slice(0, 26)}</div>
-            <div className={s.card_model}>
-              {product.title.slice(28)}
-            </div>
+            <div className={s.card_model}>{product.title.slice(28)}</div>
           </div>
         </div>
 
         <div className={s.item_price}>{product.price} грн</div>
 
         <CrossButton onClick={() => dispatch(removeFromFavorites(product))} />
+        <AddToCartBtn  product={product} />
       </div>
     </>
   );
