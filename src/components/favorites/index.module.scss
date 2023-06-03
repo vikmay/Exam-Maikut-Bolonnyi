@@ -1,3 +1,13 @@
+.fav_item_container {
+    position: relative;
+}
+
+.fav_icon {
+    // position: relative;
+    cursor: pointer;
+}
+
+
 .total_items {
     display: flex;
     justify-content: center;
@@ -13,11 +23,4 @@
     background: red;
     padding: 0.5em;
     border-radius: 50%;
-}
-.cart_icon {
-    
-    cursor: pointer;
-}
-.cart_container {
-    position: relative;
 }

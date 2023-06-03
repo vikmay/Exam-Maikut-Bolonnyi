@@ -14,10 +14,10 @@ const ProductListPage: React.FC = () => {
     <Container>
     <Row>
       {
-      products.map((id: any)  => {
+      products.map((el: any)  => {
         return (
-          <Col key={id} lg="4" md="6" className="mb-4">
-            <ProductCard  product={id} />
+          <Col key={el.id} lg="4" md="6" className="mb-4">
+            <ProductCard  product={el} />
         </Col>     
         )
       })
