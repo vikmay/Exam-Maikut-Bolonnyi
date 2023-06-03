@@ -1,15 +1,31 @@
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import s from "@/styles/Home.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+//💬 Bootstrap //
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col } from "react-bootstrap";
+
 //💬 Img //
 import CarouselImg from "../../public/images/corousel/CarouselImg.png";
+import BoschImg from "../../public/images/bosch.png";
+import TekaImg from "../../public/images/Teka.png";
+import FrankeImg from "../../public/images/Franke.png";
+import FabinoImg from "../../public/images/Fabiano.png";
+// 💬 Components //
+import ProductCard from "@/components/cards/product";
+import productsList from "@/data/products/products.json";
+
+import Accordion from "../components/accordion2";
+import Link from "next/link";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [products, setProducts] = useState(Object.values(productsList));
   return (
     <>
       <Head>
@@ -56,7 +72,60 @@ export default function Home() {
           <input className={s.search} type="search" placeholder="Пошук" />
         </div>
         <h2 className={s.h2}>Популярні товари</h2>
-        
+        <div className={s.popular_product__section}>
+          <Row>
+            {products.slice(0, 4).map((id: any) => (
+              <Col key={id} lg="3" md="4" className="mb-4">
+                <ProductCard product={id} />
+              </Col>
+            ))}
+          </Row>
+        </div>
+        <div className={s.producer_line}>
+          <Image
+            src={BoschImg}
+            width={221}
+            height={49.2}
+            alt="producer"
+          ></Image>
+          <Image
+            src={TekaImg}
+            width={103.87}
+            height={61.43}
+            alt="producer"
+          ></Image>
+          <Image
+            src={FrankeImg}
+            width={165.47}
+            height={52.01}
+            alt="producer"
+          ></Image>
+          <Image src={FabinoImg} width={180} height={58} alt="producer"></Image>
+        </div>
+        <div className={s.history_block}>
+          <h4 className={s.h4}>Наша історія</h4>
+          <p className={s.p}>
+            Lorem ipsum dolor sit amet consectetur. Nam commodo etiam lectus
+            amet proin enim porttitor arcu laoreet. Volutpat posuere eu blandit
+            egestas faucibus. Sit lacinia feugiat maecenas tincidunt aliquet.
+            Sodales suscipit ac sollicitudin fermentum. Egestas quis sagittis
+            augue egestas sit volutpat at diam.
+          </p>
+          <Link href="/about" className={s.history_btn}>
+            Дізнатися більше
+          </Link>
+        </div>
+        <Container className={s.question__section}>
+          <Row>
+            <Col lg="6" md="6">
+              <p className={s.p}>Часті запитання</p>
+              <Accordion></Accordion>
+            </Col>
+            <Col lg="6" md="6">
+              <p className={s.p}>Замовити дзвінок</p>
+            </Col>
+          </Row>
+        </Container>
       </main>
     </>
   );
