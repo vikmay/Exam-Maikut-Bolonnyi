@@ -1,4 +1,5 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useMemo } from "react";
 import {
   addToFavorites,
   removeFromFavorites,
@@ -12,11 +13,21 @@ interface Props {
   id: number;
 }
 
+
 const AddToFavBtn = ({ product, id }: Props) => {
   const dispatch = useDispatch();
 
+  const favorites = useSelector((state: any) => state.favorites);
+  const { favoritesItems } = favorites;
+
+  const isFavorite = useMemo(() => {
+    return favoritesItems.some((item: any) => item.id === product.id);
+  }, [favoritesItems]);
+
+
+
   const handleFavoriteClick = () => {
-    if (product.isFavorite) {
+    if (isFavorite) {
       dispatch(removeFromFavorites(product));
     } else {
       dispatch(addToFavorites(product));
@@ -29,7 +40,7 @@ const AddToFavBtn = ({ product, id }: Props) => {
         <button className={s.fav_btn} onClick={handleFavoriteClick}>
           <Image
             src={
-              product.isFavorite ? "/images/fheart.svg" : "/images/heart.svg"
+              isFavorite ? "/images/fheart.svg" : "/images/heart.svg"
             }
             alt="heart_image"
             width={20}
