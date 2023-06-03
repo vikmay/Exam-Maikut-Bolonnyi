@@ -7,6 +7,8 @@ import "swiper/css";
 import "bootstrap/dist/css/bootstrap.min.css";
 //💬 Img //
 import CarouselImg from "../../public/images/corousel/CarouselImg.png";
+// 💬 Components //
+import ProductCard from "@/components/cards/product";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -56,7 +58,21 @@ export default function Home() {
           <input className={s.search} type="search" placeholder="Пошук" />
         </div>
         <h2 className={s.h2}>Популярні товари</h2>
-        <div className={s.popular_product__section}></div>
+        <div className={s.popular_product__section}>
+          {/* <ProductCard></ProductCard> */}
+        </div>
+        <h2 className={s.h3}>Категорії</h2>
+        <div className={s.category_product_section}>
+          <div className={s.div1}></div>
+          <div className={s.div1}></div>
+          <div className={s.div1}></div>
+          <div className={s.div1}></div>
+          <div className={s.div2}></div>
+          <div className={s.div2}></div>
+          <div className={s.div2}></div>
+          <div className={s.div2}></div>
+          <div className={s.div3}></div>
+        </div>
       </main>
     </>
   );

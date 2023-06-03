@@ -43,7 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: $secondary-bg-color;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -54,4 +54,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.category_product_section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  .div1 {
+    width: 295px;
+    height: 295px;
+    background-color: antiquewhite;
+    grid-area: 1 / 1 / 2 / 6;
+  }
+  .div2 {
+    width: 295px;
+    background-color: aquamarine;
+    height: 295px;
+    grid-area: 2 / 4 / 6 / 6;
+  }
+  .div3 {
+    background-color: aqua;
+    width: 610px;
+    height: 639px;
+    grid-area: 2 / 1 / 6 / 4;
+  }
+}
+.h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: $secondary-bg-color;
 }
