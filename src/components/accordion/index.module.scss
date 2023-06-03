@@ -1,0 +1,42 @@
+.accordion {
+  width: 62vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.openHeader,
+.closedHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+
+  //... other styles
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid #C90000;
+    border-width: 0 2px 2px 0;
+    display: flex;
+    padding: 8px;
+  }
+}
+
+.openHeader::after {
+  transform: translateY(-75%) rotate(45deg);
+  top:25%;
+  // -45deg rotates the arrow to point up
+}
+
+.closedHeader::after {
+  transform: translateY(-25%) rotate(-135deg);
+  // 45deg rotates the arrow to point down
+}

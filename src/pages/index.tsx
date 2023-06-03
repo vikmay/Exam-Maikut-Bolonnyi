@@ -2,12 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import s from "@/styles/Home.module.scss";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-
+//💬 Img //
+import CarouselImg from "../../public/images/corousel/CarouselImg.png";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -19,7 +18,46 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main>
+        <Swiper
+          autoplay={{ delay: 3000 }}
+          spaceBetween={50}
+          slidesPerView={1}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <Image
+              src={CarouselImg}
+              width={1440}
+              height={553}
+              alt="courosel"
+            ></Image>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={CarouselImg}
+              width={1440}
+              height={553}
+              alt="courosel"
+            ></Image>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={CarouselImg}
+              width={1440}
+              height={553}
+              alt="courosel"
+            ></Image>
+          </SwiperSlide>
+        </Swiper>
+        <div className={s.search__block}>
+          <p className={s.p}>Lorem ipsum dolor sit amet.</p>
+          <input className={s.search} type="search" placeholder="Пошук" />
+        </div>
+        <h2 className={s.h2}>Популярні товари</h2>
+        
+      </main>
     </>
   );
 }

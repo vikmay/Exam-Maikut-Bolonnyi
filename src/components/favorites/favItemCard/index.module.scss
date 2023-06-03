@@ -1,0 +1,78 @@
+.cartItem_container {
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #E5E5E5;
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin-bottom: 15px;
+
+    .img_name_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.card_model {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #B2B2B2;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.remove_btn {
+    border: none;
+    background: none;
+    font-size: 28px;
+    color: #C90000;
+}
+
+
+.image {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    padding: 10px;
+}
+
+.item_price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px
+}
+
+.increase_btn {
+    background: none !important;
+    border: 1px solid #E3E3E3 !important;
+    border-radius: 0 !important;
+    color: #0F0F0F !important;
+}
+
+.decrease_btn {
+    background: none !important;
+    border: 1px solid #E3E3E3 !important;
+    border-radius: 0 !important;
+    color: #0F0F0F !important;
+
+}
+.decrease_btn_disabled {
+    color: #E3E3E3!important;
+}

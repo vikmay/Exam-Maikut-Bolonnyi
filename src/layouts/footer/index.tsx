@@ -17,8 +17,7 @@ function Footer() {
             xs={12}
             md={3}
             sm={12}
-            className="d-flex align-items-center justify-content-md-start
-             justify-content-center"
+            className="d-flex align-items-center justify-content-center my-4"
           >
             <Link href="/">
               {" "}
@@ -32,13 +31,13 @@ function Footer() {
           </Col>
           <Col
             xs={{ order: 3, span: 12 }}
-            md={3}
+            md={{order:2, span:3}}
             className="d-flex align-items-center justify-content-md-start
-             justify-content-center"
+             justify-content-center mb-4"
           >
             <nav className={s.location}>
-              <ul className="list-inline d-flex flex-column gap-3">
-                <h5>Location</h5>
+                <h5 className="align-self-md-start align-self-center mb-2 ">Location</h5>
+              <ul className="list-inline d-flex flex-column gap-3 gap-md-2">
                 <li>
                   <a
                     className="d-flex gap-3 align-items-center"
@@ -87,14 +86,15 @@ function Footer() {
           <Col
             xs={{ order: 2, span: 12 }}
             md={3}
-            className="d-flex align-items-center justify-content-center"
+            className="d-flex align-items-center justify-content-center mb-4"
           >
             <Nav ulClassName={s.ul} liClassName={s.li} aClassName={s.a} />
           </Col>
           <Col
             xs={{ order: 4, span: 12 }}
             md={3}
-            className="d-flex flex-column align-items-start justify-content-center gap-4"
+            className="d-flex flex-column align-items-md-start
+             align-items-center justify-content-center gap-4"
           >
             <div className={s.contact_social}>
               <div>
