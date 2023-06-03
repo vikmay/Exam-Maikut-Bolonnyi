@@ -14,6 +14,7 @@ import addtocard from "@/../../public/images/AddToCartBtn.png";
 interface Props {
   product: Product;
   id: number;
+  simple?: boolean; // New prop for toggling the styles and behavior
 }
 
 const AddToCartBtn = (props: Props) => {
@@ -25,10 +26,11 @@ const AddToCartBtn = (props: Props) => {
     return (
       <div>
         <button
-          className={s.btncolor}
+          className={props.simple ? s.btncolor_simple : s.btncolor} // Use the prop to toggle styles
           onClick={() => dispatch(increment(props.product))}
         >
-          <Image src={addtocard} alt="cart_image" width={60} height={60} />
+          {!props.simple && // Use the prop to toggle content
+            <Image src={addtocard} alt="cart_image" width={60} height={60} />}
         </button>
       </div>
     );

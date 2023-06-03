@@ -18,15 +18,21 @@ const favoritesSlice = createSlice({
         (item) => item.id === action.payload.id
       );
       if (!productExists) {
-        state.favoritesItems.push(action.payload);
+        // Set isFavorite to true on the product before pushing it to the array
+        const newProduct = { ...action.payload, isFavorite: true };
+        state.favoritesItems.push(newProduct);
       }
     },
     removeFromFavorites: (state, action: PayloadAction<Product>) => {
+      // Set isFavorite to false on the product before removing it from the array
+      const newProduct = { ...action.payload, isFavorite: false };
       state.favoritesItems = state.favoritesItems.filter(
-        (item) => item.id !== action.payload.id
+        (item) => item.id !== newProduct.id
       );
     },
     emptyFavorites: (state) => {
+      // Set isFavorite to false on all products in the array
+      state.favoritesItems.forEach(product => product.isFavorite = false);
       state.favoritesItems = [];
     },
   },
@@ -39,3 +45,4 @@ export const {
 } = favoritesSlice.actions;
 
 export default favoritesSlice.reducer;
+
