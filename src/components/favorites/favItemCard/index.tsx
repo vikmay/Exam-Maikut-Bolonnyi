@@ -1,5 +1,6 @@
 import { FavItem } from "@/../../interfaces";
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { removeFromFavorites } from "@/../../store/features/favoritesSlice";
 import { useAppDispatch } from "@/../../store/store";
 import s from "./index.module.scss";
@@ -15,15 +16,14 @@ interface Props {
 const FavItemCard = ({ product }: Props) => {
   const dispatch = useAppDispatch();
 
-  
   if (!product) {
     return null;
   }
 
   return (
-    <>
-      <div className={s.cartItem_container}>
-        <div className={s.img_name_wrapper}>
+    <Container>
+      <Row className={s.favItem_container}>
+        <Col xs={12} sm={12} md={2} className={s.img_name_wrapper}>
           <Image
             src={product.images[0]}
             width={100}
@@ -31,18 +31,34 @@ const FavItemCard = ({ product }: Props) => {
             alt={product.title}
             className={s.image}
           />
-          <div>
-            <div className={s.title}>{product.title.slice(0, 26)}</div>
-            <div className={s.card_model}>{product.title.slice(28)}</div>
-          </div>
-        </div>
+        </Col>
 
-        <div className={s.item_price}>{product.price} грн</div>
+        <Col xs={12} sm={12} md={4} lg={3}>
+          <div className={s.title}>{product.title.slice(0, 26)}</div>
+          <div className={s.card_model}>{product.title.slice(28, 64)}</div>
+        </Col>
 
-        <CrossButton onClick={() => dispatch(removeFromFavorites(product))} />
-        <AddToCartBtn  product={product} />
-      </div>
-    </>
+        <Col xs={12} sm={4} md={2}>
+          <div className={s.item_price}>{product.price} грн</div>
+        </Col>
+
+        <Col xs={12} sm={1}>
+          <CrossButton onClick={() => dispatch(removeFromFavorites(product))} />
+        </Col>
+
+        <Col xs={12} sm={8} md={4}>
+          <AddToCartBtn
+            id={product.id}
+            className={s.btn_simple}
+            product={product}
+            simple={true}
+            btnText="Додати до кошика"
+            increaseClassName={s.increaseBtn}
+            decreaseClassName={s.decreaseBtn}
+          />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
