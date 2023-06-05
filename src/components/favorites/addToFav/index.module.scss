@@ -1,7 +1,9 @@
+@import "/src/styles/variables.scss";
+
 .fav_btn {
     background: none;
     border: none;
-    color: #C90000;
+    color: $primary-color;
     font-size: 12px;
     cursor: pointer;
 }

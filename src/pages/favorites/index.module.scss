@@ -1,73 +1,117 @@
-.fav_container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 310px;
-    overflow-y: scroll;
+@import "/src/styles/variables.scss";
+
+$font-family: 'Montserrat';
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+$font-size-small: 16px;
+$font-size-medium: 20px;
+$font-size-large: 24px;
+$line-height-small: 18px;
+$line-height-large: 28px;
+$line-height-extra-large: 39px;
+
+.favPage {
+    &__emptyContainer {
+        @include flex-column-center;
+
+
+
+
+    }
+
+    &__clearBtn,
+    &__bottomClearBtn button {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: $font-weight-normal;
+        background: none;
+        border: none;
+        color: $primary-color;
+        cursor: pointer;
+
+        &:hover {
+            background: $primary-color;
+            color: $secondary-bg-color;
+        }
+    }
+
+    &__itemsContainer {
+        @include flex-column-center;
+        overflow-y: auto;
+        max-height: 44vh;
+    }
+
+    &__container {
+        @include flex-column-center;
+
+        @media screen and (max-width: 984px) {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__title {
+        width: 100%;
+        font-weight: $font-weight-bold;
+        font-size: 32px;
+        line-height: $line-height-extra-large;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__itemsWrapper {
+        width: 100%;
+        max-height: 42vh;
+        @include flex-column-center;
+        overflow-y: auto;
+        gap: 20px;
+
+        @media screen and (max-width: 984px) {
+            max-height: none;
+        }
+    }
+
+    &__bottomClearBtn {
+        @include flex-center;
+        margin: 20px 0;
+
+        button {
+            padding: 16px 45px;
+            background: $primary-bg-color;
+            border: 1px solid $primary-color;
+            font-size: $font-size-medium;
+            line-height: $line-height-small;
+            color: $primary-color;
+
+            &:hover {
+                background: $primary-color;
+                color: $primary-bg-color;
+            }
+        }
+    }
 }
 
-.fav_title {
-    width: 100%;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-    margin-bottom: 20px;
+.favPage__emptyMessage {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    color: $primary-color;
 }
 
-.top_clear_btn {
-    align-self: flex-end;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    background: none;
-    border: none;
-    color: #C90000;
-    margin-bottom: 10px;
-}
-
-.bottom_clear_btn {
-    background: none;
-    padding: 16px 45px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    color: #C90000;
-    background: #FFFFFF;
-    border: 1px solid #C90000;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 18px;
-    margin: 20px 0;
-}
-.empty_list_message {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    background: none;
-    border: none;
-    color: #C90000;
-}
-.go_to_catalog {
-    background: none;
+.favPage__goToCatalog {
     text-decoration: none;
     padding: 16px 45px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    color: #C90000;
-    background: #FFFFFF;
-    border: 1px solid #C90000;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 18px;
+    background: $primary-bg-color;
+    border: 1px solid $primary-color;
+    font-size: $font-size-medium;
     margin: 40px 0;
+    color: $primary-color;
+
     &:hover {
-        background: #C90000;
-        color: #FFFFFF;
+        background: $primary-color;
+        color: $primary-bg-color;
     }
 }
