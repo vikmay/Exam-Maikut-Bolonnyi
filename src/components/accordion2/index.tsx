@@ -7,7 +7,13 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // Styles //
 import s from "./index.module.scss";
 
-export default function SimpleAccordion({ AccordionTitle, AccordionText }) {
+export default function SimpleAccordion({
+  AccordionTitle,
+  AccordionText,
+}: {
+  AccordionTitle: string;
+  AccordionText: string;
+}) {
   const [accordionTitle, setAccordionTitle] = useState(AccordionTitle);
   const [accordionText, setAccordionText] = useState(AccordionText);
 
