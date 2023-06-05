@@ -4,3 +4,13 @@ $primary-bg-color:#FFFFFF;
 $secondary-bg-color:#0F0F0F;
 $primary-text-color:#222222;
 $button_footer-color:#FFFFFF;
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
