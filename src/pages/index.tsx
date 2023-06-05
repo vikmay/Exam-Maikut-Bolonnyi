@@ -19,13 +19,15 @@ import FabinoImg from "../../public/images/Fabiano.png";
 import ProductCard from "@/components/cards/product";
 import productsList from "@/data/products/products.json";
 
-import Accordion from "../components/accordion2";
 import Link from "next/link";
+import SimpleAccordion from "../components/accordion2";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [products, setProducts] = useState(Object.values(productsList));
+  const newAccordionTitle = "Title";
+  const newAccordionText = "New text  the accordion";
   return (
     <>
       <Head>
@@ -119,7 +121,10 @@ export default function Home() {
           <Row>
             <Col lg="6" md="6">
               <p className={s.p}>Часті запитання</p>
-              <Accordion></Accordion>
+              <SimpleAccordion
+                AccordionTitle={newAccordionTitle}
+                AccordionText={newAccordionText}
+              />
             </Col>
             <Col lg="6" md="6">
               <p className={s.p}>Замовити дзвінок</p>
