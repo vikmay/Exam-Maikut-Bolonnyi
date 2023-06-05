@@ -19,13 +19,17 @@ import FabinoImg from "../../public/images/Fabiano.png";
 import ProductCard from "@/components/cards/product";
 import productsList from "@/data/products/products.json";
 
-import Accordion from "../components/accordion2";
 import Link from "next/link";
+import SimpleAccordion from "../components/accordion2";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [products, setProducts] = useState(Object.values(productsList));
+  const newAccordionTitle =
+    "Lorem ipsum dolor sit amet consectetur. Sed amet viverra cras?";
+  const newAccordionText =
+    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facil";
   return (
     <>
       <Head>
@@ -117,12 +121,47 @@ export default function Home() {
         </div>
         <Container className={s.question__section}>
           <Row>
-            <Col lg="6" md="6">
+            <Col lg={6} md={4} className={s.retreat}>
               <p className={s.p}>Часті запитання</p>
-              <Accordion></Accordion>
+              <SimpleAccordion
+                AccordionTitle={newAccordionTitle}
+                AccordionText={newAccordionText}
+              />
+              <SimpleAccordion
+                AccordionTitle={newAccordionTitle}
+                AccordionText={newAccordionText}
+              />
+              <SimpleAccordion
+                AccordionTitle={newAccordionTitle}
+                AccordionText={newAccordionText}
+              />
+              <SimpleAccordion
+                AccordionTitle={newAccordionTitle}
+                AccordionText={newAccordionText}
+              />
             </Col>
-            <Col lg="6" md="6">
+            <Col lg="6" md="4">
               <p className={s.p}>Замовити дзвінок</p>
+              <div className={s.call__form}>
+                <input
+                  className={s.call__form_input}
+                  type="text"
+                  placeholder="Ім’я"
+                />
+                <input
+                  className={s.call__form_input}
+                  type="text"
+                  placeholder="Номер телефону "
+                />
+                <input
+                  className={s.call__form_input}
+                  type="text"
+                  placeholder="Коментар"
+                />
+                <a href="tel:+3800065628">
+                  <div className={s.call__form_btn}>Отримати звінок</div>
+                </a>
+              </div>
             </Col>
           </Row>
         </Container>

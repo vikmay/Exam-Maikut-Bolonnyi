@@ -143,9 +143,20 @@
     line-height: 18px;
     color: $primary-bg-color;
     margin-bottom: 90px;
+    transition: 0.5s;
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 }
 .question__section {
+  margin-top: 90px;
+  margin: 0 auto;
+  .retreat {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
   .p {
     font-family: "Montserrat";
     font-style: normal;
@@ -158,5 +169,53 @@
     height: 78px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background-color: $primary-bg-color;
+  }
+  .call__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 399px;
+    height: 387px;
+    background-color: $primary-bg-color;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 51px 30px 48px;
+    &_input {
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #c90000;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      text-align: justify;
+      text-transform: uppercase;
+    }
+    a {
+      text-decoration: none;
+    }
+    &_btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 54px;
+      gap: 10px;
+      width: 300px;
+      height: 51px;
+      background-color: $primary-color;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 18px;
+      color: $primary-bg-color;
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
   }
 }
