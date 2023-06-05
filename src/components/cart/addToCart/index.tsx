@@ -14,7 +14,11 @@ import addtocard from "@/../../public/images/AddToCartBtn.png";
 interface Props {
   product: Product;
   id: number;
-  simple?: boolean; // New prop for toggling the styles and behavior
+  simple?: boolean;
+  className?: string;
+  btnText?: string;
+  increaseClassName?: string;
+  decreaseClassName?: string;
 }
 
 const AddToCartBtn = (props: Props) => {
@@ -26,11 +30,18 @@ const AddToCartBtn = (props: Props) => {
     return (
       <div>
         <button
-          className={props.simple ? s.btncolor_simple : s.btncolor} // Use the prop to toggle styles
+          className={
+            props.simple
+              ? `${props.className} ${s.btncolor_simple}`
+              : `${props.className} ${s.btncolor}`
+          }
           onClick={() => dispatch(increment(props.product))}
         >
-          {!props.simple && // Use the prop to toggle content
-            <Image src={addtocard} alt="cart_image" width={60} height={60} />}
+          {props.simple ? (
+            props.btnText || ""
+          ) : (
+            <Image src={addtocard} alt="cart_image" width={60} height={60} />
+          )}
         </button>
       </div>
     );
@@ -39,6 +50,9 @@ const AddToCartBtn = (props: Props) => {
       onDecrease={() => dispatch(decrement(props.product))}
       onIncrease={() => dispatch(increment(props.product))}
       qty={qty}
+      className={props.className}
+      increaseClassName={props.increaseClassName}
+      decreaseClassName={props.decreaseClassName}
     />
   );
 };
