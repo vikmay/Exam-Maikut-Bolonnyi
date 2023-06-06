@@ -48,7 +48,7 @@ export default function Home() {
     phone: "",
     comment: "",
   });
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
