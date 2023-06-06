@@ -12,16 +12,16 @@ const Likes = () => {
   return (
     <>
       <Link href="/favorites">
-        <div className={s.fav_item_container}>
+        <div className={s.favItemContainer}>
           <Image
-            className={s.fav_icon}
+            className={s.favItemContainer__favIcon}
             src={heartimg}
             width={24}
             height={22}
-            alt="Likes"
+            alt="Favorites"
           />
           {totalFavItems > 0 && (
-            <span className={s.total_items}>{totalFavItems}</span>
+            <span className={s.favItemContainer__totalItems}>{totalFavItems}</span>
           )}
         </div>
       </Link>
