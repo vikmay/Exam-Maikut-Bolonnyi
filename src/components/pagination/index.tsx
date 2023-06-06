@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Pagination from 'react-bootstrap/Pagination';
-import s from './index.module.scss';
+
 
 interface PaginationProps {
   totalItems: number;
@@ -30,18 +30,20 @@ const PaginationControl: React.FC<PaginationProps> = ({ totalItems, itemsPerPage
   let items = [];
 
   for (let number = firstPageNumberToShow; number < firstPageNumberToShow + maxPageNumbersToShow; number++) {
-    items.push(
-      <Pagination.Item key={number} active={number === activePage} onClick={() => handleClick(number)}>
-        {number}
-      </Pagination.Item>,
-    );
+    if ((number - 1) * itemsPerPage < totalItems) { // Condition added here
+      items.push(
+        <Pagination.Item key={number} active={number === activePage} onClick={() => handleClick(number)}>
+          {number}
+        </Pagination.Item>,
+      );
+    }
   }
 
   return (
-    <Pagination className={s.pagination}>
-      <Pagination.Prev className={s.buttons} onClick={() => handleArrowClick('left')} />
+    <Pagination>
+      <Pagination.Prev onClick={() => handleArrowClick('left')} />
       {items}
-      <Pagination.Next className={s.buttons} onClick={() => handleArrowClick('right')} />
+      <Pagination.Next onClick={() => handleArrowClick('right')} />
     </Pagination>
   );
 }

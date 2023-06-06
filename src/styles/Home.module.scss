@@ -11,6 +11,7 @@
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 100px;
+
   .p {
     padding-top: 45px;
     color: $primary-color;
@@ -21,6 +22,7 @@
     line-height: 29px;
     margin-left: 140px;
   }
+
   .search {
     margin-left: 140px;
     width: 825.5px;
@@ -33,11 +35,13 @@
     align-items: center;
     padding: 19px 35px;
     gap: 10px;
+
     &:focus {
       color: $primary-color;
     }
   }
 }
+
 .h2 {
   margin-top: 200px;
   display: flex;
@@ -50,29 +54,34 @@
   font-size: 32px;
   line-height: 39px;
 }
+
 .popular_product__section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .category_product_section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
   .div1 {
     width: 295px;
     height: 295px;
     background-color: antiquewhite;
     grid-area: 1 / 1 / 2 / 6;
   }
+
   .div2 {
     width: 295px;
     background-color: aquamarine;
     height: 295px;
     grid-area: 2 / 4 / 6 / 6;
   }
+
   .div3 {
     background-color: aqua;
     width: 610px;
@@ -80,6 +89,7 @@
     grid-area: 2 / 1 / 6 / 4;
   }
 }
+
 .h3 {
   font-family: "Montserrat";
   font-style: normal;
@@ -88,6 +98,7 @@
   line-height: 39px;
   color: $secondary-bg-color;
 }
+
 .producer_line {
   margin-top: 90px;
   justify-content: center;
@@ -98,11 +109,13 @@
   height: 118px;
   background-color: $primary-color;
 }
+
 .history_block {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   .h4 {
     margin-top: 90px;
     display: flex;
@@ -114,6 +127,7 @@
     line-height: 44px;
     color: $primary-color;
   }
+
   .p {
     font-family: "Montserrat";
     font-style: normal;
@@ -123,6 +137,7 @@
     text-align: center;
     color: $secondary-text-color;
   }
+
   .history_btn {
     text-decoration: none !important;
     margin-top: 50px;
@@ -144,19 +159,23 @@
     color: $primary-bg-color;
     margin-bottom: 90px;
     transition: 0.5s;
+
     &:hover {
       transform: translateY(-5px);
     }
   }
 }
+
 .question__section {
   margin-top: 90px;
   margin: 0 auto;
+
   .retreat {
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
+
   .p {
     font-family: "Montserrat";
     font-style: normal;
@@ -165,11 +184,13 @@
     line-height: 39px;
     color: $secondary-bg-color;
   }
+
   .accordion {
     height: 78px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background-color: $primary-bg-color;
   }
+
   .call__form {
     display: flex;
     flex-direction: column;
@@ -179,6 +200,7 @@
     background-color: $primary-bg-color;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     padding: 51px 30px 48px;
+
     &_input {
       margin-bottom: 30px;
       border: none;
@@ -193,9 +215,11 @@
       text-align: justify;
       text-transform: uppercase;
     }
+
     a {
       text-decoration: none;
     }
+
     &_btn {
       display: flex;
       flex-direction: row;
@@ -213,6 +237,7 @@
       line-height: 18px;
       color: $primary-bg-color;
       transition: 0.5s;
+
       &:hover {
         transform: translateY(-5px);
       }
