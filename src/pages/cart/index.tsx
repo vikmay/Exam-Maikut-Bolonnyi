@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useAppDispatch } from "@/../store/store";
 import { emptyCart } from "@/../../store/features/cartSlice";
 import s from "./index.module.scss";
-import CustomAccordion from "@/components/accordion";
+import CustomAccordion from "@/components/accordion2";
 
 const CartPage = () => {
   const dispatch = useAppDispatch();
@@ -100,9 +100,8 @@ const CartPage = () => {
 
             <div className={s.accord_container}>
               <CustomAccordion
-                title="Доставка"
-                headerClassName={s.customHeader}
-                bodyClassName={s.customBody}
+                AccordionTitle="Доставка"
+               AccordionText = "Доставка по Україні здійснюється за допомогою служби доставки «Нова Пошта»."
               >
                 Доставка
               </CustomAccordion>

@@ -1,3 +1,5 @@
+@import "/src/styles/variables.scss";
+
 .empty_cart_wrapper {
     width: 100%;
     display: flex;
@@ -150,13 +152,15 @@
     margin-right: 20px;
     text-decoration: none;
     padding: 16px 45px;
-    color: #C90000;
+    color:$primary-color;
+
     margin-top: 20px;
     border: 2px solid #C90000;
 
     &:hover {
-        scale: 1.1;
-        color: #C90000;
+        
+        color:$primary-bg-color;
+        background: $primary-color;
     }
 }
 
@@ -177,7 +181,7 @@
 
 .customBody {
     align-self: flex-start;
-    background: #C90000;
+    background:$primary-color;
 }
 .form {
     width: 100%;
