@@ -1,5 +1,5 @@
 .cartItem_container {
-    width: 100%;
+
     display: flex;
     padding: 20px 0px;
     justify-content: space-around;
@@ -9,16 +9,18 @@
     font-family: 'Montserrat';
     font-style: normal;
     margin-bottom: 15px;
+    gap: 20px;
 
     .img_name_wrapper {
         display: flex;
         align-items: center;
-        gap: 20px;
+        justify-content: center;
+
     }
 }
 
 .title {
-    width: 100%;
+
     display: flex;
     justify-content: start;
     align-items: center;
@@ -29,7 +31,7 @@
 }
 
 .card_model {
-    width: 100%;
+    
     display: flex;
     justify-content: start;
     align-items: center;
@@ -51,9 +53,19 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     object-fit: contain;
     padding: 10px;
+
+    @media screen and (max-width: 460px) {
+        width: 250px;
+        height: 250px;
+    
+    }
+
 }
 
+
 .item_price {
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 24px
@@ -73,6 +85,7 @@
     color: #0F0F0F !important;
 
 }
+
 .decrease_btn_disabled {
-    color: #E3E3E3!important;
+    color: #E3E3E3 !important;
 }

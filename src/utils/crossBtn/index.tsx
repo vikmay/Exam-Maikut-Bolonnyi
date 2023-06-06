@@ -3,9 +3,10 @@ import { MouseEventHandler } from 'react';
 
 interface CrossButtonProps {
   onClick: MouseEventHandler<HTMLButtonElement>;
+  className?: string;
 }
 
-const CrossButton: React.FC<CrossButtonProps> = ({ onClick }) => (
+const CrossButton: React.FC<CrossButtonProps> = ({ onClick, className }) => (
   <button onClick={onClick} className={s.remove_btn}>
     <div className={s.cross_btn}>
       <span className={s.vector}></span>
