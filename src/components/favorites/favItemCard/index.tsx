@@ -71,5 +71,4 @@ const FavItemCard = ({ product }: Props) => {
   );
 };
 
-// export the component
 export default FavItemCard;
