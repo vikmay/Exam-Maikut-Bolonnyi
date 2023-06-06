@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+
 // Img //
 import SearchImg from "../../../public/images/SearchImg.svg";
 const Search = () => {
