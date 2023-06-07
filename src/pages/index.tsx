@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, FocusEventHandler } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -56,6 +56,14 @@ export default function Home() {
     }));
   };
 
+  // Scroll Search //
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const focus: FocusEventHandler<HTMLInputElement> = () => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  };
   return (
     <>
       <Head>
@@ -97,20 +105,29 @@ export default function Home() {
             ></Image>
           </SwiperSlide>
         </Swiper>
+
         <div className={s.search__block}>
           <p className={s.p}>Lorem ipsum dolor sit amet.</p>
-          <input className={s.search} type="search" placeholder="Пошук" />
+          <input
+            ref={inputRef}
+            className={s.search}
+            type="search"
+            placeholder="Пошук"
+          />
         </div>
         <h2 className={s.h2}>Популярні товари</h2>
         <div className={s.popular_product__section}>
           <Row>
             {products.slice(0, 4).map((id: any) => (
               <Col key={id} lg="3" md="4" className="mb-4">
-                <ProductCard product={id} />
+                <Link href="singleCard">
+                  <ProductCard product={id} />
+                </Link>
               </Col>
             ))}
           </Row>
         </div>
+
         <div className={s.producer_line}>
           <Image
             src={BoschImg}
@@ -201,6 +218,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+        <button onClick={focus}>Click</button>
         <Container className={s.feedbacks}>
           <Row>
             <Col lg={6} md={4}>

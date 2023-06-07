@@ -54,6 +54,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  a {
+    text-decoration: none;
+  }
 }
 .category_product_section {
   display: grid;
