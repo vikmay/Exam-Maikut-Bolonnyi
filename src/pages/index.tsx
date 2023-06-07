@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useRef, useEffect, FocusEventHandler } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import s from "@/styles/Home.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import toast, { Toaster } from "react-hot-toast";
+import ReactPaginate from "react-paginate";
+
 //💬 Bootstrap //
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
@@ -26,10 +29,41 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [products, setProducts] = useState(Object.values(productsList));
+
+  // 💬 Accordion //
   const newAccordionTitle =
     "Lorem ipsum dolor sit amet consectetur. Sed amet viverra cras?";
   const newAccordionText =
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facil";
+
+  // 💬 Call Form //
+  const notify = () => {
+    const { name, phone, comment } = formData;
+    toast(`✔Ім’я: ${name}
+    ✔Номер телефону: ${phone}
+    ✔Коментар: ${comment}`);
+  };
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    comment: "",
+  });
+  const handleChange = (e: { target: { name: any; value: any } }) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  // Scroll Search //
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const focus: FocusEventHandler<HTMLInputElement> = () => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  };
   return (
     <>
       <Head>
@@ -39,52 +73,69 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Swiper
-          autoplay={{ delay: 3000 }}
-          spaceBetween={50}
-          slidesPerView={1}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>
-            <Image
-              src={CarouselImg}
-              width={1440}
-              height={553}
-              alt="courosel"
-            ></Image>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={CarouselImg}
-              width={1440}
-              height={553}
-              alt="courosel"
-            ></Image>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={CarouselImg}
-              width={1440}
-              height={553}
-              alt="courosel"
-            ></Image>
-          </SwiperSlide>
-        </Swiper>
-        <div className={s.search__block}>
-          <p className={s.p}>Lorem ipsum dolor sit amet.</p>
-          <input className={s.search} type="search" placeholder="Пошук" />
-        </div>
+        <Container className={s.swiper__contsiner}>
+          <Swiper
+            autoplay={{ delay: 3000 }}
+            spaceBetween={50}
+            slidesPerView={1}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <Image
+                src={CarouselImg}
+                width={1440}
+                height={553}
+                alt="courosel"
+              ></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={CarouselImg}
+                width={1440}
+                height={553}
+                alt="courosel"
+              ></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={CarouselImg}
+                width={1440}
+                height={553}
+                alt="courosel"
+              ></Image>
+            </SwiperSlide>
+          </Swiper>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col xs={12} md={8} lg={6} className="mx-auto">
+              <div className={s.search__block}>
+                <p className={s.p}>Lorem ipsum dolor sit amet.</p>
+                <input
+                  ref={inputRef}
+                  className={s.search}
+                  type="search"
+                  placeholder="Пошук"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
         <h2 className={s.h2}>Популярні товари</h2>
         <div className={s.popular_product__section}>
           <Row>
             {products.slice(0, 4).map((id: any) => (
               <Col key={id} lg="3" md="4" className="mb-4">
-                <ProductCard product={id} />
+                <Link href="singleCard">
+                  <ProductCard product={id} />
+                </Link>
               </Col>
             ))}
           </Row>
         </div>
+
         <div className={s.producer_line}>
           <Image
             src={BoschImg}
@@ -147,20 +198,101 @@ export default function Home() {
                   className={s.call__form_input}
                   type="text"
                   placeholder="Ім’я"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                 />
                 <input
                   className={s.call__form_input}
                   type="text"
-                  placeholder="Номер телефону "
+                  placeholder="Номер телефону"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                 />
                 <input
                   className={s.call__form_input}
                   type="text"
                   placeholder="Коментар"
+                  name="comment"
+                  value={formData.comment}
+                  onChange={handleChange}
                 />
-                <a href="tel:+3800065628">
-                  <div className={s.call__form_btn}>Отримати звінок</div>
-                </a>
+                <button className={s.call__form_btn} onClick={notify}>
+                  Make me a toast
+                </button>
+                <Toaster position="top-right" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+        <button onClick={focus}>Click</button>
+        <Container className={s.feedbacks}>
+          <Row>
+            <Col lg={6} md={4}>
+              <p className={s.feedbacks__title}>Відгуки</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={3} md={4} className="mb-4">
+              <div className={s.feedbacks__card}>
+                <p className={s.feedbacks__card_date}>10 вересня 2023</p>
+                <p className={s.feedbacks__card_name}>Анастасія</p>
+                <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
+                <p className={s.feedbacks__card_text}>
+                  Lorem ipsum dolor sit amet consectetur. Gravida amet
+                  consectetur cras lectus viverra vitae. Enim enim ut quis
+                  iaculis viverra augue vel.
+                </p>
+                <button className={s.feedbacks__card_btn}>
+                  Відгук повністю
+                </button>
+              </div>
+            </Col>
+            <Col lg={3} md={4} className="mb-4">
+              <div className={s.feedbacks__card}>
+                <p className={s.feedbacks__card_date}>10 вересня 2023</p>
+                <p className={s.feedbacks__card_name}>Анастасія</p>
+                <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
+                <p className={s.feedbacks__card_text}>
+                  Lorem ipsum dolor sit amet consectetur. Gravida amet
+                  consectetur cras lectus viverra vitae. Enim enim ut quis
+                  iaculis viverra augue vel.
+                </p>
+                <button className={s.feedbacks__card_btn}>
+                  Відгук повністю
+                </button>
+              </div>
+            </Col>
+
+            <Col lg={3} md={4} className="mb-4">
+              <div className={s.feedbacks__card}>
+                <p className={s.feedbacks__card_date}>10 вересня 2023</p>
+                <p className={s.feedbacks__card_name}>Анастасія</p>
+                <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
+                <p className={s.feedbacks__card_text}>
+                  Lorem ipsum dolor sit amet consectetur. Gravida amet
+                  consectetur cras lectus viverra vitae. Enim enim ut quis
+                  iaculis viverra augue vel.
+                </p>
+                <button className={s.feedbacks__card_btn}>
+                  Відгук повністю
+                </button>
+              </div>
+            </Col>
+            <Col lg={3} md={4} className="mb-4">
+              <div className={s.feedbacks__card}>
+                <p className={s.feedbacks__card_date}>10 вересня 2023</p>
+                <p className={s.feedbacks__card_name}>Анастасія</p>
+                <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
+                <p className={s.feedbacks__card_text}>
+                  Lorem ipsum dolor sit amet consectetur. Gravida amet
+                  consectetur cras lectus viverra vitae. Enim enim ut quis
+                  iaculis viverra augue vel.
+                </p>
+                <button className={s.feedbacks__card_btn}>
+                  Відгук повністю
+                </button>
               </div>
             </Col>
           </Row>
