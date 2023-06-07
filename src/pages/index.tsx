@@ -73,48 +73,56 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Swiper
-          autoplay={{ delay: 3000 }}
-          spaceBetween={50}
-          slidesPerView={1}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>
-            <Image
-              src={CarouselImg}
-              width={1440}
-              height={553}
-              alt="courosel"
-            ></Image>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={CarouselImg}
-              width={1440}
-              height={553}
-              alt="courosel"
-            ></Image>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={CarouselImg}
-              width={1440}
-              height={553}
-              alt="courosel"
-            ></Image>
-          </SwiperSlide>
-        </Swiper>
+        <Container className={s.swiper__contsiner}>
+          <Swiper
+            autoplay={{ delay: 3000 }}
+            spaceBetween={50}
+            slidesPerView={1}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <Image
+                src={CarouselImg}
+                width={1440}
+                height={553}
+                alt="courosel"
+              ></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={CarouselImg}
+                width={1440}
+                height={553}
+                alt="courosel"
+              ></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={CarouselImg}
+                width={1440}
+                height={553}
+                alt="courosel"
+              ></Image>
+            </SwiperSlide>
+          </Swiper>
+        </Container>
 
-        <div className={s.search__block}>
-          <p className={s.p}>Lorem ipsum dolor sit amet.</p>
-          <input
-            ref={inputRef}
-            className={s.search}
-            type="search"
-            placeholder="Пошук"
-          />
-        </div>
+        <Container>
+          <Row>
+            <Col xs={12} md={8} lg={6} className="mx-auto">
+              <div className={s.search__block}>
+                <p className={s.p}>Lorem ipsum dolor sit amet.</p>
+                <input
+                  ref={inputRef}
+                  className={s.search}
+                  type="search"
+                  placeholder="Пошук"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
         <h2 className={s.h2}>Популярні товари</h2>
         <div className={s.popular_product__section}>
           <Row>

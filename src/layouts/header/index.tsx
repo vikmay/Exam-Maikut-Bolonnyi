@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import Link from "next/link";
 import s from "@/layouts/header/index.module.scss";
 import Logo from "../../../public/images/Logo.png";
@@ -8,6 +8,7 @@ import Nav from "@/components/nav";
 import Favorites from "@/components/favorites";
 import Search from "@/components/search";
 import Cart from "@/components/cart";
+import { Container } from "react-bootstrap";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -22,40 +23,63 @@ const Header = () => {
   };
 
   useEffect(() => {
-    setIsNavVisible(window.innerWidth > 1000);
-    window.addEventListener("resize", handleWindowResize);
+    const mediaQuery = window.matchMedia("(min-width: 1000px)");
+
+    setIsNavVisible(mediaQuery.matches);
+
+    const handleWindowResize = () => {
+      setIsNavVisible(mediaQuery.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleWindowResize);
+
     return () => {
-      window.removeEventListener("resize", handleWindowResize);
+      mediaQuery.removeEventListener("change", handleWindowResize);
     };
   }, []);
 
   return (
     <>
-      <header className={s.header}>
-        <div className={s.logo}>
-          <Link href="/">
-            <Image src={Logo} width={94} height={68} alt="Logo" />
-          </Link>
-        </div>
-        {isNavVisible && (isNavOpen ? <Nav ulClassName={s.open} /> : <Nav />)}
+      <Container className={s.container__header}>
+        <header className={s.header}>
+          <div className={s.logo}>
+            <Link href="/">
+              <Image
+                src={Logo}
+                width={94}
+                height={68}
+                alt="Logo"
+                loading="eager"
+                priority
+              />
+            </Link>
+          </div>
+          {isNavVisible && (
+            <Nav
+              ulClassName={isNavOpen ? `${s.ul} ${s.open}` : s.ul}
+              liClassName={s.li}
+              aClassName={s.a}
+            />
+          )}
 
-        <div className={s.action__bar}>
-          <Favorites></Favorites>
-          <Search focus={undefined} />
+          <div className={s.action__bar}>
+            <Favorites></Favorites>
+            <Search focus={undefined} />
 
-          <Cart />
-          <button className={s.menu__toggle} onClick={handleMenuToggle}>
-            <span className={s.menu__icon}></span>
-            <span className={s.menu__icon}></span>
-            <span className={s.menu__icon}></span>
-          </button>
-          <a href="tel:+3800065628">
-            <div className={s.phone__btn}>Телефонувати</div>
-          </a>
-        </div>
-      </header>
+            <Cart />
+            <button className={s.menu__toggle} onClick={handleMenuToggle}>
+              <span className={s.menu__icon}></span>
+              <span className={s.menu__icon}></span>
+              <span className={s.menu__icon}></span>
+            </button>
+            <a href="tel:+3800065628">
+              <div className={s.phone__btn}>Телефонувати</div>
+            </a>
+          </div>
+        </header>
+      </Container>
     </>
   );
 };
 
-export default Header;
+export default memo(Header);

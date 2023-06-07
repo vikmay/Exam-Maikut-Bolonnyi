@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo, useRef } from "react";
 import Link from "next/link";
 import s from "@/components/nav/index.module.scss";
 
@@ -37,4 +37,4 @@ const Nav: React.FC<NavProps> = ({ ulClassName, liClassName, aClassName }) => {
   );
 };
 
-export default Nav;
+export default memo(Nav);

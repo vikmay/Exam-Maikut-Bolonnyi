@@ -1,19 +1,27 @@
-import React, { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Image from "next/image";
 import s from "./index.module.scss";
-import productsList from "../../data/products/products.json";
+import Tabs from "../../components/tabs";
+const SingleCard = (props: any) => {
+  const { product } = props;
 
-const SingleCard = () => {
-  const [products, setProducts] = useState(Object.values(productsList));
-
-  const product = products[0];
   return (
-    <Container className={s.product__card}>
+    <Container>
+      <Row className={s.product__card}>
+        <Col className={s.product__img}>
+          <Image
+            src={product?.images[0]}
+            alt={product?.title}
+            width={200}
+            height={200}
+          />
+        </Col>
+        <Col className={s.product__text}>text</Col>
+      </Row>
       <Row>
         <Col>
-          <div className={s.product__img}>
-            <img src={product.images[0]} alt={product.title} />
-          </div>
+          <Tabs></Tabs>
         </Col>
       </Row>
     </Container>
