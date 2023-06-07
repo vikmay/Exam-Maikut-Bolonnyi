@@ -9,11 +9,12 @@ import cartimg from "@/../public/images/AddToCartBtn.png";
 import Cart from "@/components/cart";
 import Accordion from "@/components/accordion2";
 import Sort from "@/components/sort";
+import Link from "next/link";
 
 const ProductListPage: React.FC = () => {
   const productsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortOption, setSortOption] = useState('Сортувати за');
+  const [sortOption, setSortOption] = useState("Сортувати за");
   let products = Object.values(productsList);
   const totalProducts = products.length;
 
@@ -29,8 +30,8 @@ const ProductListPage: React.FC = () => {
   };
 
   useEffect(() => {
-    switch(sortOption) {
-      case 'сортувати від А до Я':
+    switch (sortOption) {
+      case "сортувати від А до Я":
         products.sort((a, b) => {
           if (a.title && b.title) {
             return a.title.localeCompare(b.title);
@@ -38,7 +39,7 @@ const ProductListPage: React.FC = () => {
           return 0;
         });
         break;
-      case 'від Я до А':
+      case "від Я до А":
         products.sort((a, b) => {
           if (a.title && b.title) {
             return b.title.localeCompare(a.title);
@@ -53,10 +54,9 @@ const ProductListPage: React.FC = () => {
     }
 
     const start = (currentPage - 1) * productsPerPage;
-    const end = Math.min(currentPage * productsPerPage, products.length); 
+    const end = Math.min(currentPage * productsPerPage, products.length);
     setDisplayedProducts(products.slice(start, end));
-}, [sortOption, currentPage]);
-
+  }, [sortOption, currentPage]);
 
   return (
     <>
@@ -65,23 +65,25 @@ const ProductListPage: React.FC = () => {
           <Col lg="9" md="8" xs="12">
             <Row>
               <Col lg="12" md="12" xs="12">
-                <Row className="flex align-items-center mb-4" >
+                <Row className="flex align-items-center mb-4">
                   <Col lg="5" xs="12">
                     <h2>Каталог</h2>
                   </Col>
-                  <Col lg='3' className="text-end">
+                  <Col lg="3" className="text-end">
                     <span>кількість товарів</span>
                   </Col>
-                  <Col lg='4' className={s.sort_accordion}>
+                  <Col lg="4" className={s.sort_accordion}>
                     <Sort onSortOptionChange={setSortOption} />
                   </Col>
                 </Row>
               </Col>
               {displayedProducts.map((product: any) => {
                 return (
-                  <Col key={product.id} lg="4" md="6" className="mb-4">
-                    <ProductCard product={product} />
-                  </Col>
+                  <>
+                    <Col key={product.id} lg="4" md="6" className="mb-4">
+                      <ProductCard product={product} />
+                    </Col>
+                  </>
                 );
               })}
             </Row>
