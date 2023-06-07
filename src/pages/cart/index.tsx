@@ -45,10 +45,10 @@ const CartPage = () => {
   if (cartItems.length === 0) {
     return (
       <>
-        <p className={s.title}>Кошик</p>
+        <div className={s.title}>Кошик</div>
         <div className={s.empty_cart_wrapper}>
           <div className={s.empty_cart_container}>
-            <span className={s.empty_cart_msg}>Ваш кошик порожній</span>
+            <div className={s.empty_cart_msg}>Ваш кошик порожній</div>
             <Link className={s.contiue_shopping_btn} href="/catalog">
               До покупок
             </Link>

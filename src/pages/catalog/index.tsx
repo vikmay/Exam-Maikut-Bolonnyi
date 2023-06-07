@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import productsList from "@/data/products/products.json";
 import ProductCard from "@/components/cards/product";
 import { Container, Row, Col } from "react-bootstrap";
-import Filter from "@/components/Filter";
+import Filter from "@/components/filter";
 import Pagination from "@/components/pagination";
 import s from "./index.module.scss";
 import cartimg from "@/../public/images/AddToCartBtn.png";
 import Cart from "@/components/cart";
+import Accordion from "@/components/accordion2";
 
 const ProductListPage: React.FC = () => {
   const productsPerPage = 9;
@@ -26,10 +27,10 @@ const ProductListPage: React.FC = () => {
   };
 
   useEffect(() => {
-    // Only update the displayed products if the current page actually changes
     const start = (currentPage - 1) * productsPerPage;
-    const end = currentPage * productsPerPage;
+    const end = Math.min(currentPage * productsPerPage, products.length); // Calculate the actual end
 
+    // Update only when the start or actual end product changes
     if (
       displayedProducts[0] !== products[start] ||
       displayedProducts[displayedProducts.length - 1] !== products[end - 1]
@@ -44,6 +45,22 @@ const ProductListPage: React.FC = () => {
         <Row className="align-items-start">
           <Col lg="9" md="8" xs="12">
             <Row>
+              <Col lg="12" md="12" xs="12">
+                <Row className="flex align-items-center mb-4" >
+                  <Col lg="5" xs="12">
+                    <h2>Каталог</h2>
+                  </Col>
+                  <Col lg='3' className="text-end">
+                    <span>кількість товарів</span>
+                  </Col>
+                  <Col lg='4' className={s.sort_accordion}>
+                    <Accordion 
+                    
+                    AccordionTitle="Сортувати за"
+                    />
+                  </Col>
+                </Row>
+              </Col>
               {displayedProducts.map((product: any) => {
                 return (
                   <Col key={product.id} lg="4" md="6" className="mb-4">
