@@ -21,12 +21,14 @@ const PaginationControl: React.FC<PaginationProps> = ({ totalItems, itemsPerPage
 
   const handleArrowClick = (direction: string) => {
     if (direction === 'left' && firstPageNumberToShow > 1) {
-      setFirstPageNumberToShow(firstPageNumberToShow - maxPageNumbersToShow);
-    } else if (direction === 'right' && firstPageNumberToShow + maxPageNumbersToShow <= totalPages) {
-      setFirstPageNumberToShow(firstPageNumberToShow + maxPageNumbersToShow);
+      setFirstPageNumberToShow(Math.max(firstPageNumberToShow - maxPageNumbersToShow, 1));
+    } else if (direction === 'right') {
+      let newFirstPage = firstPageNumberToShow + maxPageNumbersToShow;
+      setFirstPageNumberToShow(Math.min(newFirstPage, Math.max(1, totalPages - maxPageNumbersToShow + 1)));
+
     }
   }
-
+  
   let items = [];
 
   for (let number = firstPageNumberToShow; number < firstPageNumberToShow + maxPageNumbersToShow; number++) {

@@ -1,7 +1,17 @@
+@import "/src/styles/variables.scss";
+
+
 .products_container {
     position: relative;
 }
 
+// .top_title_container {
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+// }
 .cart_container {
     position: absolute;
     right: -2%;
@@ -12,7 +22,12 @@
     }
 
 }
+
 .pagination_wrapper {
     display: flex;
     justify-content: center;
+}
+
+s.sort_accordion {
+    padding: 17px 21px;
 }

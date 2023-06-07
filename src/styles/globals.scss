@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
 }
+main {
+  @include flex-column-center;
+}
 
 ::-webkit-scrollbar {
   width: 15px;
