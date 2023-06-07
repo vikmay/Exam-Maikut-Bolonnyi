@@ -8,11 +8,13 @@ import s from "./index.module.scss";
 import cartimg from "@/../public/images/AddToCartBtn.png";
 import Cart from "@/components/cart";
 import Accordion from "@/components/accordion2";
+import Sort from "@/components/sort";
 
 const ProductListPage: React.FC = () => {
   const productsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
-  const products = Object.values(productsList);
+  const [sortOption, setSortOption] = useState('Сортувати за');
+  let products = Object.values(productsList);
   const totalProducts = products.length;
 
   // Determine the products for the current page
@@ -27,17 +29,34 @@ const ProductListPage: React.FC = () => {
   };
 
   useEffect(() => {
-    const start = (currentPage - 1) * productsPerPage;
-    const end = Math.min(currentPage * productsPerPage, products.length); // Calculate the actual end
-
-    // Update only when the start or actual end product changes
-    if (
-      displayedProducts[0] !== products[start] ||
-      displayedProducts[displayedProducts.length - 1] !== products[end - 1]
-    ) {
-      setDisplayedProducts(products.slice(start, end));
+    switch(sortOption) {
+      case 'сортувати від А до Я':
+        products.sort((a, b) => {
+          if (a.title && b.title) {
+            return a.title.localeCompare(b.title);
+          }
+          return 0;
+        });
+        break;
+      case 'від Я до А':
+        products.sort((a, b) => {
+          if (a.title && b.title) {
+            return b.title.localeCompare(a.title);
+          }
+          return 0;
+        });
+        break;
+      default:
+        // No sorting or restore original order
+        products = Object.values(productsList);
+        break;
     }
-  }, [currentPage, displayedProducts, products, productsPerPage]);
+
+    const start = (currentPage - 1) * productsPerPage;
+    const end = Math.min(currentPage * productsPerPage, products.length); 
+    setDisplayedProducts(products.slice(start, end));
+}, [sortOption, currentPage]);
+
 
   return (
     <>
@@ -54,10 +73,7 @@ const ProductListPage: React.FC = () => {
                     <span>кількість товарів</span>
                   </Col>
                   <Col lg='4' className={s.sort_accordion}>
-                    <Accordion 
-                    
-                    AccordionTitle="Сортувати за"
-                    />
+                    <Sort onSortOptionChange={setSortOption} />
                   </Col>
                 </Row>
               </Col>
