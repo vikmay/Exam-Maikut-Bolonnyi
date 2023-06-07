@@ -24,3 +24,26 @@ body {
     background: #C90000;
   }
 }
+
+.pagination .page-link {
+  @include flex-center;
+  width: 45px;
+  margin: 0 0.3em;
+  background: #D5D6D4;
+  color:$primary-bg-color;
+  border-color: #D5D6D4;
+  &:hover {
+    background:$primary-color;
+    color: $primary-bg-color;
+    border-color: $primary-color;
+  }
+}
+
+.page-item.active .page-link {
+  background: $primary-color;
+  border-color: $primary-color;
+}
+.pagination .page-link:focus {
+  outline: none;
+  box-shadow: none;
+}
