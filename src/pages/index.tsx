@@ -64,6 +64,12 @@ export default function Home() {
       inputRef.current.focus();
     }
   };
+  // 💬 Pproducer_line //
+  const Bosch = "https://www.bosch.ua/";
+  const Teka = "https://www.teka.com/uk-ua/";
+  const Franke = "https://www.franke.com/ua/uk/home.html";
+  const Fabino = "https://www.fabino.net/shop/";
+  //
   return (
     <>
       <Head>
@@ -135,28 +141,44 @@ export default function Home() {
             ))}
           </Row>
         </div>
+        <Container className={s.producer}>
+          <div className={s.producer_line}>
+            <Link href={Bosch} target="_blank">
+              <Image
+                src={BoschImg}
+                width={221}
+                height={49.2}
+                alt="producer"
+              ></Image>
+            </Link>
+            <Link href={Franke} target="_blank">
+              <Image
+                src={FrankeImg}
+                width={165.47}
+                height={52.01}
+                alt="producer"
+              ></Image>
+            </Link>
+            <Link href={Teka} target="_blank">
+              <Image
+                src={TekaImg}
+                width={103.87}
+                height={61.43}
+                alt="producer"
+              ></Image>
+            </Link>
 
-        <div className={s.producer_line}>
-          <Image
-            src={BoschImg}
-            width={221}
-            height={49.2}
-            alt="producer"
-          ></Image>
-          <Image
-            src={TekaImg}
-            width={103.87}
-            height={61.43}
-            alt="producer"
-          ></Image>
-          <Image
-            src={FrankeImg}
-            width={165.47}
-            height={52.01}
-            alt="producer"
-          ></Image>
-          <Image src={FabinoImg} width={180} height={58} alt="producer"></Image>
-        </div>
+            <Link href={Fabino} target="_blank">
+              <Image
+                src={FabinoImg}
+                width={180}
+                height={58}
+                alt="producer"
+              ></Image>
+            </Link>
+          </div>
+        </Container>
+
         <div className={s.history_block}>
           <h4 className={s.h4}>Наша історія</h4>
           <p className={s.p}>

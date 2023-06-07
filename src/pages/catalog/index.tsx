@@ -46,18 +46,15 @@ const ProductListPage: React.FC = () => {
           <Col lg="9" md="8" xs="12">
             <Row>
               <Col lg="12" md="12" xs="12">
-                <Row className="flex align-items-center mb-4" >
+                <Row className="flex align-items-center mb-4">
                   <Col lg="5" xs="12">
                     <h2>Каталог</h2>
                   </Col>
-                  <Col lg='3' className="text-end">
+                  <Col lg="3" className="text-end">
                     <span>кількість товарів</span>
                   </Col>
-                  <Col lg='4' className={s.sort_accordion}>
-                    <Accordion 
-                    
-                    AccordionTitle="Сортувати за"
-                    />
+                  <Col lg="4" className={s.sort_accordion}>
+                    <Accordion AccordionTitle="Сортувати за" />
                   </Col>
                 </Row>
               </Col>
