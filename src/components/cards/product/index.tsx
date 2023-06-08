@@ -32,10 +32,11 @@ const ProductCard = (props: any) => {
             height={200}
           />
           <Link href={`/catalog/${product.id}`}>
+            {" "}
             <div className={s.card_title}>{product?.title.slice(0, 26)}</div>
+            <div className={s.card_model}>{product?.title.slice(28)}</div>
+            <div className={s.card__producer}>_{product?.producer}</div>
           </Link>
-          <div className={s.card_model}>{product?.title.slice(28)}</div>
-          <div className={s.card__producer}>_{product?.producer}</div>
           <div className={s.price_cart_container}>
             <div>
               <div className={s.card__price}>{product?.price + "грн"}</div>

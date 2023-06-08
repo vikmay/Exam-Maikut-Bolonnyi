@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
 }
+main {
+  width: 100%;
+}
 
 ::-webkit-scrollbar {
   width: 15px;
@@ -46,4 +49,8 @@ body {
 .pagination .page-link:focus {
   outline: none;
   box-shadow: none;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
