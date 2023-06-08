@@ -6,9 +6,31 @@ import { Product } from "../../../interfaces";
 import productsList from "@/data/products/products.json";
 import s from "./index.module.scss";
 import Tabs from "../../components/tabs";
+import toast, { Toaster } from "react-hot-toast";
+
 interface ProductPageProps {}
 
 const ProductPage: React.FC<ProductPageProps> = () => {
+  // Toaster //
+  const notify = () => {
+    const { name, phone, comment } = formData;
+    toast(`✔Ім’я: ${name}
+    
+    ✔Відгук: Надіслано`);
+  };
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    comment: "",
+  });
+  const handleChange = (e: { target: { name: any; value: any } }) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
   const router = useRouter();
   const [product, setProduct] = useState<Product | null>(null);
   const [selectedColor, setSelectedColor] = useState<string>("");
@@ -89,6 +111,83 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           <Col>Photos</Col>
           <Col>
             <Tabs></Tabs>
+          </Col>
+        </Row>
+      </Container>
+      <Container className={s.features__section}>
+        <Row>
+          <p className={s.title}>характеристики</p>
+          <Col>
+            <Row className={s.features__section_left}>
+              {product?.features.slice(0, 6).map((feature, index) => (
+                <React.Fragment key={index}>
+                  <Col xs={6} className={`${s.label} ${s.labelMargin}`}>
+                    {feature.label}
+                  </Col>
+                  <Col xs={6} className={`${s.value} ${s.valueMargin}`}>
+                    {feature.value}
+                  </Col>
+                </React.Fragment>
+              ))}
+            </Row>
+          </Col>
+
+          <Col>
+            <Row className={s.features__section_right}>
+              {product?.features.slice(6, 12).map((feature, index) => (
+                <React.Fragment key={index}>
+                  <Col xs={6} className={`${s.label} ${s.labelMargin}`}>
+                    {feature.label}
+                  </Col>
+                  <Col xs={6} className={`${s.value} ${s.valueMargin}`}>
+                    {feature.value}
+                  </Col>
+                </React.Fragment>
+              ))}
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+      <Container className={s.description__section}>
+        <Row>
+          <p className={s.description__section_title}>Опис</p>
+          <Col className={s.description__section_text}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error
+            nisi quidem similique ab nemo laudantium doloribus commodi
+            laboriosam quisquam, ut fugiat eligendi excepturi nesciunt, enim
+            soluta consequatur at obcaecati. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Et error nisi quidem similique ab nemo
+            laudantium doloribus commodi laboriosam quisquam, ut fugiat eligendi
+            excepturi nesciunt, enim soluta consequatur at obcaecati.
+          </Col>
+        </Row>
+      </Container>
+      <Container className={s.review__section}>
+        <Row>
+          <Col className={s.review__section_card}>Card</Col>
+          <Col className={s.review__section_form}>
+            <p className={s.review__section_title}>Написати відгук</p>
+            <input
+              className={s.review__section_form_input}
+              type="text"
+              placeholder="Ім’я"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+
+            <input
+              className={s.review__section_form_input}
+              type="text"
+              placeholder="Відгук"
+              name="comment"
+              value={formData.comment}
+              onChange={handleChange}
+            />
+            <button className={s.review__section_form_btn} onClick={notify}>
+              Надіслати відгук
+            </button>
+            <Toaster position="top-right" />
           </Col>
         </Row>
       </Container>
