@@ -21,7 +21,7 @@ import FabinoImg from "../../public/images/Fabiano.png";
 // 💬 Components //
 import ProductCard from "@/components/cards/product";
 import productsList from "@/data/products/products.json";
-
+import Pagination from "../components/pagination";
 import Link from "next/link";
 import SimpleAccordion from "../components/accordion2";
 
@@ -319,6 +319,13 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+        <Pagination
+          totalItems={2}
+          itemsPerPage={1}
+          onPageChange={function (page: number): void {
+            throw new Error("Function not implemented.");
+          }}
+        />
       </main>
     </>
   );
