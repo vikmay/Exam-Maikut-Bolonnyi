@@ -16,7 +16,13 @@ const PaginationControl: React.FC<PaginationProps> = ({ totalItems, itemsPerPage
   useEffect(() => {
     // Define updateButtonsToShow function
     const updateButtonsToShow = () => {
-      setButtonsToShow(window.innerWidth > 992 ? 10 : 5);
+      if(window.innerWidth <= 365){
+        setButtonsToShow(3);
+      } else if(window.innerWidth > 365 && window.innerWidth <= 992){
+        setButtonsToShow(5);
+      } else {
+        setButtonsToShow(10);
+      }
     };
 
     // Update buttonsToShow on mount

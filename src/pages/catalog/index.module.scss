@@ -29,11 +29,13 @@
 s.sort_accordion {
   padding: 17px 21px;
 }
+
 // id.tsx //
 .product__card_container {
   .product__card_block {
     display: flex;
     gap: 30px;
+
     .img__block {
       padding: 90px;
       width: 600px;
@@ -42,6 +44,7 @@ s.sort_accordion {
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       border-radius: 0px;
     }
+
     .text__block {
       padding: 35px 43px;
       width: 600px;
@@ -49,6 +52,7 @@ s.sort_accordion {
       background: $primary-bg-color;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       border-radius: 0px;
+
       &_title {
         font-family: "Montserrat";
         font-style: normal;
@@ -59,6 +63,7 @@ s.sort_accordion {
         align-items: center;
         color: $primary-text-color;
       }
+
       &_model {
         margin-top: 20px;
         font-family: "Montserrat";
@@ -72,6 +77,7 @@ s.sort_accordion {
 
         color: #b2b2b2;
       }
+
       &_producer {
         font-family: "Montserrat";
         font-style: normal;
@@ -84,6 +90,7 @@ s.sort_accordion {
         text-transform: uppercase;
         color: #c8102e;
       }
+
       &_features {
         margin-top: 40px;
         font-family: "Montserrat";
@@ -96,6 +103,7 @@ s.sort_accordion {
         gap: 10px;
         color: $secondary-bg-color;
       }
+
       &_color {
         margin-top: 33px;
         font-family: "Montserrat";
@@ -106,10 +114,12 @@ s.sort_accordion {
         display: flex;
         flex-direction: column;
         color: $secondary-bg-color;
+
         &_all {
           margin-top: 19px;
           display: flex;
           gap: 10px;
+
           .color_item {
             cursor: pointer;
             padding: 5px 20px;
@@ -117,6 +127,7 @@ s.sort_accordion {
             color: $secondary-text-color;
             border: 1px solid #a2a2a2;
           }
+
           .selected_color {
             color: #000000;
             border: 1px solid #0f0f0f;
@@ -136,6 +147,7 @@ s.sort_accordion {
         align-items: center;
         color: $primary-text-color;
       }
+
       &_stock {
         margin-top: 10px;
         font-family: "Montserrat";
@@ -149,6 +161,7 @@ s.sort_accordion {
       }
     }
   }
+
   .tabs__block {
     width: 600px;
     height: 100px;
@@ -157,6 +170,7 @@ s.sort_accordion {
     margin-top: 14px;
     display: flex;
     gap: 10px;
+
     &_title {
       cursor: pointer;
       margin-right: 10px;
@@ -176,12 +190,14 @@ s.sort_accordion {
       align-items: center;
       color: #0f0f0f;
     }
+
     .selected {
       border-bottom: 1px solid #c90000;
       color: $primary-color;
     }
   }
 }
+
 .features__section {
   margin-top: 45px;
   padding: 35px 60px;
@@ -196,14 +212,18 @@ s.sort_accordion {
   font-size: 18px;
   line-height: 22px;
   color: #444444;
+
   /* identical to box height */
   .labelMargin {
-    margin-bottom: 32px; /* Додати відстань внизу */
+    margin-bottom: 32px;
+    /* Додати відстань внизу */
   }
 
   .valueMargin {
-    margin-top: 0px; /* Додати відстань зверху */
+    margin-top: 0px;
+    /* Додати відстань зверху */
   }
+
   .title {
     font-family: "Montserrat";
     font-style: normal;
@@ -213,6 +233,7 @@ s.sort_accordion {
     text-transform: uppercase;
     color: #281a08;
   }
+
   .features__section_left {
     .line {
       margin: 10px;
@@ -220,9 +241,8 @@ s.sort_accordion {
       border: 1px solid #a2a2a2;
     }
   }
-  .features__section_right {
-  }
 }
+
 .description__section {
   padding: 35px 60px;
   margin-top: 45px;
@@ -231,6 +251,7 @@ s.sort_accordion {
   background: $primary-bg-color;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0px;
+
   &_title {
     font-family: "Montserrat";
     font-style: normal;
@@ -240,6 +261,7 @@ s.sort_accordion {
     text-transform: uppercase;
     color: #281a08;
   }
+
   &_text {
     font-family: "Montserrat";
     font-style: normal;
@@ -249,10 +271,12 @@ s.sort_accordion {
     color: #000000;
   }
 }
+
 .review__section {
   margin-top: 41px;
   display: flex;
   justify-content: center;
+
   &_card {
     width: 701px;
     height: 501px;
@@ -260,6 +284,7 @@ s.sort_accordion {
     margin-right: 50px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
+
   &_form {
     width: 489px;
     height: 501px;
@@ -268,6 +293,7 @@ s.sort_accordion {
     display: flex;
     flex-direction: column;
     padding: 35px 74px;
+
     &_title {
       font-family: "Montserrat";
       font-style: normal;
@@ -276,7 +302,9 @@ s.sort_accordion {
       line-height: 29px;
       color: $secondary-bg-color;
     }
+
     align-items: center;
+
     &_input {
       margin-bottom: 30px;
       border: none;
@@ -290,6 +318,7 @@ s.sort_accordion {
       text-transform: uppercase;
       width: 314px;
     }
+
     &_btn {
       width: 341px;
       height: 51px;
@@ -304,6 +333,7 @@ s.sort_accordion {
     }
   }
 }
+
 .similar__products {
   &_title {
     margin-top: 45px;
@@ -317,6 +347,7 @@ s.sort_accordion {
     justify-content: center;
     color: #0f0f0f;
   }
+
   &_cards {
     display: flex;
     justify-content: center;

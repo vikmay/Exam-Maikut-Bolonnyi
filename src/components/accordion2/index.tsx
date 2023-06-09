@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, ReactNode } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -22,7 +22,7 @@ export default function SimpleAccordion({
   sx?: any;
   children?: ReactNode; // Declare children prop with type ReactNode
 }) {
-  // ... existing useState hooks ...
+  
 
   return (
     <div>
