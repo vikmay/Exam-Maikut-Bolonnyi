@@ -1,19 +1,22 @@
 @import "../styles/variables.scss";
 .swiper__contsiner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin: 0 auto;
-  max-width: 100%;
 }
 .search__block {
   position: absolute;
-  left: 167px;
+  left: 0;
+  right: 0;
   width: 1105.5px;
   height: 238.5px;
-  background-color: aqua;
   transform: translate(0, -100px);
   z-index: 2;
-  background: #ffffff;
+  background: $primary-bg-color;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 100px;
+  margin: 0 auto;
 
   .p {
     padding-top: 45px;
@@ -30,7 +33,7 @@
     margin-left: 140px;
     width: 825.5px;
     height: 68.5px;
-    background: #ffffff;
+    background: $primary-bg-color;
     border: 3px solid $primary-color;
     display: flex;
     flex-direction: column;
@@ -67,35 +70,6 @@
   }
 }
 
-.category_product_section {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-
-  .div1 {
-    width: 295px;
-    height: 295px;
-    background-color: antiquewhite;
-    grid-area: 1 / 1 / 2 / 6;
-  }
-
-  .div2 {
-    width: 295px;
-    background-color: aquamarine;
-    height: 295px;
-    grid-area: 2 / 4 / 6 / 6;
-  }
-
-  .div3 {
-    background-color: aqua;
-    width: 610px;
-    height: 639px;
-    grid-area: 2 / 1 / 6 / 4;
-  }
-}
-
 .h3 {
   font-family: "Montserrat";
   font-style: normal;
@@ -104,16 +78,18 @@
   line-height: 39px;
   color: $secondary-bg-color;
 }
-
-.producer_line {
-  margin-top: 90px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  gap: 200px;
-  width: 100%;
-  height: 118px;
-  background-color: $primary-color;
+.producer {
+  margin: 0 auto;
+  .producer_line {
+    max-width: 100%;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    flex-grow: 1;
+    height: 118px;
+    background-color: $primary-color;
+  }
 }
 
 .history_block {
@@ -135,6 +111,7 @@
   }
 
   .p {
+    max-width: 1240px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
@@ -216,8 +193,6 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
-      /* identical to box height */
-
       text-align: justify;
       text-transform: uppercase;
     }

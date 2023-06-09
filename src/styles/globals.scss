@@ -7,7 +7,6 @@ body {
 }
 main {
   width: 100%;
-
 }
 
 ::-webkit-scrollbar {
@@ -20,12 +19,12 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 1px solid #C90000;
-  background: #FFFFFF;
+  border: 1px solid #c90000;
+  background: #ffffff;
   border-radius: 10px;
 
   &:hover {
-    background: #C90000;
+    background: #c90000;
   }
 }
 
@@ -33,11 +32,11 @@ main {
   @include flex-center;
   width: 45px;
   margin: 0 0.3em;
-  background: #D5D6D4;
-  color:$primary-bg-color;
-  border-color: #D5D6D4;
+  background: #d5d6d4;
+  color: $primary-bg-color;
+  border-color: #d5d6d4;
   &:hover {
-    background:$primary-color;
+    background: $primary-color;
     color: $primary-bg-color;
     border-color: $primary-color;
   }
