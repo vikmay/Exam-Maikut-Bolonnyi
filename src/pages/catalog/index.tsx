@@ -15,12 +15,13 @@ const ProductListPage: React.FC = () => {
   const productsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
   const [sortOption, setSortOption] = useState("Сортувати за");
+  let products = Object.values(productsList);
+  const totalProducts = products.length;
 
-  // Filters
-  const [filterColor, setFilterColor] = useState("");
-  const [filterCountry, setFilterCountry] = useState("");
-  const [filterManufacturer, setFilterManufacturer] = useState("");
-
+  // Determine the products for the current page
+  const [displayedProducts, setDisplayedProducts] = useState(
+    products.slice(0, productsPerPage)
+  );
   const invertedStyle: React.CSSProperties = {
     color: "#C90000",
     backgroundColor: "whitesmoke",
@@ -28,40 +29,10 @@ const ProductListPage: React.FC = () => {
     left: "40px",
   };
 
-  let products = Object.values(productsList);
-  const totalProducts = products.length;
-
-  const [displayedProducts, setDisplayedProducts] = useState(
-    products.slice(0, productsPerPage)
-  );
-
   useEffect(() => {
-    let filteredProducts = products;
-
-    if (filterColor) {
-      filteredProducts = filteredProducts.filter(
-        (product) =>
-          product.color.toLowerCase() === filterColor.toLowerCase()
-      );
-    }
-
-    if (filterCountry) {
-      filteredProducts = filteredProducts.filter(
-        (product) =>
-          product.country.toLowerCase() === filterCountry.toLowerCase()
-      );
-    }
-
-    if (filterManufacturer) {
-      filteredProducts = filteredProducts.filter(
-        (product) =>
-          product.manufacturer.toLowerCase() === filterManufacturer.toLowerCase()
-      );
-    }
-
     switch (sortOption) {
       case "сортувати від А до Я":
-        filteredProducts.sort((a, b) => {
+        products.sort((a, b) => {
           if (a.title && b.title) {
             return a.title.localeCompare(b.title);
           }
@@ -69,7 +40,7 @@ const ProductListPage: React.FC = () => {
         });
         break;
       case "від Я до А":
-        filteredProducts.sort((a, b) => {
+        products.sort((a, b) => {
           if (a.title && b.title) {
             return b.title.localeCompare(a.title);
           }
@@ -78,14 +49,14 @@ const ProductListPage: React.FC = () => {
         break;
       default:
         // No sorting or restore original order
-        filteredProducts = Object.values(productsList);
+        products = Object.values(productsList);
         break;
     }
 
     const start = (currentPage - 1) * productsPerPage;
-    const end = Math.min(currentPage * productsPerPage, filteredProducts.length);
-    setDisplayedProducts(filteredProducts.slice(start, end));
-  }, [filterColor, filterCountry, filterManufacturer, sortOption, currentPage]);
+    const end = Math.min(currentPage * productsPerPage, products.length);
+    setDisplayedProducts(products.slice(start, end));
+  }, [sortOption, currentPage]);
 
   return (
     <>
@@ -108,26 +79,24 @@ const ProductListPage: React.FC = () => {
               </Col>
               {displayedProducts.map((product: any) => {
                 return (
-                  <Col key={product.id} lg="4" md="6" className="mb-4">
-                    <ProductCard product={product} />
-                  </Col>
+                  <>
+                    <Col key={product.id} lg="4" md="6" className="mb-4">
+                      <ProductCard product={product} />
+                    </Col>
+                  </>
                 );
               })}
             </Row>
             <div className={s.pagination_wrapper}>
               <Pagination
-                totalItems={totalProducts}
+                totalItems={products.length}
                 itemsPerPage={productsPerPage}
                 onPageChange={setCurrentPage}
               />
             </div>
           </Col>
           <Col lg="3" md="4" xs="12">
-            <Filter 
-              onColorChange={setFilterColor} 
-              onCountryChange={setFilterCountry} 
-              onManufacturerChange={setFilterManufacturer} 
-            />
+            <Filter />
           </Col>
         </Row>
         <Cart

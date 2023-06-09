@@ -1,35 +1,23 @@
-import React, { FC } from "react";
-import CheckboxDropdown from "../checkboxDropdown";
+import React from "react";
+import Accordion from "@/components/accordion2";
+import filter from "@/../public/images/Filter_clear.png";
+import Image from "next/image";
+import s from "./index.module.scss";
 
-interface FilterProps {
-  onColorChange: (selectedOptions: string[]) => void;
-  onCountryChange: (selectedOptions: string[]) => void;
-  onManufacturerChange: (selectedOptions: string[]) => void;
-}
-
-const Filter: FC<FilterProps> = ({ onColorChange, onCountryChange, onManufacturerChange }) => {
-  const colorOptions = ["Red", "Blue", "Green"];
-  const countryOptions = ["USA", "Germany", "China"];
-  const manufacturerOptions = ["Manufacturer A", "Manufacturer B", "Manufacturer C"];
-
+const Filter = () => {
   return (
-    <div>
-      <CheckboxDropdown
-        title="Color"
-        options={colorOptions}
-        onChange={onColorChange}
+    <>
+      <div className={s.filter_title_container}>
+        <span>Фільтрування</span>
+        <button className={s.filter_btn}>
+          <Image src={filter} alt="filter_img" />
+        </button>
+      </div>
+      <Accordion 
+      AccordionTitle="Ціна"
       />
-      <CheckboxDropdown
-        title="Country"
-        options={countryOptions}
-        onChange={onCountryChange}
-      />
-      <CheckboxDropdown
-        title="Manufacturer"
-        options={manufacturerOptions}
-        onChange={onManufacturerChange}
-      />
-    </div>
+      
+    </>
   );
 };
 

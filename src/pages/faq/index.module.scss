@@ -1,0 +1,52 @@
+@import "/src/styles/variables.scss";
+
+.faq_wrapper {
+  width: 100%;
+  @include flex-column-center;
+  margin-bottom: 3rem;
+}
+
+.faq_container {
+  @include flex-column-center;
+  width: 80%;
+
+  gap: 20px;
+
+  .faq_title {
+    align-self: center;
+  }
+}
+
+.faq_question {
+  width: 80%;
+  background: #fff;
+  padding: 15px 21px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 18px;
+  color: #222222;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.faq_answer {
+  width: 80%;
+  background: none;
+  padding: 15px 21px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
