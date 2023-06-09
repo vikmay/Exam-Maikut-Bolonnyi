@@ -1,5 +1,9 @@
 @import "/src/styles/variables.scss";
 
+.cartpage_wrapper {
+    width: 100%;
+    @include flex-column-center;
+}
 .empty_cart_wrapper {
     width: 100%;
     display: flex;

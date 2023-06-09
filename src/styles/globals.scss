@@ -6,7 +6,8 @@ body {
   padding: 0;
 }
 main {
-  @include flex-column-center;
+  width: 100%;
+
 }
 
 ::-webkit-scrollbar {
@@ -49,4 +50,8 @@ main {
 .pagination .page-link:focus {
   outline: none;
   box-shadow: none;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
