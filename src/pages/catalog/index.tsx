@@ -28,9 +28,27 @@ const ProductListPage: React.FC = () => {
     top: "-3px",
     left: "40px",
   };
+  const [priceFilter, setPriceFilter] = useState([0, 50000]);
   const [colorFilter, setColorFilter] = useState([]);
   const [producerFilter, setProducerFilter] = useState([]);
   const [countryFilter, setCountryFilter] = useState([]);
+
+  const getQuantityLabel = (num: number) => {
+    const lastDigit = num % 10;
+    const lastTwoDigits = num % 100;
+
+    if (lastDigit === 1 && !(lastTwoDigits >= 11 && lastTwoDigits <= 14)) {
+      return "товар";
+    } else if (
+      lastDigit >= 2 &&
+      lastDigit <= 4 &&
+      !(lastTwoDigits >= 10 && lastTwoDigits <= 20)
+    ) {
+      return "товари";
+    } else {
+      return "товарів";
+    }
+  };
 
   useEffect(() => {
     switch (sortOption) {
@@ -55,10 +73,16 @@ const ProductListPage: React.FC = () => {
         products = Object.values(productsList);
         break;
     }
+    if (priceFilter[0] !== 0 || priceFilter[1] !== 50000) {
+      products = products.filter(
+        (product) =>
+          product.price >= priceFilter[0] && product.price <= priceFilter[1]
+      );
+    }
 
     if (colorFilter.length > 0) {
-      products = products.filter(product => 
-        product.colors.some(color => colorFilter.includes(color))
+      products = products.filter((product) =>
+        product.colors.some((color) => colorFilter.includes(color))
       );
     }
     if (producerFilter.length > 0) {
@@ -66,10 +90,10 @@ const ProductListPage: React.FC = () => {
         producerFilter.includes(product.producer)
       );
     }
-    
+
     // Filter products that have a 'Країна виробника' feature
-    products = products.filter(product => 
-      product.features.some(feature => feature.label === "Країна виробника")
+    products = products.filter((product) =>
+      product.features.some((feature) => feature.label === "Країна виробника")
     );
 
     if (countryFilter.length > 0) {
@@ -80,14 +104,13 @@ const ProductListPage: React.FC = () => {
           )?.value
         )
       );
-    };
+    }
     setTotalProducts(products.length);
 
     const start = (currentPage - 1) * productsPerPage;
     const end = Math.min(currentPage * productsPerPage, products.length);
     setDisplayedProducts(products.slice(start, end));
-}, [sortOption, currentPage, colorFilter, producerFilter, countryFilter]);
-
+  }, [sortOption, currentPage, colorFilter, producerFilter, countryFilter, priceFilter]);
 
   return (
     <>
@@ -101,7 +124,11 @@ const ProductListPage: React.FC = () => {
                     <h2>Каталог</h2>
                   </Col>
                   <Col lg="3" className="text-end">
-                    <span>кількість товарів</span>
+                    <span
+                      className={s.total__items}
+                    >{`${totalProducts} ${getQuantityLabel(
+                      totalProducts
+                    )}`}</span>
                   </Col>
                   <Col lg="4" className={s.sort_accordion}>
                     <Sort onSortOptionChange={setSortOption} />
@@ -131,9 +158,11 @@ const ProductListPage: React.FC = () => {
               setColorFilter={setColorFilter}
               setProducerFilter={setProducerFilter}
               setCountryFilter={setCountryFilter}
+              setPriceFilter={setPriceFilter} // Add this line
             />
           </Col>
         </Row>
+
         <Cart
           className={s.cart_container}
           newImage={cartimg}

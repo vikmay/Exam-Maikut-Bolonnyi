@@ -4,6 +4,8 @@ import filter from "@/../public/images/Filter_clear.png";
 import Image from "next/image";
 import s from "./index.module.scss";
 import productsList from "@/data/products/products.json";
+import PriceRangeFilter from "../priceRangeFilter";
+
 
 type FilterProps = {
   setColorFilter: Dispatch<SetStateAction<string[]>>;
@@ -53,7 +55,16 @@ const Filter: React.FC<FilterProps> = ({
         </div>
         <form key={resetKey}>
           <Accordion
-            sx={{ boxShadow: "none", border: "none", mb:"-15px"  }}
+            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
+            AccordionTitle="Ціна"
+            AccordionText="Price Range"
+            textClassName={s.filter_text}
+            titleClassName={s.filter_title}
+          >
+            <PriceRangeFilter />
+          </Accordion>
+          <Accordion
+            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
             AccordionTitle="Колір"
             AccordionText="Колір"
             textClassName={s.filter_text}
@@ -81,7 +92,7 @@ const Filter: React.FC<FilterProps> = ({
             ))}
           </Accordion>
           <Accordion
-            sx={{ boxShadow: "none", border: "none",  mb: "-15px" }}
+            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
             AccordionTitle="Виробник"
             AccordionText="Виробник"
             textClassName={s.filter_text}
@@ -109,7 +120,7 @@ const Filter: React.FC<FilterProps> = ({
             ))}
           </Accordion>
           <Accordion
-            sx={{ boxShadow: "none", border: "none"}}
+            sx={{ boxShadow: "none", border: "none" }}
             AccordionTitle="Країна"
             AccordionText="Країна"
             textClassName={s.filter_text}

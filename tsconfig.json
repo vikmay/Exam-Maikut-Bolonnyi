@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/tabs/index.tsx"
+    "src/components/tabs/index.tsx",
   ],
   "exclude": ["node_modules"]
 }
