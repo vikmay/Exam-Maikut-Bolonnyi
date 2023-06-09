@@ -1,16 +1,47 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { useRef } from "react";
 import { Col, Container, Row, Tab } from "react-bootstrap";
 import { Product } from "../../../interfaces";
 import productsList from "@/data/products/products.json";
 import s from "./index.module.scss";
 import Tabs from "../../components/tabs";
 import toast, { Toaster } from "react-hot-toast";
+import ProductCard from "@/components/cards/product";
+import Link from "next/link";
 
 interface ProductPageProps {}
 
 const ProductPage: React.FC<ProductPageProps> = () => {
+  const [selectedTab, setSelectedTab] = useState(""); // Початково нічого не вибрано
+
+  // Scroll tabs //
+  const descriptionRef = useRef(null);
+  const scrollToDescription = () => {
+    descriptionRef.current.scrollIntoView({ behavior: "smooth" });
+    setSelectedTab("description");
+  };
+
+  const featuresRef = useRef(null);
+  const scrollFeatures = () => {
+    featuresRef.current.scrollIntoView({ behavior: "smooth" });
+    setSelectedTab("description");
+  };
+
+  const reviewRef = useRef(null);
+  const scrollReview = () => {
+    reviewRef.current.scrollIntoView({ behavior: "smooth" });
+    setSelectedTab("description");
+  };
+
+  const similarRef = useRef(null);
+  const scrollSimilar = () => {
+    similarRef.current.scrollIntoView({ behavior: "smooth" });
+    setSelectedTab("description");
+  };
+  //
+  const [products, setProducts] = useState(Object.values(productsList));
   // Toaster //
   const notify = () => {
     const { name, phone, comment } = formData;
@@ -110,11 +141,56 @@ const ProductPage: React.FC<ProductPageProps> = () => {
         <Row>
           <Col>Photos</Col>
           <Col>
-            <Tabs></Tabs>
+            <div className={s.tabs__block}>
+              <span
+                className={`${s.tabs__block_title} ${
+                  selectedTab === "features" ? s.selected : ""
+                }`}
+                onClick={(e) => {
+                  scrollFeatures();
+                  setSelectedTab("features"); // Додайте ваш обробник події тут
+                }}
+              >
+                Всі характеристики
+              </span>
+              <span
+                className={`${s.tabs__block_title} ${
+                  selectedTab === "description" ? s.selected : ""
+                }`}
+                onClick={(e) => {
+                  scrollToDescription();
+                  setSelectedTab("description"); // Додайте ваш обробник події тут
+                }}
+              >
+                Опис
+              </span>
+              <span
+                className={`${s.tabs__block_title} ${
+                  selectedTab === "reviews" ? s.selected : ""
+                }`}
+                onClick={(e) => {
+                  scrollReview();
+                  setSelectedTab("reviews"); // Додайте ваш обробник події тут
+                }}
+              >
+                Відгуки
+              </span>
+              <Row
+                className={`${s.tabs__block_title} ${
+                  selectedTab === "similar" ? s.selected : ""
+                }`}
+                onClick={(e) => {
+                  scrollSimilar();
+                  setSelectedTab("similar"); // Додайте ваш обробник події тут
+                }}
+              >
+                Схожі товари
+              </Row>
+            </div>
           </Col>
         </Row>
       </Container>
-      <Container className={s.features__section}>
+      <Container className={s.features__section} ref={featuresRef}>
         <Row>
           <p className={s.title}>характеристики</p>
           <Col>
@@ -148,7 +224,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           </Col>
         </Row>
       </Container>
-      <Container className={s.description__section}>
+      <Container className={s.description__section} ref={descriptionRef}>
         <Row>
           <p className={s.description__section_title}>Опис</p>
           <Col className={s.description__section_text}>
@@ -162,7 +238,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           </Col>
         </Row>
       </Container>
-      <Container className={s.review__section}>
+      <Container className={s.review__section} ref={reviewRef}>
         <Row>
           <Col className={s.review__section_card}>Card</Col>
           <Col className={s.review__section_form}>
@@ -189,6 +265,18 @@ const ProductPage: React.FC<ProductPageProps> = () => {
             </button>
             <Toaster position="top-right" />
           </Col>
+        </Row>
+      </Container>
+      <Container className={s.similar__products} ref={similarRef}>
+        <p className={s.similar__products_title}>Схожі товари</p>
+        <Row className={s.similar__products_cards}>
+          {products.slice(0, 4).map((id: any) => (
+            <Col key={id} lg="3" md="4" className="mb-4">
+              <Link href="singleCard">
+                <ProductCard product={id} />
+              </Link>
+            </Col>
+          ))}
         </Row>
       </Container>
     </>
