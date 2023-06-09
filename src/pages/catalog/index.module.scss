@@ -123,6 +123,7 @@ s.sort_accordion {
           }
         }
       }
+
       &_price {
         margin-top: 33px;
         font-family: "Montserrat";
@@ -146,6 +147,38 @@ s.sort_accordion {
         align-items: center;
         color: $primary-color;
       }
+    }
+  }
+  .tabs__block {
+    width: 600px;
+    height: 100px;
+    justify-content: center;
+    margin-left: 51px;
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    &_title {
+      cursor: pointer;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
+      height: 51px;
+      background: $primary-bg-color;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 18px;
+
+      align-items: center;
+      color: #0f0f0f;
+    }
+    .selected {
+      border-bottom: 1px solid #c90000;
+      color: $primary-color;
     }
   }
 }
@@ -269,5 +302,24 @@ s.sort_accordion {
       background: #c90000;
       color: $primary-bg-color;
     }
+  }
+}
+.similar__products {
+  &_title {
+    margin-top: 45px;
+    margin-bottom: 52px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    justify-content: center;
+    color: #0f0f0f;
+  }
+  &_cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
   }
 }
