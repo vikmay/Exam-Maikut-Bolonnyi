@@ -9,3 +9,8 @@ $button_footer-color: #ffffff;
   justify-content: center;
   align-items: center;
 }
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
