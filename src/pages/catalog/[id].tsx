@@ -210,7 +210,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
           <Col>
             <Row className={s.features__section_right}>
-              {product?.features.slice(6, 12).map((feature, index) => (
+              {product?.features.slice(8, 14).map((feature, index) => (
                 <React.Fragment key={index}>
                   <Col xs={6} className={`${s.label} ${s.labelMargin}`}>
                     {feature.label}
@@ -240,7 +240,26 @@ const ProductPage: React.FC<ProductPageProps> = () => {
       </Container>
       <Container className={s.review__section} ref={reviewRef}>
         <Row>
-          <Col className={s.review__section_card}>Card</Col>
+          <Col className={s.review__section_card}>
+            <p className={s.review__section_card_title}>Відгуки(4)</p>
+
+            <p className={s.review__section_card_name}>Анастасія ⭐⭐⭐⭐⭐</p>
+            <p className={s.review__section_card_date}>10 вересня 2023</p>
+            <p className={s.review__section_card_text}>
+              Lorem ipsum dolor sit amet consectetur. Gravida amet consectetur
+              cras lectus viverra vitae. Enim enim ut quis iaculis viverra augue
+              vel.
+            </p>
+            <button className={s.review__section_card_btn}>Відповісти</button>
+            <p className={s.review__section_card_name}>Анастасія ⭐⭐⭐⭐⭐</p>
+            <p className={s.review__section_card_date}>10 вересня 2023</p>
+            <p className={s.review__section_card_text}>
+              Lorem ipsum dolor sit amet consectetur. Gravida amet consectetur
+              cras lectus viverra vitae. Enim enim ut quis iaculis viverra augue
+              vel.
+            </p>
+            <button className={s.review__section_card_btn}>Відповісти</button>
+          </Col>
           <Col className={s.review__section_form}>
             <p className={s.review__section_title}>Написати відгук</p>
             <input
