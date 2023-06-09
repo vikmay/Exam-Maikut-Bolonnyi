@@ -8,60 +8,51 @@ interface PaginationProps {
 }
 
 const PaginationControl: React.FC<PaginationProps> = ({ totalItems, itemsPerPage, onPageChange }) => {
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
   const [activePage, setActivePage] = useState(1);
   const [firstPageNumberToShow, setFirstPageNumberToShow] = useState(1);
-  const [buttonsToShow, setButtonsToShow] = useState(10); // Initial value
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const [buttonsToShow, setButtonsToShow] = useState(Math.min(totalPages, 10)); // Calculate buttonsToShow considering total pages
 
   useEffect(() => {
-    // Define updateButtonsToShow function
     const updateButtonsToShow = () => {
-      setButtonsToShow(window.innerWidth > 992 ? 10 : 5);
+      let buttons = window.innerWidth <= 365 ? 3 : window.innerWidth <= 992 ? 5 : 10;
+      setButtonsToShow(Math.min(totalPages, buttons));
     };
 
-    // Update buttonsToShow on mount
     updateButtonsToShow();
-
-    // Listen to resize events
     window.addEventListener('resize', updateButtonsToShow);
-
-    // Cleanup listener on unmount
     return () => {
       window.removeEventListener('resize', updateButtonsToShow);
     };
-  }, []);
+  }, [totalPages]);
 
   const handleClick = (pageNumber: number) => {
     setActivePage(pageNumber);
     onPageChange(pageNumber);
-  }
+  };
 
   const handleArrowClick = (direction: string) => {
     if (direction === 'left' && firstPageNumberToShow > 1) {
       setFirstPageNumberToShow(Math.max(firstPageNumberToShow - buttonsToShow, 1));
-    } else if (direction === 'right') {
-      let newFirstPage = firstPageNumberToShow + buttonsToShow;
-      setFirstPageNumberToShow(Math.min(newFirstPage, Math.max(1, totalPages - buttonsToShow + 1)));
+    } else if (direction === 'right' && firstPageNumberToShow <= totalPages - buttonsToShow) {
+      setFirstPageNumberToShow(Math.min(firstPageNumberToShow + buttonsToShow, totalPages - buttonsToShow + 1));
     }
-  }
-  
-  let items = [];
+  };
 
-  for (let number = firstPageNumberToShow; number < firstPageNumberToShow + buttonsToShow; number++) {
-    if ((number - 1) * itemsPerPage < totalItems) {
-      items.push(
-        <Pagination.Item key={number} active={number === activePage} onClick={() => handleClick(number)}>
-          {number}
-        </Pagination.Item>,
-      );
-    }
+  let items = [];
+  for (let number = firstPageNumberToShow; number <= Math.min(firstPageNumberToShow + buttonsToShow - 1, totalPages); number++) {
+    items.push(
+      <Pagination.Item key={number} active={number === activePage} onClick={() => handleClick(number)}>
+        {number}
+      </Pagination.Item>,
+    );
   }
 
   return (
     <Pagination>
-      <Pagination.Prev onClick={() => handleArrowClick('left')} />
+      {firstPageNumberToShow > 1 && <Pagination.Prev onClick={() => handleArrowClick('left')} />}
       {items}
-      <Pagination.Next onClick={() => handleArrowClick('right')} />
+      {firstPageNumberToShow <= totalPages - buttonsToShow && <Pagination.Next onClick={() => handleArrowClick('right')} />}
     </Pagination>
   );
 }

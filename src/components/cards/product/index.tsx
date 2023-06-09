@@ -20,7 +20,7 @@ const ProductCard = (props: any) => {
       <div className={s.card_wrapper}>
         <div className={s.card_container}>
           <div className={s.new_fav_container}>
-            {NewLabel()}
+            <div>{NewLabel()}</div>
             <AddToFavBtn product={product} id={id} />
           </div>
 
