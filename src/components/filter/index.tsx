@@ -13,13 +13,10 @@ const Filter = () => {
           <Image src={filter} alt="filter_img" />
         </button>
       </div>
-      <Accordion />
-      <Accordion />
-      <Accordion />
-      <Accordion />
-      <Accordion />
-      <Accordion />
-      <Accordion />
+      <Accordion 
+      AccordionTitle="Ціна"
+      />
+      
     </>
   );
 };

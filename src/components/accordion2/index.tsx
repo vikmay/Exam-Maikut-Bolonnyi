@@ -10,9 +10,13 @@ import s from "./index.module.scss";
 export default function SimpleAccordion({
   AccordionTitle,
   AccordionText,
+  titleClassName,
+  textClassName,
 }: {
   AccordionTitle: string;
   AccordionText: string;
+  titleClassName?: string;
+  textClassName?: string;
 }) {
   const [accordionTitle, setAccordionTitle] = useState(AccordionTitle);
   const [accordionText, setAccordionText] = useState(AccordionText);
@@ -25,10 +29,10 @@ export default function SimpleAccordion({
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{accordionTitle}</Typography>
+          <Typography className={titleClassName}>{accordionTitle}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{accordionText}</Typography>
+          <Typography className={textClassName}>{accordionText}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>

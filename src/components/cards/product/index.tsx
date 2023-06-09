@@ -25,14 +25,18 @@ const ProductCard = (props: any) => {
             {NewLabel()}
             <AddToFavBtn product={product} id={id} />
           </div>
+
           <Link href={`/catalog/${product.id}`}>
             {" "}
+
             <Image
+            className={s.card_image}
               src={product?.images[0]}
               alt={product?.title}
               width={200}
               height={200}
             />
+
           </Link>
           <Link href={`/catalog/${product.id}`}>
             {" "}
@@ -47,6 +51,7 @@ const ProductCard = (props: any) => {
                 <div className={s.card__price}>{product?.price + "грн"}</div>
                 <span className={s.on_stock}>В наявності</span>
               </Link>
+
             </div>
             <AddToCartBtn product={product} id={id} />
           </div>
