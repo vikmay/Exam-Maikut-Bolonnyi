@@ -14,7 +14,7 @@ const ProductCard = (props: any) => {
     if (product?.isNew) {
       return <span className={s.new_label}>НОВЕ</span>;
     }
-    return <span></span>;
+    return null;
   };
 
   return (
@@ -25,7 +25,10 @@ const ProductCard = (props: any) => {
             {NewLabel()}
             <AddToFavBtn product={product} id={id} />
           </div>
-          
+
+          <Link href={`/catalog/${product.id}`}>
+            {" "}
+
             <Image
             className={s.card_image}
               src={product?.images[0]}
@@ -33,17 +36,22 @@ const ProductCard = (props: any) => {
               width={200}
               height={200}
             />
-          
-          
-            <div className={s.card_title}>{product?.title.slice(0, 26)}</div>
-          
-          <div className={s.card__producer}>_{product?.producer}</div>
-          <div className={s.card_model}>{product?.title.slice(28)}</div>
 
+          </Link>
+          <Link href={`/catalog/${product.id}`}>
+            {" "}
+            <div className={s.card_title}>{product?.title.slice(0, 26)}</div>
+            <div className={s.card_model}>{product?.title.slice(28)}</div>
+            <div className={s.card__producer}>_{product?.producer}</div>
+          </Link>
           <div className={s.price_cart_container}>
             <div>
-              <div className={s.card__price}>{product?.price + "грн"}</div>
-              <span className={s.on_stock}>В наявності</span>
+              <Link href={`/catalog/${product.id}`}>
+                {" "}
+                <div className={s.card__price}>{product?.price + "грн"}</div>
+                <span className={s.on_stock}>В наявності</span>
+              </Link>
+
             </div>
             <AddToCartBtn product={product} id={id} />
           </div>

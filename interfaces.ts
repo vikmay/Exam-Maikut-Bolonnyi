@@ -1,4 +1,5 @@
 export interface Product {
+  producer: string;
   id: number;
   title: string;
   price: any;

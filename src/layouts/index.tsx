@@ -9,8 +9,6 @@ type LayoutProps = {
 };
 
 const Layouts = ({ children, ...props }: LayoutProps) => {
-  const footerRef = useRef<HTMLDivElement>(null);
-
   return (
     <div className={s.container}>
       <Head>
@@ -23,7 +21,7 @@ const Layouts = ({ children, ...props }: LayoutProps) => {
       <main className={s.main} {...props}>
         {children}
       </main>
-      {/* <div ref={footerRef} /> */}
+
       <Footer />
     </div>
   );

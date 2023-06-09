@@ -3,8 +3,6 @@ import "@/styles/globals.scss";
 import "swiper/css";
 import Layouts from "@/layouts";
 import Providers from "@/components/Providers";
-import Footer from "@/layouts/footer";
-import Nav from "@/components/nav";
 
 function MyApp({
   Component,
@@ -13,14 +11,10 @@ function MyApp({
   Component: React.ComponentType<any>;
   pageProps: any;
 }) {
-  const footerRef = useRef<HTMLDivElement>(null);
-
   return (
     <Providers>
       <Layouts>
-        {/* <Nav footerRef={footerRef} /> */}
         <Component {...pageProps} />
-        {/* <div ref={footerRef} />{" "} */}
       </Layouts>
     </Providers>
   );
