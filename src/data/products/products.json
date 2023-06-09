@@ -478,7 +478,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -546,7 +546,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -623,7 +623,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -696,7 +696,7 @@
         "value": "Управління: Touch Slider\nЗахист від перегріву: Так\nФункція Super Booster для всіх полів нагрівання\nТаймер: Так Для кожного поля\nАвтоматичні програми: розморожування (42ºС)%, підтримка тепла (70ºС), приготування картоплі/макаронних виробів (94ºС)\nАвтоматичне включення відповідної витяжки Downdraft або острівної витяжки Frames by Franke"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Швейцарія"
       }
     ],
@@ -767,7 +767,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -835,7 +835,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -909,7 +909,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -977,7 +977,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -1052,7 +1052,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -1124,7 +1124,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -1196,7 +1196,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -1267,7 +1267,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -1421,7 +1421,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -1490,7 +1490,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -1570,7 +1570,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -1637,7 +1637,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -1716,7 +1716,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -1781,7 +1781,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -3365,7 +3365,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP001_110.0274.749.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_110.0274.749.png.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "42",
@@ -3458,7 +3458,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/franke-inca-smart-fbi-525-705-bk-4.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/franke-inca-smart-fbi-525-705-bk-3.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "43",
@@ -3546,7 +3546,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP001_305.0665.369-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_305.0665.361-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "44",
@@ -3630,7 +3630,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/TE001_305.0662.835-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP003_305.0662.835-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "45",
@@ -3718,7 +3718,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/07/PP001_110.0203.224-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/07/TE001_110.0203.224-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "46",
@@ -3805,7 +3805,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_110.0017.853-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_110.0017.853-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "47",
@@ -3891,7 +3891,7 @@
     "images": [
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_110.0260.658-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "48",
@@ -3979,7 +3979,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP002_110.0392.878-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP003_110.0392.878-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "49",
@@ -4066,7 +4066,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_110.0473.547-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_110.0473.545-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "50",
@@ -4162,7 +4162,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/PP001_335.0590.493-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_110.0045.854-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "51",
@@ -4262,7 +4262,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE004_330.0542.181-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/PP003_330.0542.181-nd1000w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "52",
@@ -4350,7 +4350,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP001_321.0536.200-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_321.0536.200-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "53",
@@ -4440,7 +4440,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP004_345.0529.584-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/PD001_345.0529.584-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "54",
@@ -4529,7 +4529,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/12/PD003_325.0552.772-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/12/PD001_325.0552.772-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "55",
@@ -4617,7 +4617,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/TE001_325.0591.035-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/TE001_325.0591.035-nd860w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "56",
@@ -4704,7 +4704,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP002_325.0597.294-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP001_325.0597.294-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "57",
@@ -4787,7 +4787,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/PP001_330.0591.778-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/TE001_330.0591.773-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "58",
@@ -4866,7 +4866,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP002_340.0595.364-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP001_340.0595.364-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "59",
@@ -4958,7 +4958,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0298.093-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0298.091-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "60",
@@ -5050,7 +5050,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0370.694-nd1000w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0370.689-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "61",
@@ -5144,7 +5144,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0476.826-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0476.760-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "62",
@@ -5227,7 +5227,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0470.661-nd1000w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0373.779-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "63",
@@ -5318,7 +5318,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0470.674-nd1000w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0373.782-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "64",
@@ -5410,7 +5410,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/PP001_115.0626.053-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_115.0626.051-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "65",
@@ -5503,7 +5503,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0275.366-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0328.177-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "66",
@@ -5597,7 +5597,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/05/AP001_115.0595.091-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/05/AP001_115.0595.086-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "67",
@@ -5680,7 +5680,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/07/PP001_115.0373.930-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/07/TE001_115.0373.928-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "68",
@@ -5772,7 +5772,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0392.335-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0392.332-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "69",
@@ -5865,7 +5865,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/07/PP001_115.0373.945-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/07/TE001_115.0373.943-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "70",
@@ -5959,7 +5959,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP003_115.0521.435-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP002_115.0521.435-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "71",
@@ -6051,7 +6051,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/PP001_115.0623.057-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_115.0623.055-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "72",
@@ -6142,7 +6142,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/TE001_115.0521.435-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/TE002_115.0521.438-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "73",
@@ -6235,7 +6235,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0550.442-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/PD003_115.0550.442-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "74",
@@ -6331,7 +6331,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0626.020-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0626.019-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "75",
@@ -6422,7 +6422,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0373.890-nd1000w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0524.929-nd860w-2.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "76",
@@ -6512,7 +6512,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/09/TE001_115.0547.852-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/09/TE002_115.0547.852-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "77",
@@ -6611,7 +6611,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PD002_115.0653.401-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.401-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "78",
@@ -6707,7 +6707,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.379-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.298-nd486w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "79",
@@ -6800,7 +6800,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.298-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/PD004_Taps_Laminar_Flow-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "80",
@@ -6890,7 +6890,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0625.190-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0625.188-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "81",
@@ -6983,7 +6983,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0250.143-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0250.143-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "82",
@@ -7078,7 +7078,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP002_115.0393.976-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/03/AP001_115.0545.136-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "83",
@@ -7168,7 +7168,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP002_115.0543.285-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0543.285-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "84",
@@ -7264,7 +7264,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0524.928-nd486w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0546.118-nd486w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "85",
@@ -7357,7 +7357,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/TE002_115.0668.280.png",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_115.0668.280.png"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "86",
@@ -7435,7 +7435,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/PD001_115.0625.185-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0625.187-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "87",
@@ -7529,7 +7529,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0393.975-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0393.975-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "88",
@@ -7620,7 +7620,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0486.978-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0486.978-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "89",
@@ -7710,7 +7710,7 @@
     "images": [
       "https://franke-lux.com.ua/wp-content/uploads/2019/09/PP001_115.0546.115-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "90",
@@ -7810,7 +7810,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP003_115.0613.671-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP004_115.0613.671-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "91",
@@ -7900,7 +7900,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/TE001_115.0693.230.png.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/TE002_115.0693.230.png.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "92",
@@ -7991,7 +7991,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP004_115.0653.505-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/PP003_115.0653.505-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "93",
@@ -8093,7 +8093,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP002_115.0669.768-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0669.768-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "94",
@@ -8192,7 +8192,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PD002_115.0653.395-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.395-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Miele"
   },
   {
     "id": "95",
@@ -13761,7 +13761,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PD002_115.0653.401-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.401-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "159",
@@ -13857,7 +13857,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.379-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.298-nd486w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "160",
@@ -13950,7 +13950,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.298-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/PD004_Taps_Laminar_Flow-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "161",
@@ -14050,7 +14050,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP003_115.0613.671-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP004_115.0613.671-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "162",
@@ -14141,7 +14141,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP004_115.0653.505-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/PP003_115.0653.505-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "163",
@@ -14243,7 +14243,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP002_115.0669.768-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0669.768-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "164",
@@ -14342,7 +14342,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PD002_115.0653.395-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.395-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "165",
@@ -14430,7 +14430,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/TE001_115.0569.290-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/TE002_115.0569.290-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "166",
@@ -14521,7 +14521,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/TE002_115.0529.207-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0529.207-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "167",
@@ -14615,7 +14615,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/05/AP002_115.0600.095-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/05/PD001_115.0600.095-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "168",
@@ -14699,7 +14699,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_115.0621.596-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP002_114.0620.974-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "169",
@@ -14794,7 +14794,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP002_115.0596.388-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0596.388-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "170",
@@ -14892,7 +14892,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP002_115.0596.389-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0596.389-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "171",
@@ -14989,7 +14989,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/05/AP002_115.0590.044-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/05/AP001_115.0590.044-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "172",
@@ -15073,7 +15073,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/06/TE001_305.0599.533-nd860w-5.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/06/AP001_305.0599.533-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "173",
@@ -15162,7 +15162,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_315.0547.796-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_315.0547.798-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "174",
@@ -15250,7 +15250,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_110.0200.740-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_110.0200.670-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "175",
@@ -15342,7 +15342,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/06/TE001_305.0599.544-nd860w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/06/AP001_305.0599.544-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "176",
@@ -15426,7 +15426,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/06/TE001_305.0599.533-nd860w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/06/AP001_305.0599.508-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "177",
@@ -15506,7 +15506,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/TE001_305.0665.361-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_305.0665.364-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "178",
@@ -15590,7 +15590,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/06/TE001_305.0599.533-nd860w-3.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/06/PP001_305.0599.510-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "179",
@@ -15687,7 +15687,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_110.0456.722-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_110.0456.724-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "180",
@@ -15783,7 +15783,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_110.0473.545-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_110-1.0473.545-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "181",
@@ -15879,7 +15879,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/PP001_305.0522.798-nd1000w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_110-1.0473.545-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "182",
@@ -15972,7 +15972,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/franke-inca-smart-fbi-525-705-bk-4.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/franke-inca-smart-fbi-525-705-bk-3.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "183",
@@ -16060,7 +16060,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP001_305.0665.369-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_305.0665.361-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "184",
@@ -16144,7 +16144,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/TE001_305.0662.835-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP003_305.0662.835-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "185",
@@ -16231,7 +16231,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_110.0017.853-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_110.0017.853-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "186",
@@ -16319,7 +16319,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP002_110.0392.878-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP003_110.0392.878-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "187",
@@ -16406,7 +16406,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_110.0473.547-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_110.0473.545-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "188",
@@ -16485,7 +16485,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP002_340.0595.364-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP001_340.0595.364-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "189",
@@ -16580,7 +16580,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP002_115.0393.976-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/03/AP001_115.0545.136-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "190",
@@ -16674,7 +16674,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0393.975-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0393.975-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "191",
@@ -16767,7 +16767,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0393.974-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0393.974-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "192",
@@ -16860,7 +16860,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0265.997-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0265.997-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "193",
@@ -16897,7 +16897,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -16932,11 +16932,11 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE001_108.0606.106-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE002_108.0606.106-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "194",
-    "title": "Варильна поверхня FRANKE Frames by Franke FHFS 786 3FLEXI ST",
+    "title": "Варильна поверхня FRANKE Frames by Bosch FHFS 786 3FLEXI ST",
     "price": "39 155 ",
     "colors": ["Шампань", "Онікс"],
     "features": [
@@ -16970,10 +16970,10 @@
       },
       {
         "label": "Деталі товару",
-        "value": "Управління: Touch Slider\nЗахист від перегріву: Так\nФункція Super Booster для всіх полів нагрівання\nТаймер: Так Для кожного поля\nАвтоматичні програми: розморожування (42ºС)%, підтримка тепла (70ºС), приготування картоплі/макаронних виробів (94ºС)\nАвтоматичне включення відповідної витяжки Downdraft або острівної витяжки Frames by Franke"
+        "value": "Управління: Touch Slider\nЗахист від перегріву: Так\nФункція Super Booster для всіх полів нагрівання\nТаймер: Так Для кожного поля\nАвтоматичні програми: розморожування (42ºС)%, підтримка тепла (70ºС), приготування картоплі/макаронних виробів (94ºС)\nАвтоматичне включення відповідної витяжки Downdraft або острівної витяжки Frames by Bosch"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Швейцарія"
       }
     ],
@@ -16996,14 +16996,14 @@
       },
       {
         "label": "Серія варильної поверхні",
-        "value": "Frames by Franke\n"
+        "value": "Frames by Bosch\n"
       }
     ],
     "images": [
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/PP001_108.0516.320-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_108.0516.320-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "195",
@@ -17040,7 +17040,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -17074,7 +17074,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_108.0377.090-nd1000w-2.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_108.0377.090-nd860w-2.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "196",
@@ -17153,7 +17153,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP002_340.0595.364-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/AP001_340.0595.364-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "197",
@@ -17190,7 +17190,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -17225,7 +17225,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE002_108.0606.110-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE001_108.0606.110-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "198",
@@ -17262,7 +17262,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -17300,7 +17300,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP002_108.0606.112-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP001_108.0606.112-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "199",
@@ -17333,7 +17333,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       },
       {
@@ -17370,7 +17370,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP002_108.0613.588-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP001_108.0613.588-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "200",
@@ -17441,7 +17441,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_116.0374.301-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_116.0374.302-nd860w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "201",
@@ -17512,7 +17512,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/11/PP001_116.0540.670-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/11/TE001_116.0017.414-nd860w-3.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "202",
@@ -17597,11 +17597,11 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE002_116.0576.979-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_116.0576.979-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "203",
-    "title": "Духова шафа FRANKE Frames by Franke FS 913 P DCT TFT",
+    "title": "Духова шафа FRANKE Frames by Bosch FS 913 P DCT TFT",
     "price": "53 956 ",
     "colors": ["Шампань", "Мигдаль"],
     "features": [
@@ -17665,7 +17665,7 @@
       },
       {
         "label": "Серія духової шафи",
-        "value": "Frames by Franke\n"
+        "value": "Frames by Bosch\n"
       }
     ],
     "images": [
@@ -17673,7 +17673,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_116.0373.684-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_116.0373.683-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "204",
@@ -17753,7 +17753,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_116.0606.101-nd860w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/AP003_116.0613.706-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "205",
@@ -17808,7 +17808,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP001_131.0640.710.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_131.0611.212.png.jpeg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "206",
@@ -17879,7 +17879,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_116.0374.296-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_116.0374.302-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "207",
@@ -17950,7 +17950,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/01/PP001_116.0606.100-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE001_116.0606.100-nd860w-2.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "208",
@@ -18032,7 +18032,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP001_116.0606.093-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP001_116.0606.091-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "209",
@@ -18104,7 +18104,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_116.0606.100-nd860w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/AP002_116.0606.097-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "210",
@@ -18184,7 +18184,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_116.0606.101-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/AP001_116.0606.102-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "211",
@@ -18264,7 +18264,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_116.0606.101-nd860w-2.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/AP001_116.0613.709-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "212",
@@ -18323,11 +18323,11 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/PP001_131.0611.212-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_131.0611.212-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "213",
-    "title": "Духова шафа FRANKE Frames by Franke FS 913 P DCT TFT",
+    "title": "Духова шафа FRANKE Frames by Bosch FS 913 P DCT TFT",
     "price": "53 956 ",
     "colors": ["Шампань", "Мигдаль"],
     "features": [
@@ -18391,7 +18391,7 @@
       },
       {
         "label": "Серія духової шафи",
-        "value": "Frames by Franke\n"
+        "value": "Frames by Bosch\n"
       }
     ],
     "images": [
@@ -18399,7 +18399,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_116.0373.684-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_116.0373.683-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "214",
@@ -18479,7 +18479,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_116.0606.101-nd860w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/AP003_116.0613.706-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "215",
@@ -18534,7 +18534,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP001_131.0640.710.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_131.0611.212.png.jpeg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "216",
@@ -18605,7 +18605,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/01/PP001_116.0606.100-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/01/TE001_116.0606.100-nd860w-2.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "217",
@@ -18687,7 +18687,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP001_116.0606.093-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP001_116.0606.091-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "218",
@@ -18759,7 +18759,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_116.0606.100-nd860w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/AP002_116.0606.097-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "219",
@@ -18839,7 +18839,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_116.0606.101-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/AP001_116.0606.102-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "220",
@@ -18919,7 +18919,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/TE001_116.0606.101-nd860w-2.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/04/AP001_116.0613.709-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "221",
@@ -18978,7 +18978,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/PP001_131.0611.212-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_131.0611.212-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "222",
@@ -19069,7 +19069,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0470.674-nd1000w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0373.782-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "223",
@@ -19161,7 +19161,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/PP001_115.0623.057-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_115.0623.055-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "224",
@@ -19260,7 +19260,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PD002_115.0653.401-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.401-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "225",
@@ -19356,7 +19356,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.379-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.298-nd486w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "226",
@@ -19446,7 +19446,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0625.190-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0625.188-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "227",
@@ -19541,7 +19541,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP002_115.0393.976-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/03/AP001_115.0545.136-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "228",
@@ -19637,7 +19637,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0524.928-nd486w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0546.118-nd486w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "229",
@@ -19731,7 +19731,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0393.975-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0393.975-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "230",
@@ -19831,7 +19831,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP003_115.0613.671-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP004_115.0613.671-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "231",
@@ -19922,7 +19922,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP004_115.0653.505-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/PP003_115.0653.505-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "232",
@@ -20015,7 +20015,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0393.974-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0393.974-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "233",
@@ -20108,7 +20108,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0265.997-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0265.997-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "234",
@@ -20199,7 +20199,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/TE002_115.0529.207-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0529.207-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "235",
@@ -20287,7 +20287,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_115.0523.290-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE002_115.0523.290-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "236",
@@ -20387,7 +20387,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/PD001_115.0523.286-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP001_115.0523.286-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "237",
@@ -20485,7 +20485,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP002_115.0596.389-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0596.389-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "238",
@@ -20575,7 +20575,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP004_345.0529.584-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/PD001_345.0529.584-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "239",
@@ -20616,7 +20616,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -20646,7 +20646,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_106.0183.016-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_106.0183.016-nd860w-2.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "240",
@@ -20687,7 +20687,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -20718,7 +20718,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/09/TE001_106.0554.404-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_106.0554.404-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "241",
@@ -20759,7 +20759,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -20794,7 +20794,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP002_106.0670.114.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_106.0554.382.png"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "242",
@@ -20827,7 +20827,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -20860,7 +20860,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PD002_106.0670.111.png",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_106.0554.394.png"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "243",
@@ -20901,7 +20901,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -20932,7 +20932,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP001_106.0670.100.png",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_106.0554.391.png"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "244",
@@ -20973,7 +20973,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -21004,7 +21004,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_106.0374.282-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_106.0496.075-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "245",
@@ -21045,7 +21045,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -21076,7 +21076,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_106.0374.285-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_106.0496.076-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "246",
@@ -21117,7 +21117,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -21147,7 +21147,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_106.0374.292-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_106.0374.294-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "247",
@@ -21188,7 +21188,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -21218,7 +21218,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_106.0183.104-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_106.0183.104-nd860w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "248",
@@ -21263,7 +21263,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -21295,7 +21295,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/02/AP002_106.0541.747-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/02/AP001_106.0541.747-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "249",
@@ -21340,7 +21340,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -21370,11 +21370,11 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/03/PP001_106.0541.746-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/03/TE001_106.0541.746-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "250",
-    "title": "Варильна поверхня Franke Smart FHSM 755 4G",
+    "title": "Варильна поверхня Bosch Smart FHSM 755 4G",
     "price": "13 243 ",
     "colors": ["Бежевий", "Мигдаль"],
     "features": [
@@ -21411,7 +21411,7 @@
         "value": "2 роки"
       },
       {
-        "label": "Країна виробництва",
+        "label": "Країна виробника",
         "value": "Італія"
       }
     ],
@@ -21443,7 +21443,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP001_106.0554.394-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/05/AP002_106.0554.394-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "251",
@@ -21534,7 +21534,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0486.978-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0486.978-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "252",
@@ -21628,7 +21628,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0476.826-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0476.760-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "253",
@@ -21719,7 +21719,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0470.674-nd1000w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0373.782-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "254",
@@ -21811,7 +21811,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/PP001_115.0626.053-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_115.0626.051-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "255",
@@ -21905,7 +21905,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/05/AP001_115.0595.091-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/05/AP001_115.0595.086-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "256",
@@ -21998,7 +21998,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/07/PP001_115.0373.945-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/07/TE001_115.0373.943-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "257",
@@ -22092,7 +22092,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP003_115.0521.435-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP002_115.0521.435-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "258",
@@ -22184,7 +22184,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/PP001_115.0623.057-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_115.0623.055-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "259",
@@ -22277,7 +22277,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0550.442-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/PD003_115.0550.442-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "260",
@@ -22368,7 +22368,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/PP001_115.0373.890-nd1000w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/08/TE001_115.0524.929-nd860w-2.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "261",
@@ -22467,7 +22467,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PD002_115.0653.401-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.401-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "262",
@@ -22563,7 +22563,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.379-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/AP001_115.0653.298-nd486w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "263",
@@ -22653,7 +22653,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0625.190-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0625.188-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "264",
@@ -22748,7 +22748,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/04/AP002_115.0393.976-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/03/AP001_115.0545.136-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "265",
@@ -22844,7 +22844,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0524.928-nd486w-1.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0546.118-nd486w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "266",
@@ -22937,7 +22937,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/TE002_115.0668.280.png",
       "https://franke-lux.com.ua/wp-content/uploads/TE001_115.0668.280.png"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "267",
@@ -23031,7 +23031,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0393.975-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0393.975-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "268",
@@ -23131,7 +23131,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP003_115.0613.671-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/AP004_115.0613.671-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "269",
@@ -23222,7 +23222,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/PP004_115.0653.505-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/PP003_115.0653.505-nd1000w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "270",
@@ -23315,7 +23315,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0393.974-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0393.974-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "271",
@@ -23408,7 +23408,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/PP001_115.0265.997-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2018/09/TE001_115.0265.997-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "272",
@@ -23499,7 +23499,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/TE002_115.0529.207-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0529.207-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "273",
@@ -23587,7 +23587,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE001_115.0523.290-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE002_115.0523.290-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "274",
@@ -23680,7 +23680,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/TE001_115.0621.546-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP005_114.0620.977-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "275",
@@ -23775,7 +23775,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP002_115.0596.388-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0596.388-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "276",
@@ -23873,7 +23873,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP002_115.0596.389-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/06/AP001_115.0596.389-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "277",
@@ -23963,7 +23963,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP002_115.0543.285-nd486w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_115.0543.285-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "278",
@@ -24059,7 +24059,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/PP001_330.0528.064-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/07/TE001_330.0528.067-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "279",
@@ -24153,7 +24153,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/TE001_330.0573.294-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2019/10/AP001_330.0573.294-nd486w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "280",
@@ -24253,7 +24253,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/TE004_330.0542.181-nd860w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2020/01/PP003_330.0542.181-nd1000w-1.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "281",
@@ -24336,7 +24336,7 @@
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/PP001_330.0591.778-nd1000w.jpg",
       "https://franke-lux.com.ua/wp-content/uploads/2021/09/TE001_330.0591.773-nd860w.jpg"
     ],
-    "producer": "Franke"
+    "producer": "Bosch"
   },
   {
     "id": "282",
