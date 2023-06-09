@@ -1,4 +1,4 @@
-
+@import "/src/styles/variables.scss";
 
 .total_items {
     display: flex;
@@ -12,7 +12,7 @@
     top: -10px;
     left: -10px;
     color: white;
-    background: red;
+    background: $primary-color;
     padding: 0.5em;
     border-radius: 50%;
 }
