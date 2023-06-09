@@ -12,27 +12,30 @@ export default function SimpleAccordion({
   AccordionText,
   titleClassName,
   textClassName,
+  sx,
+  children, // Add children prop
 }: {
   AccordionTitle: string;
   AccordionText: string;
   titleClassName?: string;
   textClassName?: string;
+  sx?: any;
+  children?: ReactNode; // Declare children prop with type ReactNode
 }) {
-  const [accordionTitle, setAccordionTitle] = useState(AccordionTitle);
-  const [accordionText, setAccordionText] = useState(AccordionText);
+  // ... existing useState hooks ...
 
   return (
     <div>
-      <Accordion>
+      <Accordion sx={sx}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon className={s.accordion__ico} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={titleClassName}>{accordionTitle}</Typography>
+          <Typography className={titleClassName}>{AccordionTitle}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={textClassName}>{accordionText}</Typography>
+          {children} {/* Render children */}
         </AccordionDetails>
       </Accordion>
     </div>

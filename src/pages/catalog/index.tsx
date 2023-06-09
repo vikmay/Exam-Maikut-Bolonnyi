@@ -28,6 +28,9 @@ const ProductListPage: React.FC = () => {
     top: "-3px",
     left: "40px",
   };
+  const [colorFilter, setColorFilter] = useState([]);
+  const [producerFilter, setProducerFilter] = useState([]);
+  const [countryFilter, setCountryFilter] = useState([]);
 
   useEffect(() => {
     switch (sortOption) {
@@ -53,10 +56,37 @@ const ProductListPage: React.FC = () => {
         break;
     }
 
+    if (colorFilter.length > 0) {
+      products = products.filter(product => 
+        product.colors.some(color => colorFilter.includes(color))
+      );
+    }
+    if (producerFilter.length > 0) {
+      products = products.filter((product) =>
+        producerFilter.includes(product.producer)
+      );
+    }
+    
+    // Filter products that have a 'Країна виробника' feature
+    products = products.filter(product => 
+      product.features.some(feature => feature.label === "Країна виробника")
+    );
+
+    if (countryFilter.length > 0) {
+      products = products.filter((product) =>
+        countryFilter.includes(
+          product.features.find(
+            (feature) => feature.label === "Країна виробника"
+          )?.value
+        )
+      );
+    }
+
     const start = (currentPage - 1) * productsPerPage;
     const end = Math.min(currentPage * productsPerPage, products.length);
     setDisplayedProducts(products.slice(start, end));
-  }, [sortOption, currentPage]);
+}, [sortOption, currentPage, colorFilter, producerFilter, countryFilter]);
+
 
   return (
     <>
@@ -96,7 +126,11 @@ const ProductListPage: React.FC = () => {
             </div>
           </Col>
           <Col lg="3" md="4" xs="12">
-            <Filter />
+            <Filter
+              setColorFilter={setColorFilter}
+              setProducerFilter={setProducerFilter}
+              setCountryFilter={setCountryFilter}
+            />
           </Col>
         </Row>
         <Cart
