@@ -47,7 +47,6 @@ const ProductPage: React.FC<ProductPageProps> = () => {
   const notify = () => {
     const { name, phone, comment } = formData;
     toast(`✔Ім’я: ${name}
-    
     ✔Відгук: Надіслано`);
   };
   const [formData, setFormData] = useState({
