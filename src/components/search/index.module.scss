@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+.list {
+  list-style-type: none;
+  padding: 0;
+  .product__list {
+    text-decoration: none;
+    color: $primary-text-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+.line {
+  border-bottom: 1px solid $primary-color;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.search__btn {
+  background-color: $primary-color;
+  color: $primary-bg-color;
+  height: 35px;
+}
+.search__input {
+  width: 80%;
+  height: 35px;
+}

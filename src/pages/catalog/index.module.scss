@@ -34,7 +34,6 @@
 s.sort_accordion {
   padding: 17px 21px;
 }
-
 // id.tsx //
 .product__card_container {
   .product__card_block {
@@ -218,16 +217,13 @@ s.sort_accordion {
   font-size: 18px;
   line-height: 22px;
   color: #444444;
-
   /* identical to box height */
   .labelMargin {
-    margin-bottom: 32px;
-    /* Додати відстань внизу */
+    margin-bottom: 32px; /* Додати відстань внизу */
   }
 
   .valueMargin {
-    margin-top: 0px;
-    /* Додати відстань зверху */
+    margin-top: 0px; /* Додати відстань зверху */
   }
 
   .title {
@@ -244,7 +240,6 @@ s.sort_accordion {
     .line {
       margin: 10px;
       width: 510px;
-      border: 1px solid #a2a2a2;
     }
   }
 }
@@ -284,11 +279,73 @@ s.sort_accordion {
   justify-content: center;
 
   &_card {
+    padding: 35px 25px;
     width: 701px;
     height: 501px;
-    background: #ffffff;
+    background: $primary-bg-color;
     margin-right: 50px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    &_title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #0f0f0f;
+    }
+    &_name {
+      margin-top: 30px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      color: $primary-color;
+    }
+    &_date {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 14px;
+      /* identical to box height, or 100% */
+
+      display: flex;
+      align-items: center;
+
+      color: #b2b2b2;
+    }
+    &_text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+
+      color: rgba(15, 15, 15, 0.6);
+    }
+    &_btn {
+      margin-top: 41px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 39px;
+      width: 181px;
+      border: 1px solid #c90000;
+      padding: 10px 45px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      background-color: $primary-bg-color;
+      color: #c90000;
+      transition: 0.4s;
+      &:hover {
+        color: $primary-bg-color;
+        background-color: $primary-color;
+      }
+    }
   }
 
   &_form {
