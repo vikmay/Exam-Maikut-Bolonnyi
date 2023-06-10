@@ -244,7 +244,7 @@ export default function Home() {
                   onChange={handleChange}
                 />
                 <button className={s.call__form_btn} onClick={notify}>
-                  Make me a toast
+                  Отримати дзвінок
                 </button>
                 <Toaster position="top-right" />
               </div>
