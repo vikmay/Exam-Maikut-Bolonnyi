@@ -148,7 +148,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 }`}
                 onClick={(e) => {
                   scrollFeatures();
-                  setSelectedTab("features"); // Додайте ваш обробник події тут
+                  setSelectedTab("features");
                 }}
               >
                 Всі характеристики
@@ -159,7 +159,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 }`}
                 onClick={(e) => {
                   scrollToDescription();
-                  setSelectedTab("description"); // Додайте ваш обробник події тут
+                  setSelectedTab("description");
                 }}
               >
                 Опис
@@ -170,7 +170,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 }`}
                 onClick={(e) => {
                   scrollReview();
-                  setSelectedTab("reviews"); // Додайте ваш обробник події тут
+                  setSelectedTab("reviews");
                 }}
               >
                 Відгуки
@@ -181,7 +181,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 }`}
                 onClick={(e) => {
                   scrollSimilar();
-                  setSelectedTab("similar"); // Додайте ваш обробник події тут
+                  setSelectedTab("similar");
                 }}
               >
                 Схожі товари
@@ -291,7 +291,12 @@ const ProductPage: React.FC<ProductPageProps> = () => {
         <Row className={s.similar__products_cards}>
           {products.slice(0, 4).map((id: any) => (
             <Col key={id} lg="3" md="4" className="mb-4">
-              <Link href="singleCard">
+              <Link
+                style={{
+                  textDecoration: "none",
+                }}
+                href="singleCard"
+              >
                 <ProductCard product={id} />
               </Link>
             </Col>

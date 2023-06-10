@@ -31,12 +31,14 @@ function Footer() {
           </Col>
           <Col
             xs={{ order: 3, span: 12 }}
-            md={{order:2, span:3}}
+            md={{ order: 2, span: 3 }}
             className="d-flex align-items-center justify-content-md-start
              justify-content-center mb-4"
           >
             <nav className={s.location}>
-                <h5 className="align-self-md-start align-self-center mb-2 ">Location</h5>
+              <h5 className="align-self-md-start align-self-center mb-2 ">
+                Location
+              </h5>
               <ul className="list-inline d-flex flex-column gap-3 gap-md-2">
                 <li>
                   <a
