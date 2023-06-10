@@ -10,7 +10,8 @@ import Tabs from "../../components/tabs";
 import toast, { Toaster } from "react-hot-toast";
 import ProductCard from "@/components/cards/product";
 import Link from "next/link";
-
+import AddToCartBtn from "@/components/cart/addToCart";
+import AddToFavBtn from "@/components/favorites/addToFav";
 interface ProductPageProps {}
 
 const ProductPage: React.FC<ProductPageProps> = () => {
@@ -134,12 +135,14 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
             <div className={s.text__block_price}>{product?.price}грн</div>
             <span className={s.text__block_stock}>В наявності</span>
-            <div className={s.text__block_btn}>1</div>
-            <div className={s.text__block_btn}>1</div>
+            <div className={s.text__block_btn}>
+              {/* <AddToCartBtn></AddToCartBtn> */}
+            </div>
+            <div className={s.text__block_btn}></div>
           </Col>
         </Row>
         <Row>
-          <Col>Photos</Col>
+          <Col></Col>
           <Col>
             <div className={s.tabs__block}>
               <span

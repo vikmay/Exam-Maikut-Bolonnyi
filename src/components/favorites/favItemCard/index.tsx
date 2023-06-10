@@ -44,7 +44,9 @@ const FavItemCard = ({ product }: Props) => {
 
         <Col xs={12} sm={12} md={4} lg={3}>
           <div className={s.favItem__title}>{product.title.slice(0, 26)}</div>
-          <div className={s.favItem__cardModel}>{product.title.slice(28, 64)}</div>
+          <div className={s.favItem__cardModel}>
+            {product.title.slice(28, 64)}
+          </div>
         </Col>
 
         <Col xs={12} sm={4} md={2}>
