@@ -16,7 +16,7 @@ const ProductListPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [sortOption, setSortOption] = useState("Сортувати за");
   let products = Object.values(productsList);
-  const totalProducts = products.length;
+  const [totalProducts, setTotalProducts] = useState(products.length);
 
   // Determine the products for the current page
   const [displayedProducts, setDisplayedProducts] = useState(
@@ -80,7 +80,8 @@ const ProductListPage: React.FC = () => {
           )?.value
         )
       );
-    }
+    };
+    setTotalProducts(products.length);
 
     const start = (currentPage - 1) * productsPerPage;
     const end = Math.min(currentPage * productsPerPage, products.length);
@@ -119,7 +120,7 @@ const ProductListPage: React.FC = () => {
             </Row>
             <div className={s.pagination_wrapper}>
               <Pagination
-                totalItems={products.length}
+                totalItems={totalProducts} // Use 'totalProducts' state instead of 'products.length'
                 itemsPerPage={productsPerPage}
                 onPageChange={setCurrentPage}
               />

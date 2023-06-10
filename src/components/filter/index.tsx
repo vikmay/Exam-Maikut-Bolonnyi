@@ -46,21 +46,21 @@ const Filter: React.FC<FilterProps> = ({
     <>
       <div className={s.filter_container}>
         <div className={s.filter_title_container}>
-          <div className={s.filter_title}>Фільтрування</div>
+          <div className={s.filter_btn_title}>Фільтрування</div>
           <button className={s.filter_btn} onClick={clearFilters}>
             <Image src={filter} alt="filter" width={20} height={20} />
           </button>
         </div>
         <form key={resetKey}>
           <Accordion
-            sx={{ boxShadow: "none", border: "none" }}
+            sx={{ boxShadow: "none", border: "none", mb: "-15px" }}
             AccordionTitle="Колір"
-            AccordionText="Колір"
+            AccordionText=""
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
             {colors.map((color, index) => (
-              <div key={index}>
+              <label className={`${s.checkboxContainer}`} key={index}>
                 <input
                   type="checkbox"
                   id={`color-${index}`}
@@ -75,19 +75,20 @@ const Filter: React.FC<FilterProps> = ({
                     }
                   }}
                 />
-                <label htmlFor={`color-${index}`}>{color}</label>
-              </div>
+                <span className={`${s.checkmark}`}></span>
+                <span className={`${s.checkboxText}`}>{color}</span>
+              </label>
             ))}
           </Accordion>
           <Accordion
-            sx={{ boxShadow: "none", border: "none" }}
+            sx={{ boxShadow: "none", border: "none", mb: "-15px" }}
             AccordionTitle="Виробник"
-            AccordionText="Виробник"
+            AccordionText=""
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
             {producers.map((producer, index) => (
-              <div key={index}>
+              <label className={`${s.checkboxContainer}`} key={index}>
                 <input
                   type="checkbox"
                   id={`producer-${index}`}
@@ -102,19 +103,20 @@ const Filter: React.FC<FilterProps> = ({
                     }
                   }}
                 />
-                <label htmlFor={`producer-${index}`}>{producer}</label>
-              </div>
+                <span className={`${s.checkmark}`}></span>
+                <span className={`${s.checkboxText}`}>{producer}</span>
+              </label>
             ))}
           </Accordion>
           <Accordion
             sx={{ boxShadow: "none", border: "none" }}
             AccordionTitle="Країна"
-            AccordionText="Країна"
+            AccordionText=""
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
             {countries.map((country, index) => (
-              <div key={index}>
+              <label className={`${s.checkboxContainer}`} key={index}>
                 <input
                   type="checkbox"
                   id={`country-${index}`}
@@ -129,8 +131,9 @@ const Filter: React.FC<FilterProps> = ({
                     }
                   }}
                 />
-                <label htmlFor={`country-${index}`}>{country}</label>
-              </div>
+                <span className={`${s.checkmark}`}></span>
+                <span className={`${s.checkboxText}`}>{country}</span>
+              </label>
             ))}
           </Accordion>
         </form>

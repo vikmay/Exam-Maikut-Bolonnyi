@@ -2,12 +2,10 @@
 
 .filter_title_container {
     width: 100%;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-   
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -16,15 +14,64 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     padding: 15px 21px;
 }
+
+.filter_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+
 .filter_btn {
     border: none;
     background: none;
+    &:hover {
+        scale: 1.05;
+    }
 }
-.filter_title {
-    border: none;
-    box-decoration-break: none!important;
+
+
+
+/* Add these to your SCSS file */
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 8px;
+
 }
-.filter_text {
-    border: none;
-    box-decoration-break: none!important;
+
+//real checkbox hidden
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid $primary-color;
+    margin-right: 20px;
+}
+
+.checkboxContainer input:checked~.checkmark {
+    background-color: $primary-color;
+}
+filter.text {
+    margin: 0;
 }

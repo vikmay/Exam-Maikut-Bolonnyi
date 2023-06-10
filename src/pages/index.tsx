@@ -29,7 +29,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [products, setProducts] = useState(Object.values(productsList));
+  const [currentPage, setCurrentPage] = useState(1);
 
+  const handlePageChange = (page: number): void => {
+    setCurrentPage(page);
+  };
   // 💬 Accordion //
   const newAccordionTitle =
     "Lorem ipsum dolor sit amet consectetur. Sed amet viverra cras?";
@@ -84,7 +88,6 @@ export default function Home() {
             autoplay={{ delay: 3000 }}
             spaceBetween={50}
             slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
@@ -241,14 +244,14 @@ export default function Home() {
                   onChange={handleChange}
                 />
                 <button className={s.call__form_btn} onClick={notify}>
-                  Make me a toast
+                  Отримати дзвінок
                 </button>
                 <Toaster position="top-right" />
               </div>
             </Col>
           </Row>
         </Container>
-        <button onClick={focus}>Click</button>
+
         <Container className={s.feedbacks}>
           <Row>
             <Col lg={6} md={4}>
@@ -259,22 +262,9 @@ export default function Home() {
             <Col lg={3} md={4} className="mb-4">
               <div className={s.feedbacks__card}>
                 <p className={s.feedbacks__card_date}>10 вересня 2023</p>
-                <p className={s.feedbacks__card_name}>Анастасія</p>
-                <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
-                <p className={s.feedbacks__card_text}>
-                  Lorem ipsum dolor sit amet consectetur. Gravida amet
-                  consectetur cras lectus viverra vitae. Enim enim ut quis
-                  iaculis viverra augue vel.
+                <p className={s.feedbacks__card_name}>
+                  {currentPage === 1 ? "Анастасія" : "Олег"}
                 </p>
-                <button className={s.feedbacks__card_btn}>
-                  Відгук повністю
-                </button>
-              </div>
-            </Col>
-            <Col lg={3} md={4} className="mb-4">
-              <div className={s.feedbacks__card}>
-                <p className={s.feedbacks__card_date}>10 вересня 2023</p>
-                <p className={s.feedbacks__card_name}>Анастасія</p>
                 <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
                 <p className={s.feedbacks__card_text}>
                   Lorem ipsum dolor sit amet consectetur. Gravida amet
@@ -290,7 +280,9 @@ export default function Home() {
             <Col lg={3} md={4} className="mb-4">
               <div className={s.feedbacks__card}>
                 <p className={s.feedbacks__card_date}>10 вересня 2023</p>
-                <p className={s.feedbacks__card_name}>Анастасія</p>
+                <p className={s.feedbacks__card_name}>
+                  {currentPage === 1 ? "Анастасія" : "Віталік"}
+                </p>
                 <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
                 <p className={s.feedbacks__card_text}>
                   Lorem ipsum dolor sit amet consectetur. Gravida amet
@@ -302,10 +294,31 @@ export default function Home() {
                 </button>
               </div>
             </Col>
+
             <Col lg={3} md={4} className="mb-4">
               <div className={s.feedbacks__card}>
                 <p className={s.feedbacks__card_date}>10 вересня 2023</p>
-                <p className={s.feedbacks__card_name}>Анастасія</p>
+                <p className={s.feedbacks__card_name}>
+                  {currentPage === 1 ? "Анастасія" : "Петро"}
+                </p>
+                <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
+                <p className={s.feedbacks__card_text}>
+                  Lorem ipsum dolor sit amet consectetur. Gravida amet
+                  consectetur cras lectus viverra vitae. Enim enim ut quis
+                  iaculis viverra augue vel.
+                </p>
+                <button className={s.feedbacks__card_btn}>
+                  Відгук повністю
+                </button>
+              </div>
+            </Col>
+
+            <Col lg={3} md={4} className="mb-4">
+              <div className={s.feedbacks__card}>
+                <p className={s.feedbacks__card_date}>10 вересня 2023</p>
+                <p className={s.feedbacks__card_name}>
+                  {currentPage === 1 ? "Анастасія" : "Роман"}
+                </p>
                 <p className={s.feedbacks__card_stars}>⭐⭐⭐⭐⭐</p>
                 <p className={s.feedbacks__card_text}>
                   Lorem ipsum dolor sit amet consectetur. Gravida amet
@@ -319,13 +332,13 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-        <Pagination
-          totalItems={2}
-          itemsPerPage={1}
-          onPageChange={function (page: number): void {
-            throw new Error("Function not implemented.");
-          }}
-        />
+        <Container className={s.pagination}>
+          <Pagination
+            totalItems={2}
+            itemsPerPage={1}
+            onPageChange={(page: number) => setCurrentPage(page)}
+          />
+        </Container>
       </main>
     </>
   );
