@@ -1,6 +1,6 @@
 import React from "react";
-import { totalCartItemsSelector } from "@cartSlice/../../store/features/cartSlice";
-import { useAppSelector } from "@store/../../store/store";
+import { totalCartItemsSelector } from "@/store/features/cartSlice";
+import { useAppSelector } from "@/store/store";
 import Image from "next/image";
 import s from "./index.module.scss";
 

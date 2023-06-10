@@ -4,11 +4,11 @@ import React from "react";
 import {
   TotalPriceSelector,
   totalCartItemsSelector,
-} from "@/../store/features/cartSlice";
-import { useAppSelector } from "@/../store/store";
+} from "@/store/features/cartSlice";
+import { useAppSelector } from "@/store/store";
 import Link from "next/link";
-import { useAppDispatch } from "@/../store/store";
-import { emptyCart } from "@/../../store/features/cartSlice";
+import { useAppDispatch } from "@/store/store";
+import { emptyCart } from "@/store/features/cartSlice";
 import s from "./index.module.scss";
 import CustomAccordion from "@/components/accordion2";
 

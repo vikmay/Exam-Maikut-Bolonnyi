@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { totalFavItemsSelector } from "@/../../store/features/favoritesSlice";
+import { totalFavItemsSelector } from "@/store/features/favoritesSlice";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -20,11 +20,11 @@ const Likes = () => {
             height={22}
             alt="Favorites"
           />
-          {totalFavItems > 0 && (
+          {/* {totalFavItems > 0 && (
             <span className={s.favItemContainer__totalItems}>
               {totalFavItems}
             </span>
-          )}
+          )} */}
         </div>
       </Link>
     </>

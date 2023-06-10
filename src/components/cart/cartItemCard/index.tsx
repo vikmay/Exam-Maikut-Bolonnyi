@@ -1,7 +1,7 @@
 import { CartItem } from "@/../../interfaces";
 import React from "react";
-import { decrement, increment, remove } from "@/../../store/features/cartSlice";
-import { useAppDispatch } from "@/../../store/store";
+import { decrement, increment, remove } from "@/store/features/cartSlice";
+import { useAppDispatch } from "@/store/store";
 import QtyBtn from "../qtyBtn";
 import s from "./index.module.scss";
 import Image from "next/image";

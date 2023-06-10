@@ -1,12 +1,12 @@
 import { Product } from "@/../../interfaces";
 import React from "react";
-import { useAppDispatch, useAppSelector } from "@/../../store/store";
+import { useAppDispatch, useAppSelector } from "@/store/store";
 import s from "./index.module.scss";
 import {
   decrement,
   increment,
   productQtyInCartSelector,
-} from "@/../store/features/cartSlice";
+} from "@/store/features/cartSlice";
 import QtyBtn from "../qtyBtn";
 import Image from "next/image";
 import addtocard from "@/../../public/images/AddToCartBtn.png";
