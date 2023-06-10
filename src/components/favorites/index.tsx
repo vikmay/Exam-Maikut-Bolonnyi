@@ -21,7 +21,9 @@ const Likes = () => {
             alt="Favorites"
           />
           {totalFavItems > 0 && (
-            <span className={s.favItemContainer__totalItems}>{totalFavItems}</span>
+            <span className={s.favItemContainer__totalItems}>
+              {totalFavItems}
+            </span>
           )}
         </div>
       </Link>
