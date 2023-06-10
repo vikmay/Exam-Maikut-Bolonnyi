@@ -10,7 +10,8 @@ import Tabs from "../../components/tabs";
 import toast, { Toaster } from "react-hot-toast";
 import ProductCard from "@/components/cards/product";
 import Link from "next/link";
-
+import AddToCartBtn from "@/components/cart/addToCart";
+import AddToFavBtn from "@/components/favorites/addToFav";
 interface ProductPageProps {}
 
 const ProductPage: React.FC<ProductPageProps> = () => {
@@ -46,7 +47,6 @@ const ProductPage: React.FC<ProductPageProps> = () => {
   const notify = () => {
     const { name, phone, comment } = formData;
     toast(`✔Ім’я: ${name}
-    
     ✔Відгук: Надіслано`);
   };
   const [formData, setFormData] = useState({
@@ -134,12 +134,14 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
             <div className={s.text__block_price}>{product?.price}грн</div>
             <span className={s.text__block_stock}>В наявності</span>
-            <div className={s.text__block_btn}>1</div>
-            <div className={s.text__block_btn}>1</div>
+            <div className={s.text__block_btn}>
+              {/* <AddToCartBtn></AddToCartBtn> */}
+            </div>
+            <div className={s.text__block_btn}></div>
           </Col>
         </Row>
         <Row>
-          <Col>Photos</Col>
+          <Col></Col>
           <Col>
             <div className={s.tabs__block}>
               <span
@@ -148,7 +150,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 }`}
                 onClick={(e) => {
                   scrollFeatures();
-                  setSelectedTab("features"); // Додайте ваш обробник події тут
+                  setSelectedTab("features");
                 }}
               >
                 Всі характеристики
@@ -159,7 +161,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 }`}
                 onClick={(e) => {
                   scrollToDescription();
-                  setSelectedTab("description"); // Додайте ваш обробник події тут
+                  setSelectedTab("description");
                 }}
               >
                 Опис
@@ -170,7 +172,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 }`}
                 onClick={(e) => {
                   scrollReview();
-                  setSelectedTab("reviews"); // Додайте ваш обробник події тут
+                  setSelectedTab("reviews");
                 }}
               >
                 Відгуки
@@ -181,7 +183,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 }`}
                 onClick={(e) => {
                   scrollSimilar();
-                  setSelectedTab("similar"); // Додайте ваш обробник події тут
+                  setSelectedTab("similar");
                 }}
               >
                 Схожі товари
@@ -291,7 +293,12 @@ const ProductPage: React.FC<ProductPageProps> = () => {
         <Row className={s.similar__products_cards}>
           {products.slice(0, 4).map((id: any) => (
             <Col key={id} lg="3" md="4" className="mb-4">
-              <Link href="singleCard">
+              <Link
+                style={{
+                  textDecoration: "none",
+                }}
+                href="singleCard"
+              >
                 <ProductCard product={id} />
               </Link>
             </Col>

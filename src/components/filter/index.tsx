@@ -54,17 +54,9 @@ const Filter: React.FC<FilterProps> = ({
         </div>
         <form key={resetKey}>
           <Accordion
-            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
-            AccordionTitle="Ціна"
-            AccordionText="Price Range"
-            textClassName={s.filter_text}
-            titleClassName={s.filter_title}
-          >
-            <PriceRangeFilter />
-          </Accordion>
-          <Accordion
-            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
+            sx={{ boxShadow: "none", border: "none", mb:"-10px"  }}
             AccordionTitle="Колір"
+          
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -90,9 +82,9 @@ const Filter: React.FC<FilterProps> = ({
             ))}
           </Accordion>
           <Accordion
-            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
+            sx={{ boxShadow: "none", border: "none",  mb: "-10px" }}
             AccordionTitle="Виробник"
-
+            
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -120,6 +112,7 @@ const Filter: React.FC<FilterProps> = ({
           <Accordion
             sx={{ boxShadow: "none", border: "none" }}
             AccordionTitle="Країна"
+            
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >

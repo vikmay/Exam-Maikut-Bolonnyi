@@ -88,7 +88,6 @@ export default function Home() {
             autoplay={{ delay: 3000 }}
             spaceBetween={50}
             slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
@@ -245,7 +244,7 @@ export default function Home() {
                   onChange={handleChange}
                 />
                 <button className={s.call__form_btn} onClick={notify}>
-                  Make me a toast
+                  Отримати дзвінок
                 </button>
                 <Toaster position="top-right" />
               </div>
