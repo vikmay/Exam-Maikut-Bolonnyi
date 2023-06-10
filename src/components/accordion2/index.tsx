@@ -22,8 +22,6 @@ export default function SimpleAccordion({
   sx?: any;
   children?: ReactNode; // Declare children prop with type ReactNode
 }) {
-  
-
   return (
     <div>
       <Accordion sx={sx}>
@@ -36,6 +34,7 @@ export default function SimpleAccordion({
         </AccordionSummary>
         <AccordionDetails>
           {children} {/* Render children */}
+          <Typography className={titleClassName}>{AccordionText}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>
