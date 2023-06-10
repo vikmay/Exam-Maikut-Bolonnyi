@@ -6,7 +6,6 @@ import s from "./index.module.scss";
 import productsList from "@/data/products/products.json";
 import PriceRangeFilter from "../priceRangeFilter";
 
-
 type FilterProps = {
   setColorFilter: Dispatch<SetStateAction<string[]>>;
   setProducerFilter: Dispatch<SetStateAction<string[]>>;
@@ -66,7 +65,6 @@ const Filter: React.FC<FilterProps> = ({
           <Accordion
             sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
             AccordionTitle="Колір"
-            AccordionText="Колір"
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -94,7 +92,7 @@ const Filter: React.FC<FilterProps> = ({
           <Accordion
             sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
             AccordionTitle="Виробник"
-            AccordionText="Виробник"
+
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -122,7 +120,6 @@ const Filter: React.FC<FilterProps> = ({
           <Accordion
             sx={{ boxShadow: "none", border: "none" }}
             AccordionTitle="Країна"
-            AccordionText="Країна"
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
