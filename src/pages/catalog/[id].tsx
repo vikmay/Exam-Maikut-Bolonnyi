@@ -141,7 +141,21 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           </Col>
         </Row>
         <Row>
-          <Col></Col>
+          <Col className={s.swiper__img}>
+            <Row>
+              {product?.images.map((image, index) => (
+                <Image
+                  className={s.swiper__img_block}
+                  key={index}
+                  src={image}
+                  alt={product?.title}
+                  width={420}
+                  height={418}
+                />
+              ))}
+            </Row>
+          </Col>
+
           <Col>
             <div className={s.tabs__block}>
               <span
@@ -177,18 +191,19 @@ const ProductPage: React.FC<ProductPageProps> = () => {
               >
                 Відгуки
               </span>
-              <Row
-                className={`${s.tabs__block_title} ${
-                  selectedTab === "similar" ? s.selected : ""
-                }`}
-                onClick={(e) => {
-                  scrollSimilar();
-                  setSelectedTab("similar");
-                }}
-              >
-                Схожі товари
-              </Row>
             </div>
+
+            <Row
+              className={`${s.tabs__block_title} ${
+                selectedTab === "similar" ? s.selected : ""
+              }`}
+              onClick={(e) => {
+                scrollSimilar();
+                setSelectedTab("similar");
+              }}
+            >
+              Схожі товари
+            </Row>
           </Col>
         </Row>
       </Container>
