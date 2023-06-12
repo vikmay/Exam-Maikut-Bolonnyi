@@ -168,14 +168,15 @@ const ProductListPage: React.FC = () => {
           </Col>
           <Col lg="3" md="4" xs="12"></Col>
         </Row>
-
+      </Container>
+      <div className={s.cart_container}>
+        {" "}
         <Cart
-          className={s.cart_container}
           newImage={cartimg}
           imageSize={{ width: 60, height: 60 }}
           totalItemsStyle={invertedStyle}
         />
-      </Container>
+      </div>
     </>
   );
 };
