@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import {
   addToFavorites,
   removeFromFavorites,
-} from "@/../../store/features/favoritesSlice";
+} from "@/store/features/favoritesSlice";
 import Image from "next/image";
 import s from "./index.module.scss";
 import { Product } from "@/../../interfaces";

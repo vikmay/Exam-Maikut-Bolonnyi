@@ -7,8 +7,8 @@ import CrossButton from "@/utils/crossBtn";
 import AddToCartBtn from "@/components/cart/addToCart";
 
 // import required redux action and hook
-import { removeFromFavorites } from "@/../../store/features/favoritesSlice";
-import { useAppDispatch } from "@/../../store/store";
+import { removeFromFavorites } from "@/store/features/favoritesSlice";
+import { useAppDispatch } from "@/store/store";
 
 // import necessary types
 import { Product } from "@/../../interfaces";

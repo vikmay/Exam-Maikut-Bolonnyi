@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { totalFavItemsSelector } from "@/../../store/features/favoritesSlice";
+import { totalFavItemsSelector } from "@/store/features/favoritesSlice";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

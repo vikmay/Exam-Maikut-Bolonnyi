@@ -48,6 +48,11 @@ const PaginationControl: React.FC<PaginationProps> = ({ totalItems, itemsPerPage
     );
   }
 
+  // If all items can be shown on one page, don't display the Pagination component
+  if (totalItems <= itemsPerPage) {
+    return null;
+  }
+
   return (
     <Pagination>
       {firstPageNumberToShow > 1 && <Pagination.Prev onClick={() => handleArrowClick('left')} />}

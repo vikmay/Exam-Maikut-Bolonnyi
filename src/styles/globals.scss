@@ -54,3 +54,15 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.order-xs-1 {
+  @media (max-width: 575.98px) { // Bootstrap 4 xs max-width
+    order: 1!important;
+  }
+}
+
+.order-xs-2 {
+  @media (max-width: 575.98px) { // Bootstrap 4 xs max-width
+    order: 2!important;
+  }
+}
