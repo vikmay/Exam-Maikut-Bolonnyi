@@ -1,22 +1,18 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setColorFilter, setProducerFilter, setCountryFilter } from "@/store/features/filterActions";
 import Accordion from "@/components/accordion2";
-import filter from "@/../public/images/Filter_clear.png";
 import Image from "next/image";
 import s from "./index.module.scss";
 import productsList from "@/data/products/products.json";
 import PriceRangeFilter from "../priceRangeFilter";
 
-type FilterProps = {
-  setColorFilter: Dispatch<SetStateAction<string[]>>;
-  setProducerFilter: Dispatch<SetStateAction<string[]>>;
-  setCountryFilter: Dispatch<SetStateAction<string[]>>;
-};
+const Filter: React.FC = () => {
+  const dispatch = useDispatch();
+  const colorFilter = useSelector((state) => state.filter.colorFilter);
+  const producerFilter = useSelector((state) => state.filter.producerFilter);
+  const countryFilter = useSelector((state) => state.filter.countryFilter);
 
-const Filter: React.FC<FilterProps> = ({
-  setColorFilter,
-  setProducerFilter,
-  setCountryFilter,
-}) => {
   const products = Object.values(productsList);
 
   // Calculate unique colors, producers, and countries
@@ -33,30 +29,22 @@ const Filter: React.FC<FilterProps> = ({
     ),
   ].filter(Boolean);
 
-  // State for resetting the form
-  const [resetKey, setResetKey] = React.useState(Math.random().toString());
-
-  const clearFilters = () => {
-    setColorFilter([]);
-    setProducerFilter([]);
-    setCountryFilter([]);
-    setResetKey(Math.random().toString()); // This will cause the form to re-render, resetting the checkboxes
-  };
-
   return (
     <>
       <div className={s.filter_container}>
-        <div className={s.filter_title_container}>
-          <div className={s.filter_btn_title}>Фільтрування</div>
-          <button className={s.filter_btn} onClick={clearFilters}>
-            <Image src={filter} alt="filter" width={20} height={20} />
-          </button>
-        </div>
-        <form key={resetKey} className={s.form}>
+       
+        <form className={s.form}>
           <Accordion
-            sx={{ boxShadow: "none", border: "none", mb:"-10px" }}
+            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
+            AccordionTitle="Ціна"
+            titleClassName={s.filter_title}
+            textClassName={s.filter_text}
+          >
+            <PriceRangeFilter />
+          </Accordion>
+          <Accordion
+            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
             AccordionTitle="Колір"
-          
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -66,14 +54,17 @@ const Filter: React.FC<FilterProps> = ({
                   type="checkbox"
                   id={`color-${index}`}
                   value={color}
+                  checked={colorFilter.includes(color)}
                   onChange={(e) => {
+                    let newColorFilter = [...colorFilter];
                     if (e.target.checked) {
-                      setColorFilter((prev) => [...prev, e.target.value]);
+                      newColorFilter.push(e.target.value);
                     } else {
-                      setColorFilter((prev) =>
-                        prev.filter((color) => color !== e.target.value)
+                      newColorFilter = newColorFilter.filter(
+                        (color) => color !== e.target.value
                       );
                     }
+                    dispatch(setColorFilter(newColorFilter));
                   }}
                 />
                 <span className={`${s.checkmark}`}></span>
@@ -82,9 +73,8 @@ const Filter: React.FC<FilterProps> = ({
             ))}
           </Accordion>
           <Accordion
-            sx={{ boxShadow: "none", border: "none",  mb: "-10px" }}
+            sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
             AccordionTitle="Виробник"
-            
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -94,14 +84,17 @@ const Filter: React.FC<FilterProps> = ({
                   type="checkbox"
                   id={`producer-${index}`}
                   value={producer}
+                  checked={producerFilter.includes(producer)}
                   onChange={(e) => {
+                    let newProducerFilter = [...producerFilter];
                     if (e.target.checked) {
-                      setProducerFilter((prev) => [...prev, e.target.value]);
+                      newProducerFilter.push(e.target.value);
                     } else {
-                      setProducerFilter((prev) =>
-                        prev.filter((prod) => prod !== e.target.value)
+                      newProducerFilter = newProducerFilter.filter(
+                        (prod) => prod !== e.target.value
                       );
                     }
+                    dispatch(setProducerFilter(newProducerFilter));
                   }}
                 />
                 <span className={`${s.checkmark}`}></span>
@@ -112,7 +105,6 @@ const Filter: React.FC<FilterProps> = ({
           <Accordion
             sx={{ boxShadow: "none", border: "none" }}
             AccordionTitle="Країна"
-            
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -122,14 +114,17 @@ const Filter: React.FC<FilterProps> = ({
                   type="checkbox"
                   id={`country-${index}`}
                   value={country}
+                  checked={countryFilter.includes(country)}
                   onChange={(e) => {
+                    let newCountryFilter = [...countryFilter];
                     if (e.target.checked) {
-                      setCountryFilter((prev) => [...prev, e.target.value]);
+                      newCountryFilter.push(e.target.value);
                     } else {
-                      setCountryFilter((prev) =>
-                        prev.filter((cntry) => cntry !== e.target.value)
+                      newCountryFilter = newCountryFilter.filter(
+                        (cntry) => cntry !== e.target.value
                       );
                     }
+                    dispatch(setCountryFilter(newCountryFilter));
                   }}
                 />
                 <span className={`${s.checkmark}`}></span>

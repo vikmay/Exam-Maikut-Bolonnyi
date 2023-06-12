@@ -1,182 +1,142 @@
-import React, { useState, useEffect } from "react";
-import productsList from "@/data/products/products.json";
-import ProductCard from "@/components/cards/product";
-import { Container, Row, Col } from "react-bootstrap";
-import Filter from "@/components/filter";
-import Pagination from "@/components/pagination";
-import s from "./index.module.scss";
-import cartimg from "@/../public/images/AddToCartBtn.png";
-import Cart from "@/components/cart";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setColorFilter,
+  setProducerFilter,
+  setCountryFilter,
+} from "@/store/features/filterActions";
 import Accordion from "@/components/accordion2";
+import Image from "next/image";
+import s from "./index.module.scss";
+import productsList from "@/data/products/products.json";
+import PriceRangeFilter from "@/components/priceRangeFilter";
+import { RootState } from "@/store/store";
+import { clearFilters } from "@/store/features/filterActions";
+import { Container, Row, Col } from "react-bootstrap";
 import Sort from "@/components/sort";
-import Link from "next/link";
+import ClearFilterButton from "@/components/filter/ClearFilterButton";
+import ProductCard from "@/components/cards/product";
+import Pagination from "@/components/pagination";
+import Filter from "@/components/filter";
 
 const ProductListPage: React.FC = () => {
-  const productsPerPage = 9;
-  const [currentPage, setCurrentPage] = useState(1);
-  const [sortOption, setSortOption] = useState("Сортувати за");
-  let products = Object.values(productsList);
-  const [totalProducts, setTotalProducts] = useState(products.length);
-
-  // Determine the products for the current page
-  const [displayedProducts, setDisplayedProducts] = useState(
-    products.slice(0, productsPerPage)
+  const dispatch = useDispatch();
+  const colorFilter = useSelector(
+    (state: RootState) => state.filter.colorFilter
   );
-  const invertedStyle: React.CSSProperties = {
-    color: "#C90000",
-    backgroundColor: "whitesmoke",
-    top: "-3px",
-    left: "40px",
-  };
-  const [priceFilter, setPriceFilter] = useState([0, 50000]);
-  const [colorFilter, setColorFilter] = useState([]);
-  const [producerFilter, setProducerFilter] = useState([]);
-  const [countryFilter, setCountryFilter] = useState([]);
+  const producerFilter = useSelector(
+    (state: RootState) => state.filter.producerFilter
+  );
+  const countryFilter = useSelector(
+    (state: RootState) => state.filter.countryFilter
+  );
 
-  const getQuantityLabel = (num: number) => {
-    const lastDigit = num % 10;
-    const lastTwoDigits = num % 100;
+  const productsPerPage = 9;
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const [sortOption, setSortOption] = React.useState("Сортувати за");
+  const products = Object.values(productsList);
+  const [filteredProducts, setFilteredProducts] = React.useState(products);
 
-    if (lastDigit === 1 && !(lastTwoDigits >= 11 && lastTwoDigits <= 14)) {
-      return "товар";
-    } else if (
-      lastDigit >= 2 &&
-      lastDigit <= 4 &&
-      !(lastTwoDigits >= 10 && lastTwoDigits <= 20)
-    ) {
-      return "товари";
-    } else {
-      return "товарів";
-    }
-  };
-
-  useEffect(() => {
-    switch (sortOption) {
-      case "сортувати від А до Я":
-        products.sort((a, b) => {
-          if (a.title && b.title) {
-            return a.title.localeCompare(b.title);
-          }
-          return 0;
-        });
-        break;
-      case "від Я до А":
-        products.sort((a, b) => {
-          if (a.title && b.title) {
-            return b.title.localeCompare(a.title);
-          }
-          return 0;
-        });
-        break;
-      default:
-        // No sorting or restore original order
-        products = Object.values(productsList);
-        break;
-    }
-    if (priceFilter[0] !== 0 || priceFilter[1] !== 50000) {
-      products = products.filter(
-        (product) =>
-          product.price >= priceFilter[0] && product.price <= priceFilter[1]
-      );
-    }
-
+  // Apply filters and sorting
+  React.useEffect(() => {
+    let updatedProducts = [...products];
     if (colorFilter.length > 0) {
-      products = products.filter((product) =>
+      updatedProducts = updatedProducts.filter((product) =>
         product.colors.some((color) => colorFilter.includes(color))
       );
     }
     if (producerFilter.length > 0) {
-      products = products.filter((product) =>
+      updatedProducts = updatedProducts.filter((product) =>
         producerFilter.includes(product.producer)
       );
     }
-
-    products = products.filter((product) =>
-      product.features.some((feature) => feature.label === "Країна виробника")
-    );
-
     if (countryFilter.length > 0) {
-      products = products.filter((product) =>
-        countryFilter.includes(
-          product.features.find(
-            (feature) => feature.label === "Країна виробника"
-          )?.value
+      updatedProducts = updatedProducts.filter((product) =>
+        product.features.some(
+          (feature) =>
+            feature.label === "Країна виробника" &&
+            countryFilter.includes(feature.value)
         )
       );
     }
-    setTotalProducts(products.length);
+    switch (sortOption) {
+      case "сортувати від А до Я":
+        updatedProducts.sort((a, b) =>
+          a.title.localeCompare(b.title, "uk", { sensitivity: "base" })
+        );
+        break;
+      case "від Я до А":
+        updatedProducts.sort((a, b) =>
+          b.title.localeCompare(a.title, "uk", { sensitivity: "base" })
+        );
+        break;
+      default:
+        // No sorting or restore original order
+        break;
+    }
+    setFilteredProducts(updatedProducts);
+  }, [colorFilter, producerFilter, countryFilter, sortOption, products]);
 
-    const start = (currentPage - 1) * productsPerPage;
-    const end = Math.min(currentPage * productsPerPage, products.length);
-    setDisplayedProducts(products.slice(start, end));
-  }, [
-    sortOption,
-    currentPage,
-    colorFilter,
-    producerFilter,
-    countryFilter,
-    priceFilter,
-  ]);
+  // Pagination
+  const totalProducts = filteredProducts.length;
+  const totalPages = Math.ceil(totalProducts / productsPerPage);
+  const start = (currentPage - 1) * productsPerPage;
+  const end = start + productsPerPage;
+  const displayedProducts = filteredProducts.slice(start, end);
 
   return (
     <>
-      <Container className={s.top_items_container}>
-        <Row>
-          <Col>
+      <Container>
+        <Row className="align-items-start">
+          <Col lg="3">
             <h2 className={s.main_title}>Каталог</h2>
           </Col>
-          <Col lg="4" className="text-end my-3">
-            <span
-              className={s.total__items}
-            >{`${totalProducts} ${getQuantityLabel(totalProducts)}`}</span>
+
+          <Col className="text-end mt-4" lg="3">
+            <span className={s.total__items}>{`${totalProducts} ${
+              totalProducts === 1 ? "товар" : "товари"
+            }`}</span>
           </Col>
-          <Col lg="3" className={s.sort_accordion}>
+          <Col lg="3">
             <Sort onSortOptionChange={setSortOption} />
           </Col>
           <Col lg="3">
-            {" "}
-            <Filter
-              setColorFilter={setColorFilter}
-              setProducerFilter={setProducerFilter}
-              setCountryFilter={setCountryFilter}
-              setPriceFilter={setPriceFilter}
-            />{" "}
+            <div className={s.filter_btn_container}>
+              <span>Фільтрування</span><ClearFilterButton onClick={() => dispatch(clearFilters())} />
+            </div>
           </Col>
         </Row>
       </Container>
+
       <Container className={s.products_container}>
         <Row className="align-items-start">
-          <Col lg="9" md="12" xs="12">
+          <Col className="order-2 order-lg-1" lg="9" md="12" xs="12">
             <Row>
-              {displayedProducts.map((product: any) => {
-                return (
-                  <>
-                    <Col key={product.id} lg="4" md="6" className="mb-4">
-                      <ProductCard product={product} />
-                    </Col>
-                  </>
-                );
-              })}
+              {displayedProducts.map((product: any) => (
+                <Col
+                  key={product.id}
+                  lg="4"
+                  md="6"
+                  className="mb-4 mt-sm-3 mt-lg-0"
+                >
+                  <ProductCard product={product} />
+                </Col>
+              ))}
             </Row>
             <div className={s.pagination_wrapper}>
               <Pagination
-                totalItems={totalProducts} // Use 'totalProducts' state instead of 'products.length'
+                totalItems={totalProducts}
                 itemsPerPage={productsPerPage}
+                currentPage={currentPage}
                 onPageChange={setCurrentPage}
               />
             </div>
           </Col>
-          <Col lg="3" md="4" xs="12"></Col>
+          <Col className="order-1 order-lg-2" lg="3" md="12" xs="12">
+            <Filter />
+          </Col>
         </Row>
       </Container>
-      <div className={s.cart_container}>
-        {" "}
-        <Cart
-          newImage={cartimg}
-          imageSize={{ width: 60, height: 60 }}
-          totalItemsStyle={invertedStyle}
-        />
-      </div>
     </>
   );
 };
