@@ -9,7 +9,7 @@
 .select {
     width: 100%;
     border: none;
-    padding: 17px 26px;
+    padding: 17px 16px;
 
     color: $primary-text-color;
     font-family: 'Montserrat';
@@ -38,7 +38,6 @@
     font-size: 16px;
     line-height: 18px;
     color: $primary-text-color;
-
 }
 
 .arrowimg {
@@ -46,7 +45,7 @@
     width: 18px;
     height: 12px;
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
 }

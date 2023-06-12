@@ -1,15 +1,38 @@
 @import "/src/styles/variables.scss";
 
+.top_items_container{
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  @media screen and (max-width: 990px){
+    position: inherit;
+    transform: translateX(0);
+
+  }
+}
+.main_title {
+  margin: 8px 0 0 0;
+}
+
+.total__items {
+  color: $primary-color;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}
+.sort_accordion {
+  margin-bottom: 18px;
+}
+
 .products_container {
   position: relative;
-
-  .total__items {
-    color: $primary-color;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
+  margin-top: 70px;
+  @media screen and (max-width: 990px){
+    margin-top: 18px;
   }
 }
 
@@ -18,8 +41,8 @@
   position: sticky;
   right: 0;
   bottom: 20px;
-  width: 100%;
-  margin-left: 100%;
+  // width: 100%;
+  margin-left: 96%;
 
   @media screen and (max-width: 840px) {
     display: none;

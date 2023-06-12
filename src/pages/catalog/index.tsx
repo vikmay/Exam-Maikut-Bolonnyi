@@ -91,7 +91,6 @@ const ProductListPage: React.FC = () => {
       );
     }
 
-    // Filter products that have a 'Країна виробника' feature
     products = products.filter((product) =>
       product.features.some((feature) => feature.label === "Країна виробника")
     );
@@ -110,31 +109,45 @@ const ProductListPage: React.FC = () => {
     const start = (currentPage - 1) * productsPerPage;
     const end = Math.min(currentPage * productsPerPage, products.length);
     setDisplayedProducts(products.slice(start, end));
-  }, [sortOption, currentPage, colorFilter, producerFilter, countryFilter, priceFilter]);
+  }, [
+    sortOption,
+    currentPage,
+    colorFilter,
+    producerFilter,
+    countryFilter,
+    priceFilter,
+  ]);
 
   return (
     <>
+      <Container className={s.top_items_container}>
+        <Row>
+          <Col>
+            <h2 className={s.main_title}>Каталог</h2>
+          </Col>
+          <Col lg="4" className="text-end my-3">
+            <span
+              className={s.total__items}
+            >{`${totalProducts} ${getQuantityLabel(totalProducts)}`}</span>
+          </Col>
+          <Col lg="3" className={s.sort_accordion}>
+            <Sort onSortOptionChange={setSortOption} />
+          </Col>
+          <Col lg="3">
+            {" "}
+            <Filter
+              setColorFilter={setColorFilter}
+              setProducerFilter={setProducerFilter}
+              setCountryFilter={setCountryFilter}
+              setPriceFilter={setPriceFilter}
+            />{" "}
+          </Col>
+        </Row>
+      </Container>
       <Container className={s.products_container}>
         <Row className="align-items-start">
-          <Col lg="9" md="8" xs="12">
+          <Col lg="9" md="12" xs="12">
             <Row>
-              <Col lg="12" md="12" xs="12">
-                <Row className="flex align-items-center mb-4">
-                  <Col lg="5" xs="12">
-                    <h2>Каталог</h2>
-                  </Col>
-                  <Col lg="3" className="text-end">
-                    <span
-                      className={s.total__items}
-                    >{`${totalProducts} ${getQuantityLabel(
-                      totalProducts
-                    )}`}</span>
-                  </Col>
-                  <Col lg="4" className={s.sort_accordion}>
-                    <Sort onSortOptionChange={setSortOption} />
-                  </Col>
-                </Row>
-              </Col>
               {displayedProducts.map((product: any) => {
                 return (
                   <>
@@ -153,14 +166,7 @@ const ProductListPage: React.FC = () => {
               />
             </div>
           </Col>
-          <Col lg="3" md="4" xs="12">
-            <Filter
-              setColorFilter={setColorFilter}
-              setProducerFilter={setProducerFilter}
-              setCountryFilter={setCountryFilter}
-              setPriceFilter={setPriceFilter} // Add this line
-            />
-          </Col>
+          <Col lg="3" md="4" xs="12"></Col>
         </Row>
 
         <Cart

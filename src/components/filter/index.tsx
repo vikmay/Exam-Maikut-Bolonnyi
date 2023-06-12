@@ -52,9 +52,9 @@ const Filter: React.FC<FilterProps> = ({
             <Image src={filter} alt="filter" width={20} height={20} />
           </button>
         </div>
-        <form key={resetKey}>
+        <form key={resetKey} className={s.form}>
           <Accordion
-            sx={{ boxShadow: "none", border: "none", mb:"-10px"  }}
+            sx={{ boxShadow: "none", border: "none", mb:"-10px" }}
             AccordionTitle="Колір"
           
             textClassName={s.filter_text}
