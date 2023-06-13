@@ -5,7 +5,7 @@ import { useAppDispatch } from "@/store/store";
 import QtyBtn from "../qtyBtn";
 import s from "./index.module.scss";
 import Image from "next/image";
-import CrossButton from "@/utils/crossBtn";
+import CrossButton from "@/components/crossBtn";
 import { Container, Row, Col } from "react-bootstrap";
 
 interface Props {

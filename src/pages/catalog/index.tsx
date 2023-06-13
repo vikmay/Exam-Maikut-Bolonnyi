@@ -18,6 +18,7 @@ import ClearFilterButton from "@/components/filter/ClearFilterButton";
 import ProductCard from "@/components/cards/product";
 import Pagination from "@/components/pagination";
 import Filter from "@/components/filter";
+import getQuantityLabel from "@/utils/quantityLabel";
 
 const ProductListPage: React.FC = () => {
   const dispatch = useDispatch();
@@ -75,7 +76,7 @@ const ProductListPage: React.FC = () => {
         break;
     }
     setFilteredProducts(updatedProducts);
-  }, [colorFilter, producerFilter, countryFilter, sortOption, products]);
+  }, [colorFilter, producerFilter, countryFilter, sortOption]);
 
   // Pagination
   const totalProducts = filteredProducts.length;
@@ -93,14 +94,12 @@ const ProductListPage: React.FC = () => {
           </Col>
 
           <Col className="text-end mt-4" lg="3">
-            <span className={s.total__items}>{`${totalProducts} ${
-              totalProducts === 1 ? "товар" : "товари"
-            }`}</span>
+            <span className={s.total__items}>{`${totalProducts} ${getQuantityLabel(totalProducts)}`}</span>
           </Col>
           <Col lg="3">
             <Sort onSortOptionChange={setSortOption} />
           </Col>
-          <Col lg="3">
+          <Col className="mt-3 mt-lg-0" lg="3">
             <div className={s.filter_btn_container}>
               <span>Фільтрування</span><ClearFilterButton onClick={() => dispatch(clearFilters())} />
             </div>

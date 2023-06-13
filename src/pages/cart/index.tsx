@@ -10,7 +10,8 @@ import Link from "next/link";
 import { useAppDispatch } from "@/store/store";
 import { emptyCart } from "@/store/features/cartSlice";
 import s from "./index.module.scss";
-import CustomAccordion from "@/components/accordion2";
+import DeliveryAccordion from "@/components/accordion2";
+import  getQuantityLabel from "@/utils/quantityLabel";
 
 const CartPage = () => {
   const dispatch = useAppDispatch();
@@ -25,22 +26,22 @@ const CartPage = () => {
 
   const onSubmit = (data: any) => console.log(data);
 
-  const getQuantityLabel = (num: number) => {
-    const lastDigit = num % 10;
-    const lastTwoDigits = num % 100;
+  // const getQuantityLabel = (num: number) => {
+  //   const lastDigit = num % 10;
+  //   const lastTwoDigits = num % 100;
 
-    if (lastDigit === 1 && !(lastTwoDigits >= 11 && lastTwoDigits <= 14)) {
-      return "товар";
-    } else if (
-      lastDigit >= 2 &&
-      lastDigit <= 4 &&
-      !(lastTwoDigits >= 10 && lastTwoDigits <= 20)
-    ) {
-      return "товари";
-    } else {
-      return "товарів";
-    }
-  };
+  //   if (lastDigit === 1 && !(lastTwoDigits >= 11 && lastTwoDigits <= 14)) {
+  //     return "товар";
+  //   } else if (
+  //     lastDigit >= 2 &&
+  //     lastDigit <= 4 &&
+  //     !(lastTwoDigits >= 10 && lastTwoDigits <= 20)
+  //   ) {
+  //     return "товари";
+  //   } else {
+  //     return "товарів";
+  //   }
+  // };
 
   if (cartItems.length === 0) {
     return (
@@ -100,12 +101,13 @@ const CartPage = () => {
               </div>
 
               <div className={s.accord_container}>
-                <CustomAccordion
+                <DeliveryAccordion
+                  titleClassName={s.accordion_delivery}
                   AccordionTitle="Доставка"
                   AccordionText="Доставка по Україні здійснюється за допомогою служби доставки «Нова Пошта»."
                 >
                   Доставка
-                </CustomAccordion>
+                </DeliveryAccordion>
                 <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
                   <input
                     className={s.input}

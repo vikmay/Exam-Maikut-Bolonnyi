@@ -7,6 +7,9 @@
   font-family: "Montserrat";
   font-style: normal;
   transition: ease-out 0.8s;
+  @media screen and (min-width: 992px) and (max-width: 1199px){
+    height: 500px;
+  }
   a {
     text-decoration: none;
   
@@ -52,6 +55,7 @@
       font-size: 16px;
       line-height: 18px;
       color: black;
+      margin: 10px 0 3px 0;
     }
 
     .card_model {
@@ -63,6 +67,7 @@
       font-weight: 700;
       font-size: 14px;
       line-height: 14px;
+      margin:20px 0;
     }
 
     .card__producer {
@@ -80,6 +85,12 @@
       justify-content: space-between;
       display: flex;
       align-items: center;
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+      }
+        
+      
 
       .card__price {
         font-weight: 700;
