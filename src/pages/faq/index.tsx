@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleAccordion from "@/components/accordion2";
+import SimpleAccordion from "@/components/accordion";
 import s from "./index.module.scss";
 const faqData = [
   {

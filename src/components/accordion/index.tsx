@@ -1,28 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, ReactNode } from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// Styles //
 import s from "./index.module.scss";
 
-type AccordionProps = {
-  title: string;
-  children: React.ReactNode;
-  headerClassName?: string;
-  bodyClassName?: string;
-}
-
-const CustomAccordion: React.FC<AccordionProps> = ({ title, children, headerClassName, bodyClassName }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleIsOpen = () => {
-    setIsOpen(!isOpen);
-  };
-
+export default function SimpleAccordion({
+  AccordionTitle,
+  AccordionText,
+  titleClassName,
+  textClassName,
+  sx,
+  children, // Add children prop
+}: {
+  AccordionTitle: string;
+  AccordionText: string;
+  titleClassName?: string;
+  textClassName?: string;
+  sx?: any;
+  children?: ReactNode; // Declare children prop with type ReactNode
+}) {
   return (
-    <div className={s.accordion}>
-      <button onClick={toggleIsOpen} className={`${isOpen ? s.openHeader : s.closedHeader} ${headerClassName}`}>
-        {title}
-      </button>
-      {isOpen && <div className={`${s.body} ${bodyClassName}`}>{children}</div>}
+    <div>
+      <Accordion sx={sx}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className={s.accordion__ico} />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className={titleClassName}>{AccordionTitle}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          {children} {/* Render children */}
+          <Typography className={titleClassName}>{AccordionText}</Typography>
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
-};
-
-export default CustomAccordion;
+}

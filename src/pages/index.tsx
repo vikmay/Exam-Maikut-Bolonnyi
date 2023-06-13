@@ -23,7 +23,7 @@ import ProductCard from "@/components/cards/product";
 import productsList from "@/data/products/products.json";
 import Pagination from "../components/pagination";
 import Link from "next/link";
-import SimpleAccordion from "../components/accordion2";
+import SimpleAccordion from "../components/accordion";
 
 const inter = Inter({ subsets: ["latin"] });
 

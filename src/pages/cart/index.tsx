@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useAppDispatch } from "@/store/store";
 import { emptyCart } from "@/store/features/cartSlice";
 import s from "./index.module.scss";
-import DeliveryAccordion from "@/components/accordion2";
+import DeliveryAccordion from "@/components/accordion";
 import  getQuantityLabel from "@/utils/quantityLabel";
 
 const CartPage = () => {

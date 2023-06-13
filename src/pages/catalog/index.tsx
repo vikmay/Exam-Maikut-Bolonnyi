@@ -1,15 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  setColorFilter,
-  setProducerFilter,
-  setCountryFilter,
-} from "@/store/features/filterActions";
-import Accordion from "@/components/accordion2";
-import Image from "next/image";
 import s from "./index.module.scss";
 import productsList from "@/data/products/products.json";
-import PriceRangeFilter from "@/components/priceRangeFilter";
 import { RootState } from "@/store/store";
 import { clearFilters } from "@/store/features/filterActions";
 import { Container, Row, Col } from "react-bootstrap";
@@ -19,6 +11,7 @@ import ProductCard from "@/components/cards/product";
 import Pagination from "@/components/pagination";
 import Filter from "@/components/filter";
 import getQuantityLabel from "@/utils/quantityLabel";
+
 
 const ProductListPage: React.FC = () => {
   const dispatch = useDispatch();
