@@ -11,14 +11,13 @@
     position: absolute;
     top: -10px;
     left: -10px;
-    color: white;
+    color: $primary-bg-color;
     background: $primary-color;
     padding: 0.5em;
     border-radius: 50%;
 }
 
 .cart_icon {
-
     cursor: pointer;
 }
 

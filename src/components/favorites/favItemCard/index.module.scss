@@ -70,9 +70,7 @@
 
 .btn {
   &__simple {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     width: 100%;
     background: $primary-color;
     color: $button_footer-color;
