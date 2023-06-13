@@ -4,6 +4,7 @@ import Pagination from 'react-bootstrap/Pagination';
 interface PaginationProps {
   totalItems: number;
   itemsPerPage: number;
+  currentPage: number;
   onPageChange: (page: number) => void;
 }
 

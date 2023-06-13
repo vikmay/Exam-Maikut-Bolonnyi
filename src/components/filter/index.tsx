@@ -1,17 +1,34 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setColorFilter, setProducerFilter, setCountryFilter } from "@/store/features/filterActions";
-import Accordion from "@/components/accordion2";
-import Image from "next/image";
+import {
+  setColorFilter,
+  setProducerFilter,
+  setCountryFilter,
+} from "@/store/features/filterActions";
+import Accordion from "@/components/accordion";
 import s from "./index.module.scss";
 import productsList from "@/data/products/products.json";
 import PriceRangeFilter from "../priceRangeFilter";
 
+interface RootState {
+  filter: {
+    colorFilter: string[];
+    producerFilter: string[];
+    countryFilter: string[];
+  };
+}
+
 const Filter: React.FC = () => {
   const dispatch = useDispatch();
-  const colorFilter = useSelector((state) => state.filter.colorFilter);
-  const producerFilter = useSelector((state) => state.filter.producerFilter);
-  const countryFilter = useSelector((state) => state.filter.countryFilter);
+  const colorFilter = useSelector(
+    (state: RootState) => state.filter.colorFilter
+  );
+  const producerFilter = useSelector(
+    (state: RootState) => state.filter.producerFilter
+  );
+  const countryFilter = useSelector(
+    (state: RootState) => state.filter.countryFilter
+  );
 
   const products = Object.values(productsList);
 
@@ -32,10 +49,10 @@ const Filter: React.FC = () => {
   return (
     <>
       <div className={s.filter_container}>
-       
         <form className={s.form}>
           <Accordion
             sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
+            AccordionText=""
             AccordionTitle="Ціна"
             titleClassName={s.filter_title}
             textClassName={s.filter_text}
@@ -45,6 +62,7 @@ const Filter: React.FC = () => {
           <Accordion
             sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
             AccordionTitle="Колір"
+            AccordionText=""
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -75,6 +93,7 @@ const Filter: React.FC = () => {
           <Accordion
             sx={{ boxShadow: "none", border: "none", mb: "-10px" }}
             AccordionTitle="Виробник"
+            AccordionText=""
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -105,6 +124,7 @@ const Filter: React.FC = () => {
           <Accordion
             sx={{ boxShadow: "none", border: "none" }}
             AccordionTitle="Країна"
+            AccordionText=""
             textClassName={s.filter_text}
             titleClassName={s.filter_title}
           >
@@ -114,7 +134,7 @@ const Filter: React.FC = () => {
                   type="checkbox"
                   id={`country-${index}`}
                   value={country}
-                  checked={countryFilter.includes(country)}
+                  checked={country ? countryFilter.includes(country) : false}
                   onChange={(e) => {
                     let newCountryFilter = [...countryFilter];
                     if (e.target.checked) {

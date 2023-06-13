@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./index.module.scss";
-import Accordion from "@/components/accordion2";
+import Accordion from "@/components/accordion";
 import Image from "next/image";
 import arrow from "../../../public/images/Arrow.png";
 

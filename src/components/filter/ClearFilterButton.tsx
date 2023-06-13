@@ -5,7 +5,11 @@ import filter from "@/../public/images/Filter_clear.png";
 import Image from "next/image";
 import s from "./index.module.scss";
 
-const ClearFilterButton: React.FC = () => {
+interface ClearFilterButtonProps {
+  onClick: () => void;
+}
+
+const ClearFilterButton: React.FC<ClearFilterButtonProps> = ({ onClick }) => {
   const dispatch = useDispatch();
 
   const handleClearFilters = () => {
