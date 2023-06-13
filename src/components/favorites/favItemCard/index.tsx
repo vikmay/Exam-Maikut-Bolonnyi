@@ -33,17 +33,21 @@ const FavItemCard = ({ product }: Props) => {
     <Container>
       <Row className={s.favItem__container}>
         <Col xs={12} sm={12} md={2} className={s.favItem__imgNameWrapper}>
-          <Image
-            src={product.images[0]}
-            width={100}
-            height={100}
-            alt={product.title}
-            className={s.favItem__image}
-          />
+          {product?.images && product.images.length > 0 ? (
+            <Image
+              src={product.images[0]}
+              width={100}
+              height={100}
+              alt={product.title}
+              className={s.favItem__image}
+            />
+          ) : (
+            <div className={s.favItem__noImage}>No Image Available</div>
+          )}
         </Col>
 
         <Col xs={12} sm={12} md={4} lg={3}>
-          <div className={s.favItem__title}>{product.title.slice(0, 26)}</div>
+          <div className={s.favItem__title}>{product?.title.slice(0, 26)}</div>
           <div className={s.favItem__cardModel}>
             {product.title.slice(28, 64)}
           </div>
