@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import s from "./index.module.scss";
 import Image from "next/image";
-import CrossButton from "@/utils/crossBtn";
+import CrossButton from "@/components/crossBtn";
 import AddToCartBtn from "@/components/cart/addToCart";
 
 // import required redux action and hook
