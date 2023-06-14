@@ -23,8 +23,13 @@ const FavItemCard = ({ product }: Props) => {
   // use the redux dispatch hook
   const dispatch = useAppDispatch();
 
-  // return null if there is no product
-  if (!product) {
+    // return null if there is no product
+    if (!product) {
+      return null;
+    }
+
+   // return null if product.images is not defined or is empty
+  if (!product.images || product.images.length === 0) {
     return null;
   }
 
@@ -33,21 +38,17 @@ const FavItemCard = ({ product }: Props) => {
     <Container>
       <Row className={s.favItem__container}>
         <Col xs={12} sm={12} md={2} className={s.favItem__imgNameWrapper}>
-          {product?.images && product.images.length > 0 ? (
-            <Image
-              src={product.images[0]}
-              width={100}
-              height={100}
-              alt={product.title}
-              className={s.favItem__image}
-            />
-          ) : (
-            <div className={s.favItem__noImage}>No Image Available</div>
-          )}
+          <Image
+            src={product.images[0]}
+            width={100}
+            height={100}
+            alt={product.title}
+            className={s.favItem__image}
+          />
         </Col>
 
         <Col xs={12} sm={12} md={4} lg={3}>
-          <div className={s.favItem__title}>{product?.title.slice(0, 26)}</div>
+          <div className={s.favItem__title}>{product.title.slice(0, 26)}</div>
           <div className={s.favItem__cardModel}>
             {product.title.slice(28, 64)}
           </div>
