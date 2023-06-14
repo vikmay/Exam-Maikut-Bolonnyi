@@ -23,8 +23,13 @@ const FavItemCard = ({ product }: Props) => {
   // use the redux dispatch hook
   const dispatch = useAppDispatch();
 
-  // return null if there is no product
-  if (!product) {
+    // return null if there is no product
+    if (!product) {
+      return null;
+    }
+
+   // return null if product.images is not defined or is empty
+  if (!product.images || product.images.length === 0) {
     return null;
   }
 

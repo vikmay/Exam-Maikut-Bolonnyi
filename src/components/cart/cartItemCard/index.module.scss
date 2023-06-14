@@ -1,5 +1,6 @@
-.cartItem_container {
+@import "@/styles/variables.scss";
 
+.cartItem_container {
     display: flex;
     padding: 20px 0px;
     justify-content: space-around;
@@ -12,26 +13,20 @@
     gap: 20px;
 
     .img_name_wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+        @include flex-center;
     }
 }
 
 .title {
-
     display: flex;
     justify-content: start;
     align-items: center;
-
     font-weight: 700;
     font-size: 24px;
     line-height: 26px;
 }
 
 .card_model {
-    
     display: flex;
     justify-content: start;
     align-items: center;
@@ -45,7 +40,7 @@
     border: none;
     background: none;
     font-size: 28px;
-    color: #C90000;
+    color: $primary-color;
 }
 
 
@@ -57,11 +52,8 @@
     @media screen and (max-width: 460px) {
         width: 250px;
         height: 250px;
-    
     }
-
 }
-
 
 .item_price {
     display: flex;
@@ -83,7 +75,6 @@
     border: 1px solid #E3E3E3 !important;
     border-radius: 0 !important;
     color: #0F0F0F !important;
-
 }
 
 .decrease_btn_disabled {

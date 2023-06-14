@@ -1,7 +1,8 @@
+@import "@/styles/variables.scss";
+
 .remove_btn {
     background: none;
     border: none;
-
 
     .cross_btn {
         position: relative;
@@ -14,7 +15,7 @@
             left: 50%;
             width: 2px;
             height: 100%;
-            background-color: #C90000;
+            background-color: $primary-color;
             transform-origin: center center;
 
             &:first-child {

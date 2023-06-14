@@ -1,7 +1,6 @@
 import { RootState } from "@/store/store";
 import { useAppSelector, useAppDispatch } from "@/store/store";
 import FavItemCard from "@/components/favorites/favItemCard";
-import { Product } from "@/../../interfaces";
 import s from "./index.module.scss";
 import { emptyFavorites } from "@/store/features/favoritesSlice";
 import Link from "next/link";
