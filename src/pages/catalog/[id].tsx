@@ -109,7 +109,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
             <div className={s.text__block_producer}>{product?.producer}</div>
             <ul className={s.text__block_features}>
               {product?.features.slice(0, 5).map((feature, index) => (
-                <li key={index}>
+                <li className={s.text__block_li} key={index}>
                   <span className={s.feature_label}>{feature.label}:</span>{" "}
                   <span className={s.feature_value}>{feature.value}</span>
                 </li>
@@ -134,10 +134,28 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
             <div className={s.text__block_price}>{product?.price}грн</div>
             <span className={s.text__block_stock}>В наявності</span>
-            <div className={s.text__block_btn}>
-              {/* <AddToCartBtn></AddToCartBtn> */}
+            <div className={s.text__block_btns}>
+              <div>
+                {" "}
+                <AddToCartBtn
+                  className={s.text__block_btns_addtocart}
+                  id={product.id}
+                  product={product}
+                  simple={true}
+                  btnText="Додати до кошика"
+                  increaseClassName={s.btn__increase}
+                  decreaseClassName={s.btn__decrease}
+                />
+              </div>
+              <div className={s.text__block_heart_btn}>
+                У бажання{" "}
+                <AddToFavBtn
+                  className={s.text__block_heart_btn}
+                  product={product}
+                  id={product.id}
+                />
+              </div>
             </div>
-            <div className={s.text__block_btn}></div>
           </Col>
         </Row>
         <Row>

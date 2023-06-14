@@ -67,6 +67,8 @@ s.sort_accordion {
     gap: 30px;
 
     .img__block {
+      display: flex;
+      justify-content: center;
       padding: 90px;
       width: 600px;
       height: 600px;
@@ -76,6 +78,7 @@ s.sort_accordion {
     }
 
     .text__block {
+      @include flex-column-center;
       padding: 35px 43px;
       width: 600px;
       height: 600px;
@@ -132,6 +135,11 @@ s.sort_accordion {
         flex-direction: column;
         gap: 10px;
         color: $secondary-bg-color;
+        padding-left: 0px;
+      }
+
+      &_li {
+        list-style-position: inside;
       }
 
       &_color {
@@ -188,6 +196,43 @@ s.sort_accordion {
         display: flex;
         align-items: center;
         color: $primary-color;
+
+      }
+
+      &_btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+      }
+
+      &_btns_addtocart {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 16px 45px;
+        margin-right: 10px;
+        background: $primary-color;
+        color: $primary-bg-color;
+      }
+
+      &_heart_btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        padding: 16px 45px;
+        gap: 30px;
+        color: $primary-color;
+
+
+
+
+
       }
     }
   }
