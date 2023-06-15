@@ -12,10 +12,10 @@ interface Props {
   product: Product;
   id: number;
   className?: string;
+  isSimple?: boolean;
 }
 
-
-const AddToFavBtn = ({ product, id, className }: Props) => {
+const AddToFavBtn = ({ product, id, className, isSimple }: Props) => {
   const dispatch = useDispatch();
 
   const favorites = useSelector((state: any) => state.favorites);
@@ -24,8 +24,6 @@ const AddToFavBtn = ({ product, id, className }: Props) => {
   const isFavorite = useMemo(() => {
     return favoritesItems.some((item: any) => item.id === product.id);
   }, [favoritesItems]);
-
-
 
   const handleFavoriteClick = () => {
     if (isFavorite) {
@@ -37,18 +35,27 @@ const AddToFavBtn = ({ product, id, className }: Props) => {
 
   return (
     <>
-      <div>
-        <button className={s.fav_btn} onClick={handleFavoriteClick}>
+      <button className={s.fav_btn} onClick={handleFavoriteClick}>
+        {isSimple && (
+          <div className={s.fav_btn_container}>
+            <span className={s.fav_text_btn}>У бажання</span>
+            <Image
+              src={isFavorite ? "/images/fheart.svg" : "/images/heart.svg"}
+              alt="heart_image"
+              width={20}
+              height={20}
+            />
+          </div>
+        )}
+        {!isSimple && (
           <Image
-            src={
-              isFavorite ? "/images/fheart.svg" : "/images/heart.svg"
-            }
+            src={isFavorite ? "/images/fheart.svg" : "/images/heart.svg"}
             alt="heart_image"
             width={20}
             height={20}
           />
-        </button>
-      </div>
+        )}
+      </button>
     </>
   );
 };

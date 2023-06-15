@@ -1,9 +1,31 @@
 @import "/src/styles/variables.scss";
 
+.fav_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 16px 3vw;
+    gap: 30px;
+    color: $primary-color;
+    white-space: nowrap;
+}
+
 .fav_btn {
+    @include flex-center;
     background: none;
+    
     border: none;
     color: $primary-color;
     font-size: 12px;
     cursor: pointer;
+}
+
+.fav_text_btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    margin-right: 30px;
 }

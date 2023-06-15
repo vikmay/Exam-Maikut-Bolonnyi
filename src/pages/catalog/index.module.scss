@@ -84,7 +84,8 @@ s.sort_accordion {
 
     .img__block {
       @include flex-center;
-      height: 650px;
+      height: auto;
+      flex: 1;
 
       background: $primary-bg-color;
 
@@ -106,18 +107,16 @@ s.sort_accordion {
 
 
     .text__block {
-      height: 650px;
       display: flex;
       flex-direction: column;
+      flex: 1;
       padding: 35px 43px;
       justify-content: space-between;
       background: $primary-bg-color;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       border-radius: 0px;
-      @media screen and (max-width: 581px) {
-        height: auto;
-      }
-      
+
+
       &_title_producer_wrapper {
         display: flex;
         justify-content: space-between;
@@ -179,7 +178,7 @@ s.sort_accordion {
         flex-direction: column;
         gap: 10px;
         color: $secondary-bg-color;
-        padding-left: 0px;
+        padding-left: 0;
       }
 
       &_li {
@@ -268,7 +267,8 @@ s.sort_accordion {
 
       }
 
-      &_btns_addtocart {
+      &_btn_addtocart {
+        max-height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -281,28 +281,6 @@ s.sort_accordion {
 
         @media screen and (max-width: 500px) {
           white-space: inherit;
-        }
-
-
-      }
-
-      &_heart_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-        padding: 16px 3vw;
-        gap: 30px;
-        color: $primary-color;
-        white-space: nowrap;
-
-        @media screen and (max-width: 500px) {
-          max-width: 160px;
-          gap: 0px;
-          justify-content: flex-start;
-          padding: 16px 20px;
-
-
         }
       }
     }
@@ -340,7 +318,7 @@ s.sort_accordion {
       flex: 1;
       cursor: pointer;
       margin-bottom: 10px;
-      padding: 16px 20px;
+      padding: 13px 20px;
       flex-wrap: wrap;
       background: $primary-bg-color;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -352,6 +330,7 @@ s.sort_accordion {
       text-align: center;
       align-items: center;
       color: #0f0f0f;
+      white-space: nowrap;
     }
 
     &_all_features {
