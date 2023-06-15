@@ -81,6 +81,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
   const handleColorChange = (color: string) => {
     setSelectedColor(color);
   };
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   if (!product) return <div>Loading...</div>;
 
@@ -96,7 +97,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
               <div className={s.img__block}>
                 <Image
                   className={s.img__block_img}
-                  src={product?.images[0]}
+                  src={product?.images[selectedImageIndex]}
                   alt={product?.title}
                   width={420}
                   height={418}
@@ -112,6 +113,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                       alt={product?.title}
                       width={420}
                       height={418}
+                      onClick={() => setSelectedImageIndex(index)}
                     />
                   ))}
                 </div>
@@ -121,7 +123,6 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
           <Col md={12} lg={6}>
             <div className={s.title_features_container}>
-              {" "}
               <div className={s.text__block}>
                 <div className={s.text__block_title_producer_wrapper}>
                   <div className={s.text__block_title}>

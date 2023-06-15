@@ -97,12 +97,13 @@ s.sort_accordion {
       }
 
       &_img {
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 539px) {
           width: 270px;
           height: 270px;
         }
       }
     }
+
 
     .text__block {
       height: 650px;
@@ -113,7 +114,10 @@ s.sort_accordion {
       background: $primary-bg-color;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       border-radius: 0px;
-
+      @media screen and (max-width: 581px) {
+        height: auto;
+      }
+      
       &_title_producer_wrapper {
         display: flex;
         justify-content: space-between;
