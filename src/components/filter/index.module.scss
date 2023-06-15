@@ -35,9 +35,6 @@
     }
 }
 
-
-
-/* Add these to your SCSS file */
 .checkboxContainer {
     display: flex;
     align-items: center;
@@ -54,7 +51,6 @@
 
 }
 
-//real checkbox hidden
 .checkboxContainer input {
     position: absolute;
     opacity: 0;

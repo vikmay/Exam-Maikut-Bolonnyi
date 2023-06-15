@@ -11,10 +11,11 @@ import { Product } from "@/../../interfaces";
 interface Props {
   product: Product;
   id: number;
+  className?: string;
 }
 
 
-const AddToFavBtn = ({ product, id }: Props) => {
+const AddToFavBtn = ({ product, id, className }: Props) => {
   const dispatch = useDispatch();
 
   const favorites = useSelector((state: any) => state.favorites);
