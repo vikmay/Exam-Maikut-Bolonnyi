@@ -166,7 +166,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                   <div>
                     {" "}
                     <AddToCartBtn
-                      className={s.text__block_btns_addtocart}
+                      className={s.text__block_btn_addtocart}
                       id={product.id}
                       product={product}
                       simple={true}
@@ -175,10 +175,10 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                       decreaseClassName={s.btn__decrease}
                     />
                   </div>
-                  <div className={s.text__block_heart_container}>
-                    <span> У бажання</span>{" "}
+                  <div className={s.text__block_heart_containe}>
+                    
                     <AddToFavBtn
-                      className={s.text__block_heart_btn}
+                      isSimple={true}
                       product={product}
                       id={product.id}
                     />
