@@ -80,7 +80,7 @@ const ProductListPage: React.FC = () => {
 
   return (
     <>
-      <Container>
+      <Container className="flex flex-col">
         <Row className="align-items-start">
           <Col lg="3">
             <h2 className={s.main_title}>Каталог</h2>
