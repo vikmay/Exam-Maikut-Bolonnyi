@@ -137,14 +137,12 @@ export default function Home() {
           <Row>
             {products.slice(0, 4).map((id: any) => (
               <Col key={id} lg="3" md="4" className="mb-4">
-                <Link href="singleCard">
-                  <ProductCard product={id} />
-                </Link>
+                <ProductCard product={id} />
               </Col>
             ))}
           </Row>
         </div>
-        <Container className={s.producer}>
+        <div className={s.producer}>
           <div className={s.producer_line}>
             <Link href={Bosch} target="_blank">
               <Image
@@ -180,7 +178,7 @@ export default function Home() {
               ></Image>
             </Link>
           </div>
-        </Container>
+        </div>
 
         <div className={s.history_block}>
           <h4 className={s.h4}>Наша історія</h4>

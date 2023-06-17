@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "@/styles/globals.scss";
 import "swiper/css";
 import Layouts from "@/layouts";
-import Providers from "@/components/Providers";
+import Providers from "@/components/providers/Providers";
 
 function MyApp({
   Component,

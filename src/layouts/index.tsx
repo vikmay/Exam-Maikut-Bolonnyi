@@ -21,7 +21,6 @@ const Layouts = ({ children, ...props }: LayoutProps) => {
       <main className={s.main} {...props}>
         {children}
       </main>
-
       <Footer />
     </div>
   );
