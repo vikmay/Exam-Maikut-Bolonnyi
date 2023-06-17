@@ -89,7 +89,6 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
   return (
     <>
-      {/* Display product details */}
       <Container className={s.product__card_container}>
         <Row className={`${s.product__card_block}`}>
           <Col md={12} lg={6} className="mb-3 mb-lg-0">
@@ -107,7 +106,9 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 <div className={s.swiper__img}>
                   {product?.images.map((image, index) => (
                     <Image
-                      className={s.swiper__img_block}
+                      className={`${s.swiper__img_block} ${
+                        index === selectedImageIndex ? s.selectedImage : ""
+                      }`}
                       key={index}
                       src={image}
                       alt={product?.title}
@@ -176,7 +177,6 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                     />
                   </div>
                   <div className={s.text__block_heart_containe}>
-                    
                     <AddToFavBtn
                       isSimple={true}
                       product={product}
@@ -240,8 +240,10 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
         <Row>
           <Col className="d-flex mt-4">
-            <div className={s.features__section} ref={featuresRef}>
+            <div className={s.features__section}>
               <Row>
+              {/* this div for scroll */}
+              <div style={{height: '100px', marginTop: '-100px',zIndex:-1}} ref={featuresRef}/>
                 <p className={s.title}>характеристики</p>
                 <Col>
                   <Row className={s.features__section_left}>
@@ -277,7 +279,9 @@ const ProductPage: React.FC<ProductPageProps> = () => {
         </Row>
       </Container>
 
-      <Container className={s.description__section} ref={descriptionRef}>
+      <Container className={s.description__section}>
+         {/* this div for scroll */}
+         <div style={{height: '120px', marginTop: '-120px',zIndex:-1}} ref={descriptionRef}/>
         <Row>
           <p className={s.description__section_title}>Опис</p>
           <Col className={s.description__section_text}>
@@ -291,7 +295,9 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           </Col>
         </Row>
       </Container>
-      <Container className={s.review__section} ref={reviewRef}>
+      <Container className={s.review__section}>
+         {/* this div for scroll */}
+         <div style={{height: '100px', marginTop: '-100px',zIndex:-1}} ref={reviewRef}/>
         <Row>
           <Col className={s.review__section_card}>
             <p className={s.review__section_card_title}>Відгуки(4)</p>
@@ -339,19 +345,14 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           </Col>
         </Row>
       </Container>
-      <Container className={s.similar__products} ref={similarRef}>
+      <Container className={s.similar__products}>
+        {/* this div for scroll */}
+        <div style={{height: '60px', marginTop: '-60px',zIndex:-1}} ref={similarRef}/>
         <p className={s.similar__products_title}>Схожі товари</p>
         <Row className={s.similar__products_cards}>
           {products.slice(0, 4).map((id: any) => (
-            <Col key={id} lg="3" md="4" className="mb-4">
-              <Link
-                style={{
-                  textDecoration: "none",
-                }}
-                href="singleCard"
-              >
-                <ProductCard product={id} />
-              </Link>
+            <Col key={id} lg={3} md={4} className="mb-4">
+              <ProductCard product={id} />
             </Col>
           ))}
         </Row>
