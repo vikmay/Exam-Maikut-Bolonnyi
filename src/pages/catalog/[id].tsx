@@ -94,7 +94,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
     <>
       <Container className={s.product__card_container}>
         <Row className={`${s.product__card_block}`}>
-          <Col md={12} lg={6} className="mb-3 mb-lg-0">
+          <Col md={12} lg={6} className="mb-3 mb-lg-0 px-0 pe-lg-2 ">
             <div className={s.img_swiper_col}>
               <div className={s.img__block}>
                 <Image
@@ -125,7 +125,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
             </div>
           </Col>
 
-          <Col md={12} lg={6}>
+          <Col md={12} lg={6} className="px-0 ps-lg-2">
             <div className={s.title_features_container}>
               <div className={s.text__block}>
                 <div className={s.text__block_title_producer_wrapper}>
@@ -241,135 +241,137 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           </Col>
         </Row>
 
-        <Row>
-          <Col className="d-flex mt-4">
-            <div className={s.features__section}>
-              <Row>
-                {/* this div for scroll */}
-                <div
-                  style={{ height: "100px", marginTop: "-100px", zIndex: -1 }}
-                  ref={featuresRef}
-                />
-                <p className={s.title}>характеристики</p>
-                <Col>
-                  <Row className={s.features__section_left}>
-                    {product?.features.slice(0, 6).map((feature, index) => (
-                      <React.Fragment key={index}>
-                        <Col xs={6} className={`${s.label} ${s.labelMargin}`}>
-                          {feature.label}
-                        </Col>
-                        <Col xs={6} className={`${s.value} ${s.valueMargin}`}>
-                          {feature.value}
-                        </Col>
-                      </React.Fragment>
-                    ))}
-                  </Row>
-                </Col>
-              </Row>
-              <Col>
-                <Row className={s.features__section_right}>
-                  {product?.features.slice(8, 14).map((feature, index) => (
-                    <React.Fragment key={index}>
-                      <Col xs={6} className={`${s.label} ${s.labelMargin}`}>
-                        {feature.label}
-                      </Col>
-                      <Col xs={6} className={`${s.value} ${s.valueMargin}`}>
-                        {feature.value}
-                      </Col>
-                    </React.Fragment>
-                  ))}
-                </Row>
-              </Col>
+        <Row className={s.all_features_container}>
+          <p className={s.title}>характеристики</p>
+          <Col sm={12} lg={6}>
+            {/* this div for scroll */}
+            <div
+              style={{ height: "100px", marginTop: "-100px", zIndex: -1 }}
+              ref={featuresRef}
+            />
+
+            <div className={s.features_section}>
+              {product?.features.slice(0, 6).map((feature, index) => (
+                <React.Fragment key={index}>
+                  <div className={s.label_feature_container}>
+                    <div className={s.label}>{feature.label}</div>
+                    <div className={s.value}>{feature.value}</div>
+                  </div>
+                </React.Fragment>
+              ))}
+            </div>
+          </Col>
+          <Col sm={12} lg={6}>
+            <div className={s.features_section}>
+              {product?.features.slice(8, 14).map((feature, index) => (
+                <React.Fragment key={index}>
+                  <div className={s.label_feature_container}>
+                    <div className={s.label}>{feature.label}</div>
+                    <div className={s.value}>{feature.value}</div>
+                  </div>
+                </React.Fragment>
+              ))}
             </div>
           </Col>
         </Row>
-      </Container>
+        <Col className={s.description__section}>
+          {/* this div for scroll */}
+          <div
+            style={{ height: "200px", marginTop: "-200px", zIndex: -1 }}
+            ref={descriptionRef}
+          />
+          <div>
+            <h3 className={s.description__section_title}>Опис</h3>
+            <div className={s.description__section_text}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                error nisi quidem similique ab nemo laudantium doloribus commodi
+                laboriosam quisquam, ut fugiat eligendi excepturi nesciunt, enim
+                soluta consequatur at obcaecati. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Et error nisi quidem similique ab
+                nemo laudantium doloribus commodi laboriosam quisquam, ut fugiat
+                eligendi excepturi nesciunt, enim soluta consequatur at
+                obcaecati.
+              </p>
+            </div>
+          </div>
+        </Col>
+        <Row className={s.review__section}>
+          {/* this div for scroll */}
+          <div
+            style={{ height: "100px", marginTop: "-100px", zIndex: -1 }}
+            ref={reviewRef}
+          />
 
-      <Container className={s.description__section}>
-        {/* this div for scroll */}
-        <div
-          style={{ height: "120px", marginTop: "-120px", zIndex: -1 }}
-          ref={descriptionRef}
-        />
-        <Row>
-          <p className={s.description__section_title}>Опис</p>
-          <Col className={s.description__section_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error
-            nisi quidem similique ab nemo laudantium doloribus commodi
-            laboriosam quisquam, ut fugiat eligendi excepturi nesciunt, enim
-            soluta consequatur at obcaecati. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Et error nisi quidem similique ab nemo
-            laudantium doloribus commodi laboriosam quisquam, ut fugiat eligendi
-            excepturi nesciunt, enim soluta consequatur at obcaecati.
+          <Col md={7} className="px-0 pe-lg-2 mb-4 mb-md-0">
+            <div className={s.review__section_card}>
+              <p className={s.review__section_card_title}>Відгуки(4)</p>
+
+              <p className={s.review__section_card_name}>
+                Анастасія ⭐⭐⭐⭐⭐
+              </p>
+              <p className={s.review__section_card_date}>10 вересня 2023</p>
+              <p className={s.review__section_card_text}>
+                Lorem ipsum dolor sit amet consectetur. Gravida amet consectetur
+                cras lectus viverra vitae. Enim enim ut quis iaculis viverra
+                augue vel.
+              </p>
+              <button className={s.review__section_card_btn}>Відповісти</button>
+              <p className={s.review__section_card_name}>
+                Анастасія ⭐⭐⭐⭐⭐
+              </p>
+              <p className={s.review__section_card_date}>10 вересня 2023</p>
+              <p className={s.review__section_card_text}>
+                Lorem ipsum dolor sit amet consectetur. Gravida amet consectetur
+                cras lectus viverra vitae. Enim enim ut quis iaculis viverra
+                augue vel.
+              </p>
+              <button className={s.review__section_card_btn}>Відповісти</button>
+            </div>
+          </Col>
+          <Col md={5} className="px-0 ps-lg-2">
+            <div className={s.review__section_form}>
+              <p className={s.review__section_title}>Написати відгук</p>
+              <input
+                className={s.review__section_form_input}
+                type="text"
+                placeholder="Ім’я"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+
+              <input
+                className={s.review__section_form_input}
+                type="text"
+                placeholder="Відгук"
+                name="comment"
+                value={formData.comment}
+                onChange={handleChange}
+              />
+              <button className={s.review__section_form_btn} onClick={notify}>
+                Надіслати відгук
+              </button>
+              <Toaster position="top-right" />
+            </div>
           </Col>
         </Row>
-      </Container>
-      <Container className={s.review__section}>
-        {/* this div for scroll */}
-        <div
-          style={{ height: "100px", marginTop: "-100px", zIndex: -1 }}
-          ref={reviewRef}
-        />
-        <Row>
-          <Col className={s.review__section_card}>
-            <p className={s.review__section_card_title}>Відгуки(4)</p>
-
-            <p className={s.review__section_card_name}>Анастасія ⭐⭐⭐⭐⭐</p>
-            <p className={s.review__section_card_date}>10 вересня 2023</p>
-            <p className={s.review__section_card_text}>
-              Lorem ipsum dolor sit amet consectetur. Gravida amet consectetur
-              cras lectus viverra vitae. Enim enim ut quis iaculis viverra augue
-              vel.
-            </p>
-            <button className={s.review__section_card_btn}>Відповісти</button>
-            <p className={s.review__section_card_name}>Анастасія ⭐⭐⭐⭐⭐</p>
-            <p className={s.review__section_card_date}>10 вересня 2023</p>
-            <p className={s.review__section_card_text}>
-              Lorem ipsum dolor sit amet consectetur. Gravida amet consectetur
-              cras lectus viverra vitae. Enim enim ut quis iaculis viverra augue
-              vel.
-            </p>
-            <button className={s.review__section_card_btn}>Відповісти</button>
-          </Col>
-          <Col className={s.review__section_form}>
-            <p className={s.review__section_title}>Написати відгук</p>
-            <input
-              className={s.review__section_form_input}
-              type="text"
-              placeholder="Ім’я"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
+        <Row className={s.similar__products}>
+          <Col className="px-o">
+            {/* this div for scroll */}
+            <div
+              style={{ height: "30px", marginTop: "-30px", zIndex: -1 }}
+              ref={similarRef}
             />
-
-            <input
-              className={s.review__section_form_input}
-              type="text"
-              placeholder="Відгук"
-              name="comment"
-              value={formData.comment}
-              onChange={handleChange}
-            />
-            <button className={s.review__section_form_btn} onClick={notify}>
-              Надіслати відгук
-            </button>
-            <Toaster position="top-right" />
+            <p className={s.similar__products_title}>Схожі товари</p>
+            <Row className={s.similar__products_cards}>
+              {products.slice(0, 4).map((id: any) => (
+                <Col key={id} lg={3} md={6} className="mb-4">
+                  <ProductCard product={id} />
+                </Col>
+              ))}
+            </Row>
           </Col>
-        </Row>
-      </Container>
-      <Container className={s.similar__products}>
-        {/* this div for scroll */}
-        <div
-          style={{ height: "30px", marginTop: "-30px", zIndex: -1 }}
-          ref={similarRef}
-        />
-        <p className={s.similar__products_title}>Схожі товари</p>
-        <Row className={s.similar__products_cards}>
-          {products.slice(0, 4).map((id: any) => (
-            <Col key={id} lg={3} md={4} className="mb-4">
-              <ProductCard product={id} />
-            </Col>
-          ))}
         </Row>
       </Container>
     </>

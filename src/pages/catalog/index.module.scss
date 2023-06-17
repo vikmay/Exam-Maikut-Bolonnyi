@@ -66,11 +66,11 @@ s.sort_accordion {
   max-width: 90%;
   min-width: 318px;
   row-gap: 30px;
-  
+
   .product__card_block {
     width: 100%;
     justify-content: space-between;
-   
+
     .img_swiper_col {
       display: flex;
       flex-direction: column;
@@ -366,11 +366,27 @@ s.sort_accordion {
 }
 
 //features sectiom
-.features__section {
+.all_features_container {
   width: 100%;
-  padding: 10px 4%;
-  background: $primary-bg-color;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 3%;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #281A08;
+}
+
+.features_section {
+  width: 100%;
+  height: 100%;
+  background: $primary-bg-color;
+
   border-radius: 0px;
   font-family: "Montserrat";
   font-style: normal;
@@ -378,43 +394,41 @@ s.sort_accordion {
   font-size: 18px;
   line-height: 22px;
   color: #444444;
+}
 
-  /* identical to box height */
-  .labelMargin {
-    border-bottom: 1px solid #a2a2a2;
-    margin-bottom: 16px;
-    padding-bottom: 16px;
+.label_feature_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #A2A2A2;
+  padding: 10px 0;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    align-items: start;
   }
 
-  .valueMargin {
-    border-bottom: 1px solid #a2a2a2;
-    margin-bottom: 16px;
-    padding-bottom: 16px;
+  .label {
+    padding: 10px 0;
+    font-weight: 700;
   }
 
-  .title {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-    color: #281a08;
-  }
+  .value {
+    max-width: 70%;
+    padding: 10px 0;
+    text-align: right;
 
-  .features__section_left {
-    .line {
-      margin: 10px;
-      width: 510px;
+    @media screen and (max-width: 450px) {
+      text-align: start;
     }
   }
 }
 
+//description section
 .description__section {
+  width: 100%;
+  @include flex-center;
   padding: 35px 60px;
-  margin-top: 45px;
-  width: 1240px;
-  height: 227px;
   background: $primary-bg-color;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0px;
@@ -439,17 +453,16 @@ s.sort_accordion {
   }
 }
 
+//Reviews
 .review__section {
-  margin-top: 41px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   &_card {
+    width: 100%;
     padding: 35px 25px;
-    width: 701px;
-    height: 501px;
     background: $primary-bg-color;
-    margin-right: 50px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
     &_title {
@@ -500,8 +513,6 @@ s.sort_accordion {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 39px;
-      width: 181px;
       border: 1px solid #c90000;
       padding: 10px 45px;
       font-family: "Montserrat";
@@ -521,8 +532,10 @@ s.sort_accordion {
   }
 
   &_form {
-    width: 489px;
-    height: 501px;
+    @include flex-column-center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
     background: #ffffff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -538,8 +551,6 @@ s.sort_accordion {
       color: $secondary-bg-color;
     }
 
-    align-items: center;
-
     &_input {
       margin-bottom: 30px;
       border: none;
@@ -551,12 +562,10 @@ s.sort_accordion {
       line-height: 22px;
       text-align: justify;
       text-transform: uppercase;
-      width: 314px;
+      width: 95%;
     }
 
     &_btn {
-      width: 341px;
-      height: 51px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -570,9 +579,10 @@ s.sort_accordion {
 }
 
 .similar__products {
+  width: 100%;
+  
   &_title {
-    margin-top: 45px;
-    margin-bottom: 52px;
+    margin: 10px 0 40px 0;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -584,8 +594,25 @@ s.sort_accordion {
   }
 
   &_cards {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
+   :first-child {
+      padding-left: 0;
+    }
+   :last-child {
+      padding-right: 0;
+    }
+    @media screen and (max-width: 991px) {
+      :nth-child(2),:nth-child(4) {
+        padding-right: 0;
+      }
+      :nth-child(3 ) {
+        padding-left: 0;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      >* {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
   }
 }
