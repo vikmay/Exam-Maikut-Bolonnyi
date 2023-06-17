@@ -12,7 +12,6 @@ import Pagination from "@/components/pagination";
 import Filter from "@/components/filter";
 import getQuantityLabel from "@/utils/quantityLabel";
 
-
 const ProductListPage: React.FC = () => {
   const dispatch = useDispatch();
   const colorFilter = useSelector(

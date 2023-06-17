@@ -6,40 +6,39 @@ import { Col, Container, Row, Tab } from "react-bootstrap";
 import { Product } from "../../../interfaces";
 import productsList from "@/data/products/products.json";
 import s from "./index.module.scss";
-import Tabs from "../../components/tabs";
 import toast, { Toaster } from "react-hot-toast";
 import ProductCard from "@/components/cards/product";
-import Link from "next/link";
 import AddToCartBtn from "@/components/cart/addToCart";
 import AddToFavBtn from "@/components/favorites/addToFav";
+
 interface ProductPageProps {}
 
 const ProductPage: React.FC<ProductPageProps> = () => {
   const [selectedTab, setSelectedTab] = useState(""); // Початково нічого не вибрано
 
   // Scroll tabs //
-  const descriptionRef = useRef(null);
+  const descriptionRef = useRef<HTMLDivElement | null>(null);
   const scrollToDescription = () => {
-    descriptionRef.current.scrollIntoView({ behavior: "smooth" });
+    descriptionRef.current?.scrollIntoView({ behavior: "smooth" });
     setSelectedTab("description");
   };
 
-  const featuresRef = useRef(null);
+  const featuresRef = useRef<HTMLDivElement | null>(null);
   const scrollFeatures = () => {
-    featuresRef.current.scrollIntoView({ behavior: "smooth" });
-    setSelectedTab("description");
+    featuresRef.current?.scrollIntoView({ behavior: "smooth" });
+    setSelectedTab("features");
   };
 
-  const reviewRef = useRef(null);
+  const reviewRef = useRef<HTMLDivElement | null>(null);
   const scrollReview = () => {
-    reviewRef.current.scrollIntoView({ behavior: "smooth" });
-    setSelectedTab("description");
+    reviewRef.current?.scrollIntoView({ behavior: "smooth" });
+    setSelectedTab("reviews");
   };
 
-  const similarRef = useRef(null);
+  const similarRef = useRef<HTMLDivElement | null>(null);
   const scrollSimilar = () => {
-    similarRef.current.scrollIntoView({ behavior: "smooth" });
-    setSelectedTab("description");
+    similarRef.current?.scrollIntoView({ behavior: "smooth" });
+    setSelectedTab("similar");
   };
   //
   const [products, setProducts] = useState(Object.values(productsList));
@@ -71,11 +70,15 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
     const id = router.query.id;
     const productData = productsList.find(
-      (product: Product) => product.id.toString() === id
-    );
+      (product: any) => product.id.toString() === id
+    ) as Product | undefined;
 
-    setProduct(productData);
-    setSelectedColor(productData?.colors[0]);
+    setProduct(productData ?? null);
+    if (productData && productData.colors && productData.colors.length > 0) {
+      setSelectedColor(productData.colors[0]);
+    } else {
+      setSelectedColor(""); // Provide a default value if colors array is empty or undefined
+    }
   }, [router.isReady, router.query]);
 
   const handleColorChange = (color: string) => {
@@ -85,7 +88,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
 
   if (!product) return <div>Loading...</div>;
 
-  const productColors = product.colors.slice(0, 4);
+  const productColors = product.colors?.slice(0, 4);
 
   return (
     <>
@@ -147,7 +150,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                 <div className={s.text__block_color}>
                   Колір Виробника: {selectedColor}
                   <div className={s.text__block_color_all}>
-                    {productColors.map((color, index) => (
+                    {productColors?.map((color, index) => (
                       <span
                         key={index}
                         className={`${s.color_item} ${
@@ -242,8 +245,11 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           <Col className="d-flex mt-4">
             <div className={s.features__section}>
               <Row>
-              {/* this div for scroll */}
-              <div style={{height: '100px', marginTop: '-100px',zIndex:-1}} ref={featuresRef}/>
+                {/* this div for scroll */}
+                <div
+                  style={{ height: "100px", marginTop: "-100px", zIndex: -1 }}
+                  ref={featuresRef}
+                />
                 <p className={s.title}>характеристики</p>
                 <Col>
                   <Row className={s.features__section_left}>
@@ -280,8 +286,11 @@ const ProductPage: React.FC<ProductPageProps> = () => {
       </Container>
 
       <Container className={s.description__section}>
-         {/* this div for scroll */}
-         <div style={{height: '120px', marginTop: '-120px',zIndex:-1}} ref={descriptionRef}/>
+        {/* this div for scroll */}
+        <div
+          style={{ height: "120px", marginTop: "-120px", zIndex: -1 }}
+          ref={descriptionRef}
+        />
         <Row>
           <p className={s.description__section_title}>Опис</p>
           <Col className={s.description__section_text}>
@@ -296,8 +305,11 @@ const ProductPage: React.FC<ProductPageProps> = () => {
         </Row>
       </Container>
       <Container className={s.review__section}>
-         {/* this div for scroll */}
-         <div style={{height: '100px', marginTop: '-100px',zIndex:-1}} ref={reviewRef}/>
+        {/* this div for scroll */}
+        <div
+          style={{ height: "100px", marginTop: "-100px", zIndex: -1 }}
+          ref={reviewRef}
+        />
         <Row>
           <Col className={s.review__section_card}>
             <p className={s.review__section_card_title}>Відгуки(4)</p>
@@ -347,7 +359,10 @@ const ProductPage: React.FC<ProductPageProps> = () => {
       </Container>
       <Container className={s.similar__products}>
         {/* this div for scroll */}
-        <div style={{height: '60px', marginTop: '-60px',zIndex:-1}} ref={similarRef}/>
+        <div
+          style={{ height: "30px", marginTop: "-30px", zIndex: -1 }}
+          ref={similarRef}
+        />
         <p className={s.similar__products_title}>Схожі товари</p>
         <Row className={s.similar__products_cards}>
           {products.slice(0, 4).map((id: any) => (
