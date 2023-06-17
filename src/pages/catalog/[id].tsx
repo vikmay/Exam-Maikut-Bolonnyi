@@ -246,7 +246,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           <Col sm={12} lg={6}>
             {/* this div for scroll */}
             <div
-              style={{ height: "100px", marginTop: "-100px", zIndex: -1 }}
+              style={{ height: "180px", marginTop: "-180px", zIndex: -1 }}
               ref={featuresRef}
             />
 
@@ -360,7 +360,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
           <Col className="px-o">
             {/* this div for scroll */}
             <div
-              style={{ height: "30px", marginTop: "-30px", zIndex: -1 }}
+              style={{ height: "100px", marginTop: "-100px", zIndex: -1 }}
               ref={similarRef}
             />
             <p className={s.similar__products_title}>Схожі товари</p>
