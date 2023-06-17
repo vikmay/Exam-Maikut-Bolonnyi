@@ -1,12 +1,18 @@
+export interface Feature {
+  label: string;
+  value: string;
+}
+
 export interface Product {
   producer: string;
   id: number;
   title: string;
-  price: any;
+  price: number;
   description: string;
   images: string[];
-  features: string[];
+  features: Feature[];
   isFavorite?: boolean;
+  colors?: string[];
 }
 
 export interface CartItem {

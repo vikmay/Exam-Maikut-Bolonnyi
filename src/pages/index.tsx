@@ -6,7 +6,6 @@ import s from "@/styles/Home.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import toast, { Toaster } from "react-hot-toast";
-import ReactPaginate from "react-paginate";
 
 //💬 Bootstrap //
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,9 +30,6 @@ export default function Home() {
   const [products, setProducts] = useState(Object.values(productsList));
   const [currentPage, setCurrentPage] = useState(1);
 
-  const handlePageChange = (page: number): void => {
-    setCurrentPage(page);
-  };
   // 💬 Accordion //
   const newAccordionTitle =
     "Lorem ipsum dolor sit amet consectetur. Sed amet viverra cras?";
@@ -332,6 +328,7 @@ export default function Home() {
         </Container>
         <Container className={s.pagination}>
           <Pagination
+            currentPage={currentPage}
             totalItems={2}
             itemsPerPage={1}
             onPageChange={(page: number) => setCurrentPage(page)}
