@@ -1,6 +1,6 @@
 // Redux Toolkit library and Persist library imports
 import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { CartItem, Product } from "../../interfaces";
+import { CartItem, Product } from "@/../interfaces";
 import { RootState } from "../store";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";

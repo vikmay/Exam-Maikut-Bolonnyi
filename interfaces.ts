@@ -7,7 +7,7 @@ export interface Product {
   producer: string;
   id: number;
   title: string;
-  price: number;
+  price: string;
   description: string;
   images: string[];
   features: Feature[];

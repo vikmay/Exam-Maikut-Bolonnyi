@@ -12,10 +12,10 @@ interface Props {
   className?: string;
   newImage?: any;
   imageSize?: { width: number, height: number };
-  totalItemsStyle?: React.CSSProperties;
+  imported?:boolean;
 }
 
-const Cart = ({ className = '', newImage, imageSize = { width: 29, height: 24 }, totalItemsStyle }: Props) => {
+const Cart = ({ className = '', newImage, imageSize = { width: 54, height: 54 },imported}: Props) => {
   const totalItems = useAppSelector(totalCartItemsSelector);
   return (
     <>
@@ -29,7 +29,9 @@ const Cart = ({ className = '', newImage, imageSize = { width: 29, height: 24 },
             alt="Cart"
           ></Image>
           {!!totalItems && (
-            <div key={totalItems} className={s.total_items} style={totalItemsStyle}>
+            <div 
+            key={totalItems}
+            className= {imported ? s.total_items_inverted : s.total_items }>
               {totalItems}
             </div>
           )}
