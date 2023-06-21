@@ -113,9 +113,9 @@ export default function Home() {
           </Swiper>
         </Container>
 
-        <Container>
+        <Container fluid>
           <Row>
-            <Col xs={12} md={8} lg={6} className="mx-auto">
+            <Col xs={12} md={8} lg={6} className={`mx-auto ${s.container}`}>
               <div className={s.search__block}>
                 <p className={s.p}>Lorem ipsum dolor sit amet.</p>
                 <input
@@ -128,6 +128,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+
         <h2 className={s.h2}>Популярні товари</h2>
         <div className={s.popular_product__section}>
           <Row>
@@ -253,7 +254,7 @@ export default function Home() {
             </Col>
           </Row>
           <Row>
-            <Col lg={3} md={4} className="mb-4">
+            <Col lg={3} md={6} className="mb-4">
               <div className={s.feedbacks__card}>
                 <p className={s.feedbacks__card_date}>10 вересня 2023</p>
                 <p className={s.feedbacks__card_name}>
@@ -271,7 +272,7 @@ export default function Home() {
               </div>
             </Col>
 
-            <Col lg={3} md={4} className="mb-4">
+            <Col lg={3} md={6} className="mb-4">
               <div className={s.feedbacks__card}>
                 <p className={s.feedbacks__card_date}>10 вересня 2023</p>
                 <p className={s.feedbacks__card_name}>
@@ -289,7 +290,7 @@ export default function Home() {
               </div>
             </Col>
 
-            <Col lg={3} md={4} className="mb-4">
+            <Col lg={3} md={6} className="mb-4">
               <div className={s.feedbacks__card}>
                 <p className={s.feedbacks__card_date}>10 вересня 2023</p>
                 <p className={s.feedbacks__card_name}>
@@ -307,7 +308,7 @@ export default function Home() {
               </div>
             </Col>
 
-            <Col lg={3} md={4} className="mb-4">
+            <Col lg={3} md={6} className="mb-4">
               <div className={s.feedbacks__card}>
                 <p className={s.feedbacks__card_date}>10 вересня 2023</p>
                 <p className={s.feedbacks__card_name}>
@@ -326,6 +327,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+
         <Container className={s.pagination}>
           <Pagination
             currentPage={currentPage}
