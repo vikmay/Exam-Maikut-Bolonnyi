@@ -17,6 +17,13 @@
     border-radius: 50%;
 }
 
+.total_items_inverted {
+    @extend .total_items;
+    color: $primary-color;
+    background: $primary-bg-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
 .cart_icon {
     cursor: pointer;
 }

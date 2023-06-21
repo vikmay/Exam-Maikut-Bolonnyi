@@ -11,6 +11,9 @@ import ProductCard from "@/components/cards/product";
 import Pagination from "@/components/pagination";
 import Filter from "@/components/filter";
 import getQuantityLabel from "@/utils/quantityLabel";
+import Cart from "@/components/cart";
+import NewCartImg from "@/../public/images/AddToCartBtn.png";
+import { brotliDecompress } from "zlib";
 
 const ProductListPage: React.FC = () => {
   const dispatch = useDispatch();
@@ -86,14 +89,17 @@ const ProductListPage: React.FC = () => {
           </Col>
 
           <Col className="text-end mt-4" lg="3">
-            <span className={s.total__items}>{`${totalProducts} ${getQuantityLabel(totalProducts)}`}</span>
+            <span
+              className={s.total__items}
+            >{`${totalProducts} ${getQuantityLabel(totalProducts)}`}</span>
           </Col>
           <Col lg="3">
             <Sort onSortOptionChange={setSortOption} />
           </Col>
           <Col className="mt-3 mt-lg-0" lg="3">
             <div className={s.filter_btn_container}>
-              <span>Фільтрування</span><ClearFilterButton onClick={() => dispatch(clearFilters())} />
+              <span>Фільтрування</span>
+              <ClearFilterButton onClick={() => dispatch(clearFilters())} />
             </div>
           </Col>
         </Row>
@@ -128,6 +134,12 @@ const ProductListPage: React.FC = () => {
           </Col>
         </Row>
       </Container>
+      <div className={s.cart_container}>
+        <Cart
+          newImage={NewCartImg}
+         imported={true}
+        />
+      </div>
     </>
   );
 };
