@@ -16,6 +16,7 @@ const Header = () => {
 
   const handleMenuToggle = () => {
     setIsNavOpen(!isNavOpen);
+    console.log(123);
   };
 
   const handleWindowResize = () => {
@@ -48,7 +49,7 @@ const Header = () => {
                 src={Logo}
                 width={94}
                 height={68}
-                alt="Logo"
+                alt="Логотип"
                 loading="eager"
                 priority
               />
@@ -67,10 +68,25 @@ const Header = () => {
             <Search focus={undefined} />
 
             <Cart />
-            <button className={s.menu__toggle} onClick={handleMenuToggle}>
-              <span className={s.menu__icon}></span>
-              <span className={s.menu__icon}></span>
-              <span className={s.menu__icon}></span>
+            <button
+              className={`${s.menu__toggle} ${isNavOpen ? s.active : ""}`}
+              onClick={handleMenuToggle}
+            >
+              <span
+                className={`${s.menu__icon} ${
+                  isNavOpen ? s.activeMenuIcon : ""
+                }`}
+              ></span>
+              <span
+                className={`${s.menu__icon} ${
+                  isNavOpen ? s.activeMenuIcon : ""
+                }`}
+              ></span>
+              <span
+                className={`${s.menu__icon} ${
+                  isNavOpen ? s.activeMenuIcon : ""
+                }`}
+              ></span>
             </button>
             <a href="tel:+3800065628">
               <div className={s.phone__btn}>Телефонувати</div>

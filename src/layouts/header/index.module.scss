@@ -56,15 +56,29 @@
         border: none;
         align-items: center;
         gap: 7px;
+        background-color: #ffffff;
       }
 
       .menu__icon {
+        transition: 1s;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 25px;
         height: 3px;
         background-color: $primary-color;
+      }
+      .activeMenuIcon:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+        // background-color: aqua;
+      }
+      .activeMenuIcon:nth-child(2) {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      .activeMenuIcon:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+        // background-color: aqua;
       }
 
       .phone__btn {

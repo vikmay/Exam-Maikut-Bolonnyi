@@ -3,6 +3,9 @@
   list-style-type: none;
   padding: 0;
   .product__list {
+    padding: 10px;
+    gap: 15px;
+    display: flex;
     text-decoration: none;
     color: $primary-text-color;
     &:hover {
