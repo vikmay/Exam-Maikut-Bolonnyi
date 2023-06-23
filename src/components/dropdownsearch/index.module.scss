@@ -1,5 +1,15 @@
-.search_container {
-    
+@import "../../styles/variables.scss";
+
+.search_input {
+    position: relative;
+    width: 60vw;
+    background: $primary-bg-color;
+    border: 3px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 2%; 
 }
 
 .search_list {
@@ -18,6 +28,6 @@
 }
 .crossBtn {
     position: absolute;
-    right: -10%;
-    top: -50px;
+    right: 10px;
+    top: 20px;
 }

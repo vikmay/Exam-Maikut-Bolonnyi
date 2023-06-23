@@ -15,7 +15,7 @@ interface Props {
   imported?:boolean;
 }
 
-const Cart = ({ className = '', newImage, imageSize = { width: 54, height: 54 },imported}: Props) => {
+const Cart = ({ className = '', newImage, imageSize = { width: 34, height: 34 },imported}: Props) => {
   const totalItems = useAppSelector(totalCartItemsSelector);
   return (
     <>

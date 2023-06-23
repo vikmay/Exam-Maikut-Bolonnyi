@@ -46,7 +46,7 @@ const DropdownSearch = () => {
   return (
     <div className={s.search_container}>
       <input
-        className="search__input"
+        className={s.search_input}
         type="search"
         value={searchText}
         onChange={handleSearch}

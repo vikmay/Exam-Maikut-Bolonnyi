@@ -13,7 +13,6 @@ import Filter from "@/components/filter";
 import getQuantityLabel from "@/utils/quantityLabel";
 import Cart from "@/components/cart";
 import NewCartImg from "@/../public/images/AddToCartBtn.png";
-import { brotliDecompress } from "zlib";
 
 const ProductListPage: React.FC = () => {
   const dispatch = useDispatch();
@@ -135,10 +134,7 @@ const ProductListPage: React.FC = () => {
         </Row>
       </Container>
       <div className={s.cart_container}>
-        <Cart
-          newImage={NewCartImg}
-         imported={true}
-        />
+        <Cart imageSize={{width: 60, height: 60}} newImage={NewCartImg} imported={true} />
       </div>
     </>
   );
