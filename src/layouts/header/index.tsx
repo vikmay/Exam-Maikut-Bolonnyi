@@ -16,8 +16,11 @@ const Header = () => {
 
   const handleMenuToggle = () => {
     setIsNavOpen(!isNavOpen);
-    console.log(123);
+    setIsNavVisible(!isNavOpen);
   };
+  useEffect(() => {
+    setIsNavVisible(true);
+  }, []);
 
   const handleWindowResize = () => {
     setIsNavVisible(window.innerWidth > 1000);
@@ -60,6 +63,7 @@ const Header = () => {
               ulClassName={isNavOpen ? `${s.ul} ${s.open}` : s.ul}
               liClassName={s.li}
               aClassName={s.a}
+              onClose={() => setIsNavOpen(false)}
             />
           )}
 
