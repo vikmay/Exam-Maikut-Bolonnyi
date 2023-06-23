@@ -1,0 +1,23 @@
+.search_container {
+    
+}
+
+.search_list {
+    list-style-type: none;
+
+    .product_li {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        border-bottom: 1px solid #e6e6e6;
+        gap: 10px;
+    }
+}
+.crossBtn {
+    position: absolute;
+    right: -10%;
+    top: -50px;
+}

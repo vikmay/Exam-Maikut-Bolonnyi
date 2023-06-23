@@ -10,7 +10,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 //💬 Bootstrap //
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Dropdown } from "react-bootstrap";
 
 //💬 Img //
 import CarouselImg from "../../public/images/corousel/CarouselImg.png";
@@ -24,6 +24,7 @@ import productsList from "@/data/products/products.json";
 import Pagination from "../components/pagination";
 import Link from "next/link";
 import SimpleAccordion from "../components/accordion";
+import DropdownSearch from "@/components/dropdownsearch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -120,12 +121,7 @@ export default function Home() {
             <Col xs={12} md={8} lg={6} className={`mx-auto ${s.container}`}>
               <div className={s.search__block}>
                 <p className={s.p}>Lorem ipsum dolor sit amet.</p>
-                <input
-                  ref={inputRef}
-                  className={s.search}
-                  type="search"
-                  placeholder="Пошук"
-                />
+              <DropdownSearch />
               </div>
             </Col>
           </Row>
@@ -194,7 +190,7 @@ export default function Home() {
         </div>
         <Container className={s.question__section}>
           <Row>
-            <Col md={6} >
+            <Col md={6} className={s.faq}>
               <p className={s.p}>Часті запитання</p>
               <div className={s.retreat}>
                 <SimpleAccordion
