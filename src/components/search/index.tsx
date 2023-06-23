@@ -5,6 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import products from "../../data/products/products.json";
 import Link from "next/link";
 import s from "./index.module.scss";
+
 // Img //
 import SearchImg from "../../../public/images/SearchImg.svg";
 
@@ -18,6 +19,7 @@ interface Product {
   images: string[];
   producer: string;
   isNew: boolean;
+  image: string; //
 }
 
 const Search = ({ focus }: { focus: any }) => {
@@ -38,11 +40,24 @@ const Search = ({ focus }: { focus: any }) => {
     setSearchResults([]);
   };
 
-  const handleSearch = () => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const searchText = e.target.value;
+    setSearchText(searchText);
+
     const results = products.filter((product) =>
       product.title.toLowerCase().includes(searchText.toLowerCase())
     );
-    setSearchResults(results);
+
+    const searchResultsWithImages = results.map((product) => ({
+      ...product,
+      image: product.images[0],
+    }));
+
+    setSearchResults(searchResultsWithImages);
+  };
+
+  const handleLinkClick = () => {
+    handleClose();
   };
 
   return (
@@ -51,14 +66,13 @@ const Search = ({ focus }: { focus: any }) => {
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <input
+            autoFocus
             className={s.search__input}
             type="search"
             value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
+            onChange={handleSearch}
+            placeholder="Пошук"
           />
-          <button className={s.search__btn} onClick={handleSearch}>
-            Пошук
-          </button>
           <ul className={s.list}>
             {searchResults.map((product) => (
               <li className={s.line} key={product.id}>
@@ -66,8 +80,17 @@ const Search = ({ focus }: { focus: any }) => {
                   className={s.product__list}
                   href={`/catalog/${product.id}`}
                   key={product.id}
+                  onClick={handleLinkClick}
                 >
-                  {product.title}
+                  <div className={s.product__image}>
+                    <Image
+                      src={product.image}
+                      width={100}
+                      height={100}
+                      alt={product.title}
+                    />
+                  </div>
+                  <div className={s.product__title}>{product.title}</div>
                 </Link>
               </li>
             ))}
