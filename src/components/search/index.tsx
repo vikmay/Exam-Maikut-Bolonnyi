@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import products from "../../data/products/products.json";
 import Link from "next/link";
