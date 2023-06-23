@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import s from "@/styles/Home.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from "swiper";
 import "swiper/css";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -70,6 +71,8 @@ export default function Home() {
   const Franke = "https://www.franke.com/ua/uk/home.html";
   const Fabino = "https://www.fabino.net/shop/";
   //
+
+  SwiperCore.use([Autoplay]);
   return (
     <>
       <Head>
@@ -79,39 +82,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Container className={s.swiper__contsiner}>
+        <div className={s.swiper__container}>
           <Swiper
+            loop={true}
             autoplay={{ delay: 3000 }}
             spaceBetween={50}
             slidesPerView={1}
             onSwiper={(swiper) => console.log(swiper)}
+            speed={2000}
           >
             <SwiperSlide>
               <Image
+                className={s.img_swiper}
                 src={CarouselImg}
-                width={1440}
-                height={553}
                 alt="courosel"
               ></Image>
             </SwiperSlide>
             <SwiperSlide>
               <Image
+                className={s.img_swiper}
                 src={CarouselImg}
-                width={1440}
-                height={553}
                 alt="courosel"
               ></Image>
             </SwiperSlide>
             <SwiperSlide>
               <Image
+                className={s.img_swiper}
                 src={CarouselImg}
-                width={1440}
-                height={553}
                 alt="courosel"
               ></Image>
             </SwiperSlide>
           </Swiper>
-        </Container>
+        </div>
 
         <Container fluid>
           <Row>
@@ -130,7 +132,7 @@ export default function Home() {
         </Container>
 
         <h2 className={s.h2}>Популярні товари</h2>
-        <div className={s.popular_product__section}>
+        <Container className={s.popular_product__section}>
           <Row>
             {products.slice(0, 4).map((id: any) => (
               <Col key={id} lg="3" md="4" className="mb-4">
@@ -138,7 +140,7 @@ export default function Home() {
               </Col>
             ))}
           </Row>
-        </div>
+        </Container>
         <div className={s.producer}>
           <div className={s.producer_line}>
             <Link href={Bosch} target="_blank">
@@ -192,26 +194,28 @@ export default function Home() {
         </div>
         <Container className={s.question__section}>
           <Row>
-            <Col lg={6} md={4} className={s.retreat}>
+            <Col md={6} >
               <p className={s.p}>Часті запитання</p>
-              <SimpleAccordion
-                AccordionTitle={newAccordionTitle}
-                AccordionText={newAccordionText}
-              />
-              <SimpleAccordion
-                AccordionTitle={newAccordionTitle}
-                AccordionText={newAccordionText}
-              />
-              <SimpleAccordion
-                AccordionTitle={newAccordionTitle}
-                AccordionText={newAccordionText}
-              />
-              <SimpleAccordion
-                AccordionTitle={newAccordionTitle}
-                AccordionText={newAccordionText}
-              />
+              <div className={s.retreat}>
+                <SimpleAccordion
+                  AccordionTitle={newAccordionTitle}
+                  AccordionText={newAccordionText}
+                />
+                <SimpleAccordion
+                  AccordionTitle={newAccordionTitle}
+                  AccordionText={newAccordionText}
+                />
+                <SimpleAccordion
+                  AccordionTitle={newAccordionTitle}
+                  AccordionText={newAccordionText}
+                />
+                <SimpleAccordion
+                  AccordionTitle={newAccordionTitle}
+                  AccordionText={newAccordionText}
+                />
+              </div>
             </Col>
-            <Col lg="6" md="4">
+            <Col md={6}>
               <p className={s.p}>Замовити дзвінок</p>
               <div className={s.call__form}>
                 <input
