@@ -4,9 +4,11 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import s from "@/styles/Home.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay } from "swiper";
+import SwiperCore, { Autoplay, EffectFade } from "swiper";
 import "swiper/css";
+import "swiper/css/effect-fade";
 import toast, { Toaster } from "react-hot-toast";
+import {Element} from 'react-scroll';
 
 //💬 Bootstrap //
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,6 +16,7 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 
 //💬 Img //
 import CarouselImg from "../../public/images/corousel/CarouselImg.png";
+import CarouselImg2 from "../../public/images/corousel/CarouselImg2.jpg";
 import BoschImg from "../../public/images/bosch.png";
 import TekaImg from "../../public/images/Teka.png";
 import FrankeImg from "../../public/images/Franke.png";
@@ -73,7 +76,7 @@ export default function Home() {
   const Fabino = "https://www.fabino.net/shop/";
   //
 
-  SwiperCore.use([Autoplay]);
+  SwiperCore.use([EffectFade, Autoplay]);
   return (
     <>
       <Head>
@@ -86,11 +89,13 @@ export default function Home() {
         <div className={s.swiper__container}>
           <Swiper
             loop={true}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 2000 }}
+            effect={"fade"}
             spaceBetween={50}
             slidesPerView={1}
+            modules={[Autoplay, EffectFade]}
             onSwiper={(swiper) => console.log(swiper)}
-            speed={2000}
+            speed={3000}
           >
             <SwiperSlide>
               <Image
@@ -102,7 +107,7 @@ export default function Home() {
             <SwiperSlide>
               <Image
                 className={s.img_swiper}
-                src={CarouselImg}
+                src={CarouselImg2}
                 alt="courosel"
               ></Image>
             </SwiperSlide>
@@ -113,6 +118,13 @@ export default function Home() {
                 alt="courosel"
               ></Image>
             </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className={s.img_swiper}
+                src={CarouselImg2}
+                alt="courosel"
+              ></Image>
+            </SwiperSlide>
           </Swiper>
         </div>
 
@@ -120,8 +132,8 @@ export default function Home() {
           <Row>
             <Col xs={12} md={8} lg={6} className={`mx-auto ${s.container}`}>
               <div className={s.search__block}>
-                <p className={s.p}>Lorem ipsum dolor sit amet.</p>
-              <DropdownSearch />
+                <p className={s.p}>Пошук товарів</p>
+                <DropdownSearch />
               </div>
             </Col>
           </Row>

@@ -13,6 +13,7 @@ export interface Product {
   features: Feature[];
   isFavorite?: boolean;
   colors?: string[];
+  
 }
 
 export interface CartItem {

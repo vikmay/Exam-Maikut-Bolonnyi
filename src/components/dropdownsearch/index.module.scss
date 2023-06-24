@@ -1,5 +1,9 @@
 @import "../../styles/variables.scss";
 
+.search_container {
+    @include flex-column-center;
+}
+
 .search_input {
     position: relative;
     width: 60vw;
@@ -9,13 +13,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 19px 2%; 
+    padding: 19px 2%;
+    outline: none;
+
 }
 
 .search_list {
     list-style-type: none;
+    max-height: 600px;
+    overflow-y: auto;
 
     .product_li {
+        display: flex;
         text-decoration: none;
         color: black;
         padding: 10px;
@@ -23,11 +32,14 @@
         align-items: start;
         justify-content: start;
         border-bottom: 1px solid #e6e6e6;
-        gap: 10px;
+        gap: 30px;
     }
+}
+.title_container {
+  align-self: center;
 }
 .crossBtn {
     position: absolute;
     right: 10px;
-    top: 20px;
+    top: 110px;
 }
