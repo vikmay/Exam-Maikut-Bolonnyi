@@ -1,113 +1,64 @@
 import Image from "next/image";
-import React, { useRef, useState } from "react";
-import Modal from "react-bootstrap/Modal";
-import products from "../../data/products/products.json";
-import Link from "next/link";
-import s from "./index.module.scss";
-
-// Img //
+import { useRouter } from "next/router";
+import React, { useEffect, useRef } from "react";
 import SearchImg from "../../../public/images/SearchImg.svg";
+import { scroller } from "react-scroll";
+import { delay } from "@reduxjs/toolkit/dist/utils";
 
-interface Product {
-  id: string;
-  title: string;
-  price: string;
-  colors: string[];
-  features: { label: string; value: string }[];
-  attributes: { label: string; value: string }[];
-  images: string[];
-  producer: string;
-  isNew: boolean;
-  image: string; //
-}
-
-const Search = ({ focus }: { focus: any }) => {
-  const [show, setShow] = useState(false);
-  const [searchResults, setSearchResults] = useState<Product[]>([]);
-  const [searchText, setSearchText] = useState("");
+const Search = () => {
+  const router = useRouter();
   const imageRef = useRef(null);
 
-  const handleClose = () => {
-    setShow(false);
-    setSearchText("");
-    setSearchResults([]);
-  };
-
   const handleShow = () => {
-    setShow(true);
-    setSearchText("");
-    setSearchResults([]);
+    router.push("/").then(() => {
+      const header = document.getElementById("scroll_point");
+      const search = document.getElementById("search_point");
+    
+      if (header && search) {
+        search.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+  
+        const headerHeight = header.offsetHeight;
+        const vwHeight = window.innerWidth * 0.375;
+        window.scrollBy({
+          top: vwHeight,
+          behavior: "smooth"
+        });
+  
+        // Delay focus by 1 second
+        setTimeout(() => {
+          const searchInput = document.getElementById("searchInput");
+          if (searchInput) {
+            searchInput.focus();
+          }
+        }, 500); // delay in milliseconds
+      }
+    });
   };
-
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const searchText = e.target.value;
-    setSearchText(searchText);
-
-    const results = products.filter((product) =>
-      product.title.toLowerCase().includes(searchText.toLowerCase())
-    );
-
-    const searchResultsWithImages = results.map((product) => ({
-      ...product,
-      image: product.images[0],
-    }));
-
-    setSearchResults(searchResultsWithImages);
-  };
-
-  const handleLinkClick = () => {
-    handleClose();
-  };
+  
+  useEffect(() => {
+    if (router.asPath === "/") {
+      const searchInput = document.getElementById("searchInput");
+      if (searchInput) {
+        searchInput.focus();
+      }
+    }
+  }, [router.asPath]);
 
   return (
-    <>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton></Modal.Header>
-        <Modal.Body>
-          <input
-            autoFocus
-            className={s.search__input}
-            type="search"
-            value={searchText}
-            onChange={handleSearch}
-            placeholder="Пошук"
-          />
-          <ul className={s.list}>
-            {searchResults.map((product) => (
-              <li className={s.line} key={product.id}>
-                <Link
-                  className={s.product__list}
-                  href={`/catalog/${product.id}`}
-                  key={product.id}
-                  onClick={handleLinkClick}
-                >
-                  <div className={s.product__image}>
-                    <Image
-                      src={product.image}
-                      width={100}
-                      height={100}
-                      alt={product.title}
-                    />
-                  </div>
-                  <div className={s.product__title}>{product.title}</div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Modal.Body>
-      </Modal>
-      <Image
-        ref={imageRef}
-        onClick={handleShow}
-        style={{
-          cursor: "pointer",
-        }}
-        src={SearchImg}
-        width={22.5}
-        height={22.5}
-        alt="SearchImg"
-      ></Image>
-    </>
+    <Image
+      ref={imageRef}
+      onClick={handleShow}
+      style={{
+        cursor: "pointer",
+      }}
+      src={SearchImg}
+      width={22.5}
+      height={22.5}
+      alt="SearchImg"
+    />
   );
 };
 

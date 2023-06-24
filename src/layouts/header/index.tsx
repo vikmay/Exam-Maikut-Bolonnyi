@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <>
       <Container className={s.container__header}>
-        <header className={s.header}>
+        <header className={s.header} id="scroll_point">
           <div className={s.logo}>
             <Link href="/">
               <Image
@@ -70,7 +70,6 @@ const Header = () => {
           <div className={s.action__bar}>
             <Favorites></Favorites>
             <Search focus={undefined} />
-
             <Cart />
             <button
               className={`${s.menu__toggle} ${isNavOpen ? s.active : ""}`}
