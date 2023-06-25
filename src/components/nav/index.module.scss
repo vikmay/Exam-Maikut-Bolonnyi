@@ -22,6 +22,10 @@
       line-height: 18px;
       transition: 0.5s;
 
+      &:hover {
+        cursor: pointer;
+      }
+
       .selected {
         color: aqua;
       }
