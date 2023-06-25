@@ -23,9 +23,9 @@
   padding: 15px 21px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600 !important;
-  font-size: 24px !important;
-  line-height: 18px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
   color: #222222;
   border: none;
   text-align: left;
@@ -35,18 +35,5 @@
 }
 
 .faq_answer {
-  width: 80%;
-  background: none;
-  padding: 15px 21px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: #222222;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
 }

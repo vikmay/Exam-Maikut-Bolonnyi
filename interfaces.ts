@@ -5,10 +5,10 @@ export interface Feature {
 
 export interface Product {
   producer: string;
-  id: number;
+  id: string;
   title: string;
   price: string;
-  description: string;
+  description?: string;
   images: string[];
   features: Feature[];
   isFavorite?: boolean;

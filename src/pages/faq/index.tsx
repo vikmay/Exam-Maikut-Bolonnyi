@@ -18,11 +18,11 @@ const faqData = [
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
   },
   {
-    question: "Чи є у ва соплата при отриманні?",
+    question: "Чи є у ваc соплата при отриманні?",
     answer:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
   },
-  // Add as many questions and answers as you need
+  
 ];
 
 const FAQ = () => {

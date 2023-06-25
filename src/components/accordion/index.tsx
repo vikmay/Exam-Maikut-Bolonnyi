@@ -34,7 +34,7 @@ export default function SimpleAccordion({
         </AccordionSummary>
         <AccordionDetails>
           {children} {/* Render children */}
-          <Typography className={titleClassName}>{AccordionText}</Typography>
+          <Typography className={textClassName}>{AccordionText}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>

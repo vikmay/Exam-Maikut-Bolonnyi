@@ -44,6 +44,7 @@ function Footer() {
                   <a
                     className="d-flex gap-3 align-items-center"
                     href="https://www.google.com/maps/place/Metro+Offices+2+Wisconsin+Circle,+7th+Floor,+Chevy+Chase,+MD+20815/@38.9615881,-77.0878639,17z/data=!3m2!4b1!5s0x89b7c094cedab3fd:0xc3f876bafdfbd567!4m6!3m5!1s0x89b7c990b57a706d:0x54317c70cccf5eff!8m2!3d38.961584!4d-77.085289!16s%2Fg%2F1tp0fkhj?authuser=0"
+                    target="_blank"
                   >
                     <Image
                       src="/@/../../public/images/footer/Location.png"
@@ -58,6 +59,7 @@ function Footer() {
                   <a
                     className="d-flex gap-3 align-items-center"
                     href="https://www.google.com/maps/place/Metro+Offices+2+Wisconsin+Circle,+7th+Floor,+Chevy+Chase,+MD+20815/@38.9615881,-77.0878639,17z/data=!3m2!4b1!5s0x89b7c094cedab3fd:0xc3f876bafdfbd567!4m6!3m5!1s0x89b7c990b57a706d:0x54317c70cccf5eff!8m2!3d38.961584!4d-77.085289!16s%2Fg%2F1tp0fkhj?authuser=0"
+                    target="_blank"
                   >
                     <Image
                       src="/@/../../public/images/footer/Location.png"
@@ -72,6 +74,7 @@ function Footer() {
                   <a
                     className="d-flex gap-3 align-items-center"
                     href="https://www.google.com/maps/place/Metro+Offices+2+Wisconsin+Circle,+7th+Floor,+Chevy+Chase,+MD+20815/@38.9615881,-77.0878639,17z/data=!3m2!4b1!5s0x89b7c094cedab3fd:0xc3f876bafdfbd567!4m6!3m5!1s0x89b7c990b57a706d:0x54317c70cccf5eff!8m2!3d38.961584!4d-77.085289!16s%2Fg%2F1tp0fkhj?authuser=0"
+                    target="_blank"
                   >
                     <Image
                       src="/@/../../public/images/footer/Location.png"

@@ -1,21 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
-import products from "../../data/products/products.json";
+import productsData from "../../data/products/products.json";
 import Link from "next/link";
 import Image from "next/image";
 import s from "./index.module.scss";
 import CrossButton from "../crossBtn";
 import { Product } from "../../../interfaces";
 
-
+const products: Product[] = productsData;
 
 const DropdownSearch = () => {
   const [searchResults, setSearchResults] = useState<Product[]>([]);
   const [searchText, setSearchText] = useState("");
 
-  const inputRef = useRef<HTMLInputElement>(null); // Create a ref
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    inputRef.current?.focus(); // Focus the input field on component mount
+    inputRef.current?.focus();
   }, []);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -48,7 +48,6 @@ const DropdownSearch = () => {
         value={searchText}
         onChange={handleSearch}
         placeholder="Пошук"
-
       />
       {searchResults.length > 0 && (
         <ul className={s.search_list}>
