@@ -8,7 +8,6 @@ import Nav from "@/components/nav";
 import Favorites from "@/components/favorites";
 import Search from "@/components/search";
 import Cart from "@/components/cart";
-import { Container } from "react-bootstrap";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

@@ -3,17 +3,17 @@
 .container__header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   .header {
-    padding: 0 9%;
+    width: 92%;
     position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 82px;
-    width: 100%;
     background-color: $primary-bg-color;
     z-index: 9999;
 
@@ -127,7 +127,9 @@
     transition: 0.3s;
   }
 }
+
 .nav {
+
   // Your main navigation styles...
   @media (max-width: 1000px) {
     display: none;
@@ -135,6 +137,7 @@
 }
 
 .burgerNav {
+
   // Your burger navigation styles...
   @media (min-width: 1001px) {
     display: none;

@@ -50,9 +50,7 @@
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
     }
-      
     
-
     .block {
       padding:10%;
       border-bottom: 1px solid $primary-color;
@@ -66,10 +64,6 @@
       margin-bottom: 70px;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       transition: 0.5s;
-
-      &:hover {
-        transform: translateY(-10px);
-      }
     }
   }
 }
