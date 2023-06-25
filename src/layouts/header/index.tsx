@@ -63,7 +63,7 @@ const Header = () => {
               ulClassName={isNavOpen ? `${s.ul} ${s.open}` : s.ul}
               liClassName={s.li}
               aClassName={s.a}
-              onClose={() => setIsNavOpen(false)}
+              onItemClick={() => setIsNavOpen(false)}
             />
           )}
 
@@ -72,7 +72,7 @@ const Header = () => {
             <Search focus={undefined} />
 
             <Cart />
-            <button
+            <div
               className={`${s.menu__toggle} ${isNavOpen ? s.active : ""}`}
               onClick={handleMenuToggle}
             >
@@ -91,7 +91,7 @@ const Header = () => {
                   isNavOpen ? s.activeMenuIcon : ""
                 }`}
               ></span>
-            </button>
+            </div>
             <a href="tel:+3800065628">
               <div className={s.phone__btn}>Телефонувати</div>
             </a>
