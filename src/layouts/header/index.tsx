@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <>
-      <Container className={s.container__header}>
+      <div className={s.container__header}>
         <header className={s.header} id="scroll_point">
           <div className={s.logo}>
             <Link href="/">
@@ -101,7 +101,7 @@ const Header = () => {
             </a>
           </div>
         </header>
-      </Container>
+      </div>
     </>
   );
 };

@@ -7,7 +7,7 @@
   .ul {
     list-style-type: none;
     display: flex;
-    gap: 69px;
+    gap: 40px;
     margin: 0;
 
     a {
@@ -21,6 +21,7 @@
       font-size: 18px;
       line-height: 18px;
       transition: 0.5s;
+      white-space: nowrap;
 
       &:hover {
         cursor: pointer;
