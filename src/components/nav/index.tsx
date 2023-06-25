@@ -8,6 +8,10 @@ interface NavProps {
   aClassName?: string;
 }
 
+function scrollToBottom() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
 export const Nav: React.FC<NavProps> = ({
   ulClassName,
   liClassName,
@@ -25,8 +29,10 @@ export const Nav: React.FC<NavProps> = ({
         <li className={liClassName}>
           <Link href="/faq">FAQ</Link>
         </li>
-        <li className={liClassName}>
-          <Link href="/contact">Контакти</Link>
+        <li>
+          <a className={liClassName}
+          onClick={scrollToBottom}
+          >Контакти</a>
         </li>
       </ul>
     </nav>
