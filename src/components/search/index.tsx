@@ -19,9 +19,8 @@ const Search = () => {
           behavior: "smooth",
           block: "start"
         });
-  
-        const headerHeight = header.offsetHeight;
-        const vwHeight = window.innerWidth * 0.375;
+
+        const vwHeight = window.innerWidth * 0.378;
         window.scrollBy({
           top: vwHeight,
           behavior: "smooth"
