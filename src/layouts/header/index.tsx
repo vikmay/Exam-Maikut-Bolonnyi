@@ -18,22 +18,27 @@ const Header = () => {
     setIsNavOpen(!isNavOpen);
     setIsNavVisible(!isNavOpen);
   };
-  useEffect(() => {
-    setIsNavVisible(true);
-  }, []);
 
-  const handleWindowResize = () => {
+  const handleMenuItemClick = () => {
+    setIsNavOpen(false);
     setIsNavVisible(window.innerWidth > 1000);
   };
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 1000px)");
+    setIsNavVisible(true);
+  }, []);
 
-    setIsNavVisible(mediaQuery.matches);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1000px)");
 
     const handleWindowResize = () => {
       setIsNavVisible(mediaQuery.matches);
+      if (mediaQuery.matches) {
+        setIsNavOpen(false);
+      }
     };
+
+    handleWindowResize(); // Call once to set the initial state
 
     mediaQuery.addEventListener("change", handleWindowResize);
 
@@ -63,13 +68,13 @@ const Header = () => {
               ulClassName={isNavOpen ? `${s.ul} ${s.open}` : s.ul}
               liClassName={s.li}
               aClassName={s.a}
-              onClose={() => setIsNavOpen(false)}
+              onItemClick={handleMenuItemClick} // Pass the handler to Nav
             />
           )}
 
           <div className={s.action__bar}>
             <Favorites></Favorites>
-            <Search focus={undefined} />
+            <Search />
             <Cart />
             <button
               className={`${s.menu__toggle} ${isNavOpen ? s.active : ""}`}
