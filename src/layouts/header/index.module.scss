@@ -125,3 +125,16 @@
     transition: 0.3s;
   }
 }
+.nav {
+  // Your main navigation styles...
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.burgerNav {
+  // Your burger navigation styles...
+  @media (min-width: 1001px) {
+    display: none;
+  }
+}
