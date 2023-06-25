@@ -23,7 +23,7 @@ export default function SimpleAccordion({
   children?: ReactNode; // Declare children prop with type ReactNode
 }) {
   return (
-    <div>
+    <div className={s.accord_wrapper}>
       <Accordion sx={sx}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon className={s.accordion__ico} />}

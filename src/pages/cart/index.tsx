@@ -106,7 +106,6 @@ const CartPage = () => {
                   AccordionTitle="Доставка"
                   AccordionText="Доставка по Україні здійснюється за допомогою служби доставки «Нова Пошта»."
                 >
-                  Доставка
                 </DeliveryAccordion>
                 <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
                   <input
