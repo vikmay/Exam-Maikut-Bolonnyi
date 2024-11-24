@@ -36,7 +36,7 @@ main {
   color: $primary-bg-color;
   border-color: #d5d6d4;
   &:hover {
-    background: $primary-color;
+    background: rgb(255, 183, 183);
     color: $primary-bg-color;
     border-color: $primary-color;
   }
