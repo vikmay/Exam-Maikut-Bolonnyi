@@ -1,3 +1,5 @@
+@import "/src/styles/variables.scss";
+
 .btn_container {
     display: flex;
     justify-content: center;
@@ -12,7 +14,7 @@
         height: 40px;
         font-size: 48px;
         color: white;
-        background: #C90000;
+        background: $primary-color;
         border: none;
         border-radius: 50%;
         padding-bottom: 8px;
@@ -38,7 +40,7 @@
         width: 40px;
         height: 40px;
         color: white;
-        background: #C90000;
+        background: $primary-color;
         border: none;
         border-radius: 50%;
     }

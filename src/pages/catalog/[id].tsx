@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { Col, Container, Row, Tab } from "react-bootstrap";
 import { Product } from "../../../interfaces";
 import productsList from "@/data/products/products.json";
-import s from "./index.module.scss";
+import s from "./id.module.scss";
 import toast, { Toaster } from "react-hot-toast";
 import ProductCard from "@/components/cards/product";
 import AddToCartBtn from "@/components/cart/addToCart";
@@ -179,7 +179,7 @@ const ProductPage: React.FC<ProductPageProps> = () => {
                       decreaseClassName={s.btn__decrease}
                     />
                   </div>
-                  <div className={s.text__block_heart_containe}>
+                  <div>
                     <AddToFavBtn
                       isSimple={true}
                       product={product}
